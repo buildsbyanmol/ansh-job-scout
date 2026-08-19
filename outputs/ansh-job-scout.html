@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ansh Jain early-career data and business analytics job scout knowledge base">
+  <title>Ansh's Job Scout</title>
+  <style>
+    :root {
+      --ink: #14233b;
+      --muted: #5f6f85;
+      --paper: #f4f7fb;
+      --surface: #ffffff;
+      --line: #d8e1ec;
+      --blue: #1f5eff;
+      --cyan: #0f91a3;
+      --lime: #b8dd50;
+      --amber: #f4b942;
+      --rose: #d95b70;
+      --shadow: 0 14px 40px rgba(20, 35, 59, .08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(31, 94, 255, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31, 94, 255, .035) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+
+    .shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+
+    header { padding: 28px 0 20px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 780; letter-spacing: -.02em; }
+    .brand-mark {
+      display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px;
+      color: #fff; background: var(--blue); box-shadow: 7px 7px 0 var(--lime);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .stamp { color: var(--muted); font-size: 13px; text-align: right; }
+
+    .hero {
+      display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .65fr);
+      gap: 20px; align-items: stretch; padding: 22px 0 18px;
+    }
+    .hero-main, .hero-side, .panel {
+      background: rgba(255,255,255,.94); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-main { position: relative; overflow: hidden; padding: clamp(26px, 5vw, 58px); }
+    .hero-main::after {
+      content: "SQL / BI / OPS"; position: absolute; right: -16px; bottom: 14px;
+      color: rgba(31,94,255,.07); font: 800 clamp(40px, 7vw, 82px)/.9 ui-monospace, SFMono-Regular, Menlo, monospace;
+      white-space: nowrap; transform: rotate(-5deg); pointer-events: none;
+    }
+    .eyebrow { color: var(--blue); font: 760 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 15px 0 14px; font-size: clamp(38px, 6vw, 76px); line-height: .98; letter-spacing: -.065em; }
+    .hero p { max-width: 720px; margin: 0; color: var(--muted); font-size: 17px; }
+    .hero-side { padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+    .run-badge { display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding: 8px 11px; border: 1px solid #bfd0ff; border-radius: 99px; color: #1745bc; background: #eef3ff; font-size: 13px; font-weight: 720; }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: #2ba66a; box-shadow: 0 0 0 5px rgba(43,166,106,.12); }
+    .hero-side dl { margin: 24px 0 0; }
+    .hero-side dl div { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 11px 0; border-top: 1px solid var(--line); }
+    dt { color: var(--muted); font-size: 13px; }
+    dd { margin: 0; font-weight: 760; text-align: right; }
+
+    .notice { margin: 2px 0 20px; padding: 15px 18px; border-left: 4px solid var(--amber); border-radius: 0 12px 12px 0; background: #fff8e8; color: #715212; font-size: 14px; }
+
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0 0 20px; }
+    .stat { padding: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+    .stat b { display: block; font-size: 28px; letter-spacing: -.04em; }
+    .stat span { color: var(--muted); font-size: 13px; }
+
+    .controls {
+      position: sticky; top: 10px; z-index: 5; display: grid; grid-template-columns: minmax(220px, 1fr) auto;
+      gap: 12px; align-items: center; margin: 0 0 20px; padding: 12px;
+      background: rgba(255,255,255,.9); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 12px 30px rgba(20,35,59,.08); backdrop-filter: blur(14px);
+    }
+    .search { position: relative; }
+    .search input { width: 100%; min-height: 44px; padding: 0 14px 0 42px; border: 1px solid var(--line); border-radius: 11px; color: var(--ink); background: #fff; outline: none; }
+    .search input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(31,94,255,.12); }
+    .search::before { content: "⌕"; position: absolute; left: 15px; top: 7px; color: var(--blue); font-size: 22px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filter { min-height: 40px; padding: 0 13px; border: 1px solid var(--line); border-radius: 10px; color: var(--muted); background: #fff; font-size: 13px; font-weight: 700; }
+    .filter[aria-pressed="true"] { color: #fff; border-color: var(--blue); background: var(--blue); }
+
+    .section-head { display: flex; justify-content: space-between; gap: 20px; align-items: end; margin: 34px 0 14px; }
+    .section-head h2 { margin: 0; font-size: clamp(25px, 3vw, 38px); letter-spacing: -.045em; }
+    .section-head p { max-width: 620px; margin: 0; color: var(--muted); font-size: 14px; }
+
+    .lane-key { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 18px; }
+    .lane { position: relative; overflow: hidden; padding: 14px 16px 14px 40px; border: 1px solid var(--line); border-radius: 13px; background: #fff; }
+    .lane::before { content: attr(data-n); position: absolute; left: 0; top: 0; bottom: 0; width: 29px; display: grid; place-items: center; color: #fff; background: var(--blue); font: 800 13px ui-monospace, monospace; }
+    .lane:nth-child(2)::before { background: var(--cyan); }
+    .lane:nth-child(3)::before { background: var(--rose); }
+    .lane b { display: block; font-size: 14px; }
+    .lane small { color: var(--muted); }
+
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      position: relative; display: flex; flex-direction: column; min-height: 330px; padding: 22px 22px 18px 29px;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 8px 26px rgba(20,35,59,.05);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(20,35,59,.09); }
+    .card::before { content: ""; position: absolute; left: 0; top: 17px; bottom: 17px; width: 6px; border-radius: 0 6px 6px 0; background: var(--blue); }
+    .card[data-tier="2"]::before { background: var(--cyan); }
+    .card[data-tier="3"]::before { background: var(--rose); }
+    .card-top { display: flex; justify-content: space-between; gap: 14px; align-items: start; }
+    .company { color: var(--muted); font: 720 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .05em; text-transform: uppercase; }
+    .card h3 { margin: 6px 0 10px; font-size: 21px; line-height: 1.18; letter-spacing: -.025em; }
+    .status { flex: none; padding: 6px 8px; border-radius: 8px; color: #157448; background: #eaf8f0; font-size: 11px; font-weight: 790; }
+    .status.verify { color: #7b4f00; background: #fff1ce; }
+    .meta { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 14px; }
+    .chip { padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; color: var(--muted); background: #f8fafc; font-size: 11px; font-weight: 680; }
+    .signal { display: grid; grid-template-columns: 88px 1fr; gap: 12px; margin: 7px 0; font-size: 13px; }
+    .signal b { color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
+    .signal span { color: #33465f; }
+    .card-footer { display: flex; justify-content: space-between; gap: 14px; align-items: center; margin-top: auto; padding-top: 17px; border-top: 1px solid var(--line); }
+    .source-age { color: var(--muted); font-size: 12px; }
+    .source-age strong { display: block; color: var(--ink); }
+    .open-link { padding: 9px 12px; border-radius: 9px; color: #fff; background: var(--ink); text-decoration: none; font-size: 12px; font-weight: 760; }
+    .open-link:hover, .open-link:focus-visible { background: var(--blue); }
+
+    .panel { margin: 18px 0; padding: clamp(20px, 4vw, 34px); }
+    .profile-grid, .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .mini { padding: 16px; border: 1px solid var(--line); border-radius: 13px; background: #fbfcfe; }
+    .mini h3 { margin: 0 0 7px; font-size: 15px; }
+    .mini p, .mini li { color: var(--muted); font-size: 13px; }
+    .mini ul { margin: 0; padding-left: 18px; }
+
+    .rubric { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .rubric th, .rubric td { padding: 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .rubric th { color: var(--muted); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+
+    .empty { display: none; padding: 34px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 14px; background: #fff; }
+    footer { padding: 36px 0 52px; color: var(--muted); font-size: 13px; }
+    .hidden { display: none !important; }
+
+    @media (max-width: 860px) {
+      .hero, .cards, .profile-grid, .method-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .lane-key { grid-template-columns: 1fr; }
+      .controls { position: static; grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 20px, 1180px); }
+      .topbar, .section-head { align-items: start; flex-direction: column; }
+      .stamp { text-align: left; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .card { min-height: auto; padding-right: 16px; }
+      .card-top { flex-direction: column-reverse; }
+      .signal { grid-template-columns: 76px 1fr; }
+      .rubric { display: block; overflow-x: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; transition: none !important; }
+    }
+    @media print {
+      body { background: #fff; }
+      .controls { display: none; }
+      .card, .panel, .hero-main, .hero-side { box-shadow: none; break-inside: avoid; }
+      .cards { display: block; }
+      .card { margin-bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <div class="topbar">
+      <div class="brand"><span class="brand-mark">AJ</span><span>Ansh's Job Scout</span></div>
+      <div class="stamp">Evidence snapshot<br><strong>19 Aug 2026, 9:18 AM IST</strong></div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-main">
+        <div class="eyebrow">Early-career data radar / NCR + Bengaluru</div>
+        <h1 id="page-title">Find the signal before the crowd.</h1>
+        <p>A live shortlist for analyst, BI, data operations, and adjacent roles. Ranked by fit, access, freshness, and the actual effort required to get noticed.</p>
+      </div>
+      <aside class="hero-side" aria-label="Scout run status">
+        <span class="run-badge"><i class="pulse"></i> Twice-daily scout active</span>
+        <dl>
+          <div><dt>Run times</dt><dd>9:00 AM + 7:00 PM</dd></div>
+          <div><dt>Timezone</dt><dd>Asia/Kolkata</dd></div>
+          <div><dt>Email</dt><dd>Disabled</dd></div>
+          <div><dt>Delivery</dt><dd>This task + HTML</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <div class="notice"><strong>CV verification note:</strong> the source task retained a structured readout, but the original Ansh_Jain_CV.pdf is not accessible in this workspace. Matching currently uses the recovered skills baseline below. Attach the PDF here for a full line-by-line refresh.</div>
+
+    <section class="stats" aria-label="Current scout summary">
+      <div class="stat"><b>13</b><span>tracked opportunities</span></div>
+      <div class="stat"><b>8</b><span>high-approachability leads</span></div>
+      <div class="stat"><b>7</b><span>posted or checked today</span></div>
+      <div class="stat"><b>0</b><span>emails or applications sent</span></div>
+    </section>
+
+    <div class="controls" aria-label="Opportunity filters">
+      <label class="search"><input id="search" type="search" placeholder="Search company, role, location, skill..." aria-label="Search opportunities"></label>
+      <div class="filters" role="group" aria-label="Filter by approachability tier">
+        <button class="filter" data-filter="all" aria-pressed="true">All roles</button>
+        <button class="filter" data-filter="1" aria-pressed="false">Tier 1</button>
+        <button class="filter" data-filter="2" aria-pressed="false">Tier 2</button>
+        <button class="filter" data-filter="3" aria-pressed="false">Tier 3</button>
+      </div>
+    </div>
+
+    <section aria-labelledby="shortlist-heading">
+      <div class="section-head">
+        <div><div class="eyebrow">Current opportunity board</div><h2 id="shortlist-heading">Ranked, not merely collected</h2></div>
+        <p>Approachability combines eligibility, stack match, competition, source trust, company accessibility, and whether there is a usable human outreach route.</p>
+      </div>
+
+      <div class="lane-key" aria-label="Tier definitions">
+        <div class="lane" data-n="1"><b>Apply now</b><small>Fresher-friendly, direct match, or fresh human post.</small></div>
+        <div class="lane" data-n="2"><b>Realistic with positioning</b><small>Good stack overlap with one meaningful hurdle.</small></div>
+        <div class="lane" data-n="3"><b>Stretch or verify</b><small>Experience gap, indirect source, or uncertain status.</small></div>
+      </div>
+
+      <div class="cards" id="cards">
+        <article class="card" data-tier="1" data-search="is global web mis executive noida excel dashboards reporting data accuracy linkedin hiring post">
+          <div class="card-top"><div><div class="company">IS Global Web</div><h3>MIS Executive</h3></div><span class="status">Live post</span></div>
+          <div class="meta"><span class="chip">Noida</span><span class="chip">Experience preferred, not mandatory</span><span class="chip">LinkedIn hiring post</span></div>
+          <div class="signal"><b>Why fit</b><span>Reporting, large datasets, dashboards, reconciliation, and stakeholder coordination map directly to Ansh's experience.</span></div>
+          <div class="signal"><b>Main gap</b><span>The post is Excel-heavy. Make advanced Excel and recurring MIS ownership explicit on the resume.</span></div>
+          <div class="signal"><b>Access</b><span>Named poster and direct CV route. This is the strongest outreach path in the current scan.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 13 hours ago</strong>Verified in signed-in LinkedIn search</div><a class="open-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7495346653705449472/" target="_blank" rel="noopener">Open post ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="wake up whistle data analyst internship remote india excel sql dashboarding fresher linkedin jobs">
+          <div class="card-top"><div><div class="company">Wake Up Whistle</div><h3>Data Analyst Internship</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">India - Remote</span><span class="chip">Freshers encouraged</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Excel, SQL, dashboarding, cleaning, data accuracy, and business reporting are core requirements.</span></div>
+          <div class="signal"><b>Main gap</b><span>Small e-learning company and an off-platform application require basic legitimacy checks before sharing personal data.</span></div>
+          <div class="signal"><b>Access</b><span>Very low eligibility friction, but more than 100 people had already clicked apply.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 7 hours ago</strong>Deadline: 31 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4454716415/" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="oshodata statistical data analyst recent graduate noida sql python r power bi tableau statistics data modeling reporting automation linkedin jobs">
+          <div class="card-top"><div><div class="company">Oshodata</div><h3>Statistical Data Analyst (Recent Graduate)</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Noida - On-site</span><span class="chip">Recent graduate / entry level</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Python, Power BI/Tableau, statistical analysis, reporting automation, data modeling, and stakeholder communication closely match Ansh's baseline.</span></div>
+          <div class="signal"><b>Main gap</b><span>Real-estate and proptech analytics are preferred context. Show inferential statistics and structured documentation work clearly.</span></div>
+          <div class="signal"><b>Access</b><span>Explicit recent-graduate role with a direct apply route, but applicant volume reached 198 within the first two hours.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 2 hours ago</strong>Apply control present; verified today</div><a class="open-link" href="https://in.linkedin.com/jobs/view/statistical-data-analyst-recent-graduate-at-oshodata-4445464451" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="flip business analyst internship delhi gurgaon noida remote fintech loyalty commerce excel research operations reporting wellfound">
+          <div class="card-top"><div><div class="company">FLIP</div><h3>Business Analyst Intern</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Delhi / Gurgaon / Noida / Remote</span><span class="chip">Recent graduates</span><span class="chip">Wellfound</span></div>
+          <div class="signal"><b>Why fit</b><span>Operational trackers, data collection, analysis, reporting, and fintech context suit Ansh's mixed business-data profile.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role also includes research, content, and operations. It is not a pure analytics internship.</span></div>
+          <div class="signal"><b>Access</b><span>11-50 person actively hiring startup, recruiter recently active, and a broad location policy.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted today</strong>Recruiter recently active</div><a class="open-link" href="https://wellfound.com/jobs/4349709-internship-business-analyst" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="kskt agromart technical business analyst intern gurgaon product technology requirements brd frd no experience wellfound">
+          <div class="card-top"><div><div class="company">KSKT Agromart</div><h3>Technical Business Analyst Intern</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Gurgaon</span><span class="chip">No experience required</span><span class="chip">Wellfound</span></div>
+          <div class="signal"><b>Why fit</b><span>Business data analysis, implementation support, and cross-functional exposure are strong bridges from Ansh's stakeholder-facing data work.</span></div>
+          <div class="signal"><b>Main gap</b><span>BRDs, FRDs, process maps, Jira, and Agile evidence need to be added or demonstrated.</span></div>
+          <div class="signal"><b>Access</b><span>Small startup, named hiring contact, freshers welcome, and potential conversion to analyst or product roles.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 month ago</strong>Company marked actively hiring</div><a class="open-link" href="https://wellfound.com/jobs/4391284-technical-businsess-analyst-intern" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="gulf client fragma data systems fresher business analyst internship job bengaluru remote sql excel data warehouse reporting cutshort">
+          <div class="card-top"><div><div class="company">Gulf Client via Fragma</div><h3>Fresher Business Analyst</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Remote / Bengaluru</span><span class="chip">0-1 years</span><span class="chip">Cutshort agency listing</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Excel, data warehouse queries, reporting, and ad hoc analysis align closely with the recovered CV baseline.</span></div>
+          <div class="signal"><b>Main gap</b><span>The client is anonymous. Confirm employer, stipend/salary split, and conversion terms before investing time.</span></div>
+          <div class="signal"><b>Access</b><span>Low experience threshold, but the agency layer weakens direct recruiter access.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Live today</strong>Apply control present on source</div><a class="open-link" href="https://cutshort.io/job/Fresher-Business-Analyst-Internship-Job-Opportunity-Bengaluru-Bangalore-Fragma-Data-Systems-y3Dq4NEk" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="concentrix business analyst fresher bengaluru stakeholder requirements documentation data analytics cutshort agency 2024 2025 passout">
+          <div class="card-top"><div><div class="company">Concentrix via Redfoxa</div><h3>Business Analyst - Fresher</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">0-1 years</span><span class="chip">Cutshort agency listing</span></div>
+          <div class="signal"><b>Why fit</b><span>Stakeholder coordination, requirement analysis, data reporting, and process execution suit his hybrid analyst background.</span></div>
+          <div class="signal"><b>Main gap</b><span>2024 and 2025 pass-outs are preferred. Graduation year must be checked before prioritizing.</span></div>
+          <div class="signal"><b>Access</b><span>Clear fresher label and active apply control, but no direct Concentrix recruiter is identified.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Live today</strong>Agency listing, verify employer mandate</div><a class="open-link" href="https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-Redfoxa-Careerlink-Pvt-Ltd-ufPMC4jn" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="codemonk product business analyst intern bengaluru brd frd user stories agile product ai linkedin jobs internship">
+          <div class="card-top"><div><div class="company">Codemonk</div><h3>Product / Business Analyst Intern</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Bengaluru - On-site</span><span class="chip">Paid internship</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>A credible adjacent lane for someone with stakeholder-facing data work and technical fluency.</span></div>
+          <div class="signal"><b>Main gap</b><span>The posting explicitly says this is not a data analyst role. It prioritizes BRDs, FRDs, user stories, and product thinking.</span></div>
+          <div class="signal"><b>Access</b><span>Easy Apply and fresh posting, but more than 100 applicants within hours.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 14 hours ago</strong>₹13k-15k/month; rechecked today</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4454760462/" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="tap invest data analyst bengaluru fintech sql python pandas dashboards production data automation 1 2 years cutshort">
+          <div class="card-top"><div><div class="company">Tap Invest</div><h3>Data Analyst</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1-2 years</span><span class="chip">Cutshort</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL validation, Python/pandas, dashboards, production datasets, automation, and cross-functional analysis are an unusually close stack match.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role expects independent ownership and 1-2 years of relevant experience. Quantify production impact clearly.</span></div>
+          <div class="signal"><b>Access</b><span>Named poster on Cutshort and a 100-500 person profitable fintech. Strong target if experience can be framed credibly.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Live today</strong>Current apply control on source</div><a class="open-link" href="https://cutshort.io/job/Data-Analyst-Bengaluru-Bangalore-Tap-Invest-3nnNwkss" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="rentomojo business analyst bengaluru sql etl data warehouse dashboards kpi root cause analysis azure aws pyspark databricks 1 2 years cutshort">
+          <div class="card-top"><div><div class="company">RentoMojo</div><h3>Business Analyst</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1-2 years</span><span class="chip">Cutshort</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, ETL, data-warehouse work, KPI dashboards, root-cause analysis, and cross-functional insight delivery map strongly to Ansh's experience.</span></div>
+          <div class="signal"><b>Main gap</b><span>Complex SQL and 1-2 years are expected; Azure/AWS, PySpark, Databricks, and R are useful stretch skills.</span></div>
+          <div class="signal"><b>Access</b><span>Named poster Anand Pandey and a funded 500-1,000 person product company create a usable outreach route beyond platform apply.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Live this week</strong>Apply control present; checked today</div><a class="open-link" href="https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-Rentomojo-cTAi1nzB" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="1digitalstack business analyst gurugram ecommerce analytics sql python power bi excel generative ai 1 2 years wellfound">
+          <div class="card-top"><div><div class="company">1DigitalStack.ai</div><h3>Business Analyst</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Gurugram - Office</span><span class="chip">1-2 years</span><span class="chip">Wellfound</span></div>
+          <div class="signal"><b>Why fit</b><span>Advanced Excel, Power BI, SQL, Python, automation, client-facing work, and data storytelling match the profile well.</span></div>
+          <div class="signal"><b>Main gap</b><span>One year of experience and a degree from a reputed institute are stated filters. Client-facing stories need emphasis.</span></div>
+          <div class="signal"><b>Access</b><span>Named HR contact and a 201-500 person analytics company, but the listing was reposted two months ago.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Reposted 2 months ago</strong>Check activity before applying</div><a class="open-link" href="https://wellfound.com/jobs/3194845-business-analyst" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="fintech startup business data analyst bengaluru qrata sql python tableau powerbi excel data operations 1 2 years cutshort">
+          <div class="card-top"><div><div class="company">Fintech startup via Qrata</div><h3>Business / Data Analyst</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1-2 years listed</span><span class="chip">Cutshort agency listing</span></div>
+          <div class="signal"><b>Why fit</b><span>Excel, SQL, Python, BI tools, data operations, and stakeholder management closely match Ansh's core evidence.</span></div>
+          <div class="signal"><b>Main gap</b><span>The employer is anonymous and fintech/consumer internet experience is preferred.</span></div>
+          <div class="signal"><b>Access</b><span>Good fit but indirect access. Ask Qrata for company identity and interview ownership before prioritizing.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Live this week</strong>ASAP joining signal</div><a class="open-link" href="https://cutshort.io/job/Bussiness-Data-Analyst-Bengaluru-Bangalore-Qrata-AIGcbKf2" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="3" data-search="ecommerce ayurvedic data analyst bengaluru retail reports p and l marketplace power bi tableau 0 2 years cutshort">
+          <div class="card-top"><div><div class="company">E-commerce company via Qrata</div><h3>E-commerce Data Analyst</h3></div><span class="status verify">Verify fit</span></div>
+          <div class="meta"><span class="chip">Bengaluru / Mumbai</span><span class="chip">0-2 years shown</span><span class="chip">Cutshort agency listing</span></div>
+          <div class="signal"><b>Why fit</b><span>Reporting, data quality, dashboards, process improvement, and cross-functional operations are relevant.</span></div>
+          <div class="signal"><b>Main gap</b><span>The description simultaneously asks for a minimum of two years plus retail, fashion, or lifestyle experience.</span></div>
+          <div class="signal"><b>Access</b><span>Anonymous employer and contradictory experience range make this a low-effort application only.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Live 2 weeks ago</strong>Eligibility needs confirmation</div><a class="open-link" href="https://cutshort.io/job/E-commerce-Data-Analyst-Bengaluru-Bangalore-Mumbai-Qrata-xkYJq5sm" target="_blank" rel="noopener">Open role ↗</a></div>
+        </article>
+      </div>
+      <div class="empty" id="empty">No roles match this filter. Try a broader keyword or another tier.</div>
+    </section>
+
+    <section class="panel" aria-labelledby="profile-heading">
+      <div class="section-head"><div><div class="eyebrow">Recovered CV readout</div><h2 id="profile-heading">What the scout is matching against</h2></div><p>This is a working baseline from the referenced task, not a substitute for reading the missing PDF itself.</p></div>
+      <div class="profile-grid">
+        <div class="mini"><h3>Core toolkit</h3><ul><li>SQL and PostgreSQL</li><li>Python and data processing</li><li>Power BI, Tableau, Power Query</li><li>ETL pipelines and reconciliation</li></ul></div>
+        <div class="mini"><h3>Credible work signals</h3><ul><li>Production data and quality checks</li><li>Large dataset analysis</li><li>Stakeholder-facing delivery</li><li>Hypothesis testing and dashboards</li></ul></div>
+        <div class="mini"><h3>Role families in scope</h3><ul><li>Data / BI / Reporting Analyst</li><li>Business / Product Analyst</li><li>Analytics Intern</li><li>Data Ops, junior DE, analytics engineering</li></ul></div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="method-heading">
+      <div class="section-head"><div><div class="eyebrow">Search method</div><h2 id="method-heading">How each run works</h2></div><p>The workflow is designed to find fresh openings without letting low-trust aggregator noise dominate the list.</p></div>
+      <div class="method-grid">
+        <div class="mini"><h3>1. Discover</h3><p>Search LinkedIn Jobs, normal LinkedIn hiring posts, Wellfound, Cutshort, Instahyre, Foundit, Naukri when useful, YC/startup boards, and company career pages.</p></div>
+        <div class="mini"><h3>2. Verify</h3><p>Open the strongest source, confirm that the role is accepting applications, capture date/freshness, and mark contradictions or expired redirects.</p></div>
+        <div class="mini"><h3>3. Rank</h3><p>Compare eligibility, CV evidence, location, employer/recruiter access, competition, and source trust. Deduplicate by company plus role plus location.</p></div>
+      </div>
+
+      <div style="overflow-x:auto; margin-top:18px">
+        <table class="rubric">
+          <thead><tr><th>Signal</th><th>Tier 1</th><th>Tier 2</th><th>Tier 3</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Eligibility</strong></td><td>Fresher, intern, or 0-1 years</td><td>1-2 years with strong overlap</td><td>2+ years, degree/domain filter, or contradiction</td></tr>
+            <tr><td><strong>Fit</strong></td><td>Several proven CV skills are central</td><td>Core fit plus one meaningful gap</td><td>Adjacent role or missing evidence</td></tr>
+            <tr><td><strong>Approach</strong></td><td>Named poster/contact or small active startup</td><td>Platform recruiter or reachable team</td><td>Anonymous agency, MNC queue, or stale source</td></tr>
+            <tr><td><strong>Action</strong></td><td>Apply today and tailor outreach</td><td>Tailor resume, then apply</td><td>Verify first or spend minimal time</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="queries-heading">
+      <div class="section-head"><div><div class="eyebrow">Reusable search bank</div><h2 id="queries-heading">Queries worth repeating</h2></div></div>
+      <div class="profile-grid">
+        <div class="mini"><h3>LinkedIn Jobs</h3><p>“data analyst” OR “BI analyst” OR “reporting analyst” OR “business analyst” OR “analytics intern” with Internship + Entry level, Past 24 hours/Past week, and each target city separately.</p></div>
+        <div class="mini"><h3>LinkedIn posts</h3><p>“data analyst” intern, “business analyst” hiring, “MIS executive” Noida, “analytics intern” Gurugram, “fresher SQL Power BI” Bengaluru, sorted for current activity.</p></div>
+        <div class="mini"><h3>Adjacent roles</h3><p>Data operations, revenue ops analyst, marketing analyst, product analyst, junior analytics engineer, ETL analyst, data quality analyst, and reporting/MIS executive.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">No application, recruiter message, form submission, or email has been sent. Re-verify every role immediately before applying because job status changes quickly.</footer>
+
+  <script>
+    const cards = [...document.querySelectorAll('.card')];
+    const search = document.getElementById('search');
+    const filters = [...document.querySelectorAll('.filter')];
+    const empty = document.getElementById('empty');
+    let activeTier = 'all';
+
+    function update() {
+      const query = search.value.trim().toLowerCase();
+      let visible = 0;
+      cards.forEach(card => {
+        const tierMatch = activeTier === 'all' || card.dataset.tier === activeTier;
+        const searchMatch = !query || card.dataset.search.includes(query) || card.innerText.toLowerCase().includes(query);
+        const show = tierMatch && searchMatch;
+        card.classList.toggle('hidden', !show);
+        if (show) visible += 1;
+      });
+      empty.style.display = visible ? 'none' : 'block';
+    }
+
+    search.addEventListener('input', update);
+    filters.forEach(button => button.addEventListener('click', () => {
+      activeTier = button.dataset.filter;
+      filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      update();
+    }));
+  </script>
+</body>
+</html>
