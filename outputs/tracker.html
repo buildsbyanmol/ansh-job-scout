@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Application tracker for Ansh's early-career job scout">
+  <title>Application Tracker | Ansh's Job Scout</title>
+  <style>
+    :root {
+      --ink: #14233b;
+      --muted: #5f6f85;
+      --paper: #f4f7fb;
+      --surface: #fff;
+      --line: #d8e1ec;
+      --blue: #1f5eff;
+      --lime: #b8dd50;
+      --green: #23885a;
+      --amber: #f4b942;
+      --rose: #d95b70;
+      --shadow: 0 14px 40px rgba(20,35,59,.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: var(--ink); background:
+        linear-gradient(rgba(31,94,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31,94,255,.035) 1px, transparent 1px), var(--paper);
+      background-size: 32px 32px; font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5;
+    }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    .shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 28px 0 20px; }
+    .topbar, .top-actions, .site-nav { display: flex; align-items: center; }
+    .topbar { justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 780; letter-spacing: -.02em; }
+    .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; color: #fff; background: var(--blue); box-shadow: 7px 7px 0 var(--lime); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .top-actions { justify-content: flex-end; gap: 14px; }
+    .site-nav { gap: 6px; padding: 4px; border: 1px solid var(--line); border-radius: 11px; background: #fff; }
+    .site-nav a { display: inline-flex; align-items: center; gap: 7px; min-height: 34px; padding: 0 10px; border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 12px; font-weight: 760; }
+    .site-nav a[aria-current="page"] { color: #fff; background: var(--ink); }
+    .nav-count { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 99px; color: var(--ink); background: var(--lime); font-size: 10px; }
+    .device-note { color: var(--muted); font-size: 12px; text-align: right; }
+    .hero { margin: 20px 0; padding: clamp(26px,5vw,54px); border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.95); box-shadow: var(--shadow); }
+    .eyebrow { color: var(--blue); font: 760 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 800px; margin: 14px 0 12px; font-size: clamp(38px,6vw,70px); line-height: .98; letter-spacing: -.06em; }
+    .hero p { max-width: 720px; margin: 0; color: var(--muted); font-size: 17px; }
+    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin: 0 0 18px; }
+    .stat { padding: 17px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    .stat b { display: block; font-size: 27px; letter-spacing: -.04em; }
+    .stat span { color: var(--muted); font-size: 12px; }
+    .controls { display: grid; grid-template-columns: 1fr minmax(190px,260px); gap: 10px; margin-bottom: 16px; padding: 12px; border: 1px solid var(--line); border-radius: 15px; background: rgba(255,255,255,.92); box-shadow: var(--shadow); }
+    .controls input, .controls select, .status-select { width: 100%; min-height: 43px; padding: 0 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: #fff; outline: none; }
+    .controls input:focus, .controls select:focus, .status-select:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(31,94,255,.12); }
+    .ledger { display: grid; gap: 10px; }
+    .application { --stage: 0%; position: relative; display: grid; grid-template-columns: minmax(210px,1.1fr) minmax(260px,1.5fr) minmax(190px,.9fr) minmax(180px,.8fr); gap: 18px; align-items: center; padding: 19px 18px 19px 25px; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 8px 24px rgba(20,35,59,.05); }
+    .application::before { content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 6px; border-radius: 0 6px 6px 0; background: var(--blue); }
+    .application[data-outcome="Rejected"]::before { background: var(--rose); }
+    .application[data-outcome="Accepted"]::before { background: var(--green); }
+    .company { color: var(--muted); font: 720 11px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .05em; text-transform: uppercase; }
+    .application h2 { margin: 5px 0 8px; font-size: 19px; line-height: 1.2; letter-spacing: -.025em; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip { padding: 4px 7px; border: 1px solid var(--line); border-radius: 7px; color: var(--muted); background: #f8fafc; font-size: 10px; font-weight: 680; }
+    .progress-label { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; color: var(--muted); font-size: 11px; }
+    .progress-label strong { color: var(--ink); }
+    .progress { position: relative; height: 8px; overflow: hidden; border-radius: 99px; background: #e8edf4; }
+    .progress::before { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--stage); border-radius: inherit; background: linear-gradient(90deg,var(--blue),#22a46f); }
+    .stage select { font-weight: 720; }
+    .stage small { display: block; margin-top: 6px; color: var(--muted); }
+    .row-actions { display: flex; flex-direction: column; gap: 8px; align-items: stretch; }
+    .role-link, .move-back { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 0 11px; border-radius: 9px; font-size: 12px; font-weight: 760; text-decoration: none; }
+    .role-link { color: #fff; background: var(--ink); }
+    .move-back { color: var(--muted); border: 1px solid var(--line); background: #fff; }
+    .move-back:hover { color: var(--rose); border-color: #ebb3bd; }
+    .empty { display: none; padding: 54px 24px; border: 1px dashed var(--line); border-radius: 16px; background: #fff; text-align: center; }
+    .empty h2 { margin: 0 0 8px; }
+    .empty p { margin: 0 0 18px; color: var(--muted); }
+    .empty a { display: inline-flex; padding: 10px 14px; border-radius: 9px; color: #fff; background: var(--blue); text-decoration: none; font-weight: 760; }
+    footer { padding: 34px 0 50px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 900px) {
+      .application { grid-template-columns: 1fr 1fr; }
+      .stats { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 20px,1180px); }
+      .topbar, .top-actions { align-items: flex-start; flex-direction: column; }
+      .device-note { text-align: left; }
+      .controls, .application { grid-template-columns: 1fr; }
+      .application { gap: 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <div class="topbar">
+      <div class="brand"><span class="brand-mark">AJ</span><span>Ansh's Job Scout</span></div>
+      <div class="top-actions">
+        <nav class="site-nav" aria-label="Job scout pages">
+          <a href="ansh-job-scout.html">Jobs</a>
+          <a href="tracker.html" aria-current="page">Tracker <span class="nav-count" id="navCount">0</span></a>
+        </nav>
+        <div class="device-note">Saved in this browser<br><strong>No account required</strong></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">Application pipeline</div>
+      <h1>Know exactly where every application stands.</h1>
+      <p>Roles checked as applied leave the job board and arrive here. Update each stage as the conversation progresses.</p>
+    </section>
+
+    <section class="stats" aria-label="Application summary">
+      <div class="stat"><b id="totalCount">0</b><span>applications tracked</span></div>
+      <div class="stat"><b id="activeCount">0</b><span>active processes</span></div>
+      <div class="stat"><b id="interviewCount">0</b><span>at interview stage</span></div>
+      <div class="stat"><b id="acceptedCount">0</b><span>accepted</span></div>
+    </section>
+
+    <section class="controls" aria-label="Tracker filters">
+      <input id="trackerSearch" type="search" placeholder="Search company, role, or location..." aria-label="Search applications">
+      <select id="statusFilter" aria-label="Filter applications by status">
+        <option value="all">All statuses</option>
+        <option>Applied</option>
+        <option>Followed up once</option>
+        <option>Called HR</option>
+        <option>HR interview</option>
+        <option>Interview 1</option>
+        <option>Interview 2</option>
+        <option>Rejected</option>
+        <option>Accepted</option>
+      </select>
+    </section>
+
+    <section class="ledger" id="ledger" aria-live="polite"></section>
+    <section class="empty" id="empty">
+      <h2>No applications here yet</h2>
+      <p>Tick “Applied” on a role and it will move into this tracker.</p>
+      <a href="ansh-job-scout.html">Browse jobs</a>
+    </section>
+  </main>
+
+  <footer class="shell">Status changes stay on this device and browser. This tracker does not contact companies, submit forms, or send messages.</footer>
+
+  <script>
+    const trackerStorageKey = 'ansh-job-scout-tracker-v1';
+    const statuses = ['Applied', 'Followed up once', 'Called HR', 'HR interview', 'Interview 1', 'Interview 2', 'Rejected', 'Accepted'];
+    const ledger = document.getElementById('ledger');
+    const empty = document.getElementById('empty');
+    const search = document.getElementById('trackerSearch');
+    const statusFilter = document.getElementById('statusFilter');
+    const totalCount = document.getElementById('totalCount');
+    const activeCount = document.getElementById('activeCount');
+    const interviewCount = document.getElementById('interviewCount');
+    const acceptedCount = document.getElementById('acceptedCount');
+    const navCount = document.getElementById('navCount');
+
+    function readTracker() {
+      try { return JSON.parse(localStorage.getItem(trackerStorageKey) || '[]'); }
+      catch { return []; }
+    }
+
+    let applications = readTracker();
+
+    function saveTracker() {
+      try { localStorage.setItem(trackerStorageKey, JSON.stringify(applications)); }
+      catch { /* Changes remain visible until this page is refreshed. */ }
+    }
+
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
+    }
+
+    function formatDate(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return 'Updated recently';
+      return 'Updated ' + new Intl.DateTimeFormat('en-IN', {day:'numeric', month:'short', hour:'numeric', minute:'2-digit'}).format(date);
+    }
+
+    function updateStats() {
+      totalCount.textContent = applications.length;
+      navCount.textContent = applications.length;
+      activeCount.textContent = applications.filter(item => !['Rejected','Accepted'].includes(item.status)).length;
+      interviewCount.textContent = applications.filter(item => ['HR interview','Interview 1','Interview 2'].includes(item.status)).length;
+      acceptedCount.textContent = applications.filter(item => item.status === 'Accepted').length;
+    }
+
+    function render() {
+      const query = search.value.trim().toLowerCase();
+      const status = statusFilter.value;
+      const visible = applications
+        .filter(item => status === 'all' || item.status === status)
+        .filter(item => !query || [item.company,item.title,item.location,item.source].join(' ').toLowerCase().includes(query))
+        .sort((a,b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+
+      ledger.innerHTML = visible.map(item => {
+        const stageIndex = Math.max(0, statuses.indexOf(item.status));
+        const stage = Math.round((stageIndex / (statuses.length - 1)) * 100);
+        const options = statuses.map(option => '<option' + (option === item.status ? ' selected' : '') + '>' + escapeHtml(option) + '</option>').join('');
+        return '<article class="application" data-key="' + escapeHtml(item.roleKey) + '" data-outcome="' + escapeHtml(item.status) + '" style="--stage:' + stage + '%">' +
+          '<div><div class="company">' + escapeHtml(item.company) + '</div><h2>' + escapeHtml(item.title) + '</h2><div class="chips"><span class="chip">Tier ' + escapeHtml(item.tier) + '</span><span class="chip">' + escapeHtml(item.location) + '</span></div></div>' +
+          '<div><div class="progress-label"><strong>' + escapeHtml(item.status) + '</strong><span>Stage ' + (stageIndex + 1) + ' of ' + statuses.length + '</span></div><div class="progress" aria-hidden="true"></div><div class="chips" style="margin-top:9px"><span class="chip">' + escapeHtml(item.experience) + '</span><span class="chip">' + escapeHtml(item.source) + '</span></div></div>' +
+          '<label class="stage"><span class="company">Tracking status</span><select class="status-select" aria-label="Status for ' + escapeHtml(item.company + ' ' + item.title) + '">' + options + '</select><small>' + escapeHtml(formatDate(item.updatedAt)) + '</small></label>' +
+          '<div class="row-actions"><a class="role-link" href="' + escapeHtml(item.roleKey) + '" target="_blank" rel="noopener">Open role ↗</a><button class="move-back" type="button">Move back to jobs</button></div>' +
+          '</article>';
+      }).join('');
+
+      empty.style.display = visible.length ? 'none' : 'block';
+      ledger.style.display = visible.length ? 'grid' : 'none';
+      updateStats();
+
+      ledger.querySelectorAll('.application').forEach(row => {
+        const roleKey = row.dataset.key;
+        row.querySelector('.status-select').addEventListener('change', event => {
+          const item = applications.find(application => application.roleKey === roleKey);
+          if (!item) return;
+          item.status = event.target.value;
+          item.updatedAt = new Date().toISOString();
+          saveTracker();
+          render();
+        });
+        row.querySelector('.move-back').addEventListener('click', () => {
+          applications = applications.filter(application => application.roleKey !== roleKey);
+          saveTracker();
+          render();
+        });
+      });
+    }
+
+    search.addEventListener('input', render);
+    statusFilter.addEventListener('change', render);
+    render();
+  </script>
+</body>
+</html>
