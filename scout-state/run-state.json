@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-22T20:43:00+05:30",
+  "strategy": {
+    "freshWindow": "24 hours",
+    "standardWindow": "7 days",
+    "extendedWindow": "30 days only with a live direct destination",
+    "resumeRule": "oldest_incomplete_lane_first",
+    "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
+  },
+  "lastRun": {
+    "completedAt": "2026-08-22T19:28:00+05:30",
+    "activeRoles": 62,
+    "tier1Roles": 33,
+    "closedOrInvalidated": 20,
+    "linkAudit": "passed",
+    "materialChanges": true
+  },
+  "nextRun": {
+    "startWithLane": "startup_boards",
+    "then": "fresh_all_lane_sweep",
+    "notes": "Resume the blocked startup-board lane with fresh Wellfound and Instahyre attempts and traverse more Cutshort API detail pages, then refresh expiring Workday roles and sweep every lane again."
+  },
+  "sourceLanes": [
+    {
+      "id": "linkedin_jobs",
+      "label": "LinkedIn Jobs",
+      "status": "partial",
+      "lastAttemptAt": "2026-08-22T19:05:00+05:30",
+      "resumeFrom": "Fresh page-75-plus results for pricing, fraud, planning, insights, reporting, and junior data-engineering variants, then recheck today's roles for closures",
+      "notes": "The evening past-24-hour sweep traversed starts 0, 25, 50, and 75 across 15 role families and four target locations. Seven verified listings were added: Aon, IHG, Training Basket, Thoughts2Binary, AMONGST, Scouto AI, and SimCorp. Senior mismatches at McAfee, Chevron, Optum, and Umanist were rejected. NTT DATA Power BI remained unpublished because its advanced enterprise scope had no stated early-career threshold."
+    },
+    {
+      "id": "linkedin_normal_posts",
+      "label": "Normal LinkedIn hiring posts",
+      "status": "partial",
+      "lastAttemptAt": "2026-08-22T19:08:00+05:30",
+      "resumeFrom": "fresh employee and recruiter posts using reporting, revenue operations, risk, and data-engineering variants after public indexing refreshes",
+      "notes": "Normal hiring posts were searched independently again. Indexed results remained old, reposted, or inaccessible behind sign-up, including a recent Goldman Sachs post with no usable public application or contact route. No post was promoted without an inspectable original and current destination."
+    },
+    {
+      "id": "official_ats_and_careers",
+      "label": "Company careers and ATS pages",
+      "status": "partial",
+      "lastAttemptAt": "2026-08-22T19:22:00+05:30",
+      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, and Greenhouse pages, prioritizing roles with deadlines inside seven days",
+      "notes": "A fresh ATS-domain sweep found and verified Labcorp's canonical Data Analyst Entry role in Bengaluru, posted three days ago with a 24 August deadline. It was added as Tier 1. Other surfaced Workday pages were expired or senior, including Fidelity, Rockwell, Broadridge, FedEx, Gartner, and MarketStar results."
+    },
+    {
+      "id": "startup_boards",
+      "label": "Startup boards",
+      "status": "partial",
+      "lastAttemptAt": "2026-08-22T18:22:00+05:30",
+      "resumeFrom": "More Cutshort API detail pagination, current YC company boards, then retry Wellfound and Instahyre with accessible sessions",
+      "notes": "The oldest incomplete lane was resumed first. Wellfound and Instahyre still returned HTTP 403. Cutshort's public job-detail API was identified and sampled using current sitemap slugs, but the relevant results were stale, with the newest suitable MyOperator roles from October 2025. No stale listing was published and the blocked lane remains partial."
+    },
+    {
+      "id": "specialist_early_career_portals",
+      "label": "Specialist and early-career portals",
+      "status": "partial",
+      "lastAttemptAt": "2026-08-22T19:14:00+05:30",
+      "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics; then Unstop and Hirist detail pages",
+      "notes": "Six role-family result sweeps across four target locations produced 359 unseen Internshala detail pages. Fifteen fresh candidates were inspected directly and six were published: Isourse, Suvitt, Joveo, Jarvis, Zaprev, and MAI Labs. Each has a current direct application and stated September deadline or fresh posting. Unstop and Hirist remain partial."
+    },
+    {
+      "id": "broad_job_portals",
+      "label": "Broad job portals",
+      "status": "partial",
+      "lastAttemptAt": "2026-08-22T19:24:00+05:30",
+      "resumeFrom": "Foundit and Naukri client-rendered detail extraction, then retry Indeed and canonicalize any discoveries",
+      "notes": "Broad-portal discovery was retried. Naukri remained inaccessible to the search fetch and the available Foundit results did not expose a fresh canonical early-career destination. Indeed remains blocked. No cached or generic search result was promoted, so the lane remains partial."
+    }
+  ],
+  "publication": {
+    "repository": "buildsbyanmol/ansh-job-scout",
+    "branch": "main",
+    "pagesUrl": "https://buildsbyanmol.github.io/ansh-job-scout/outputs/ansh-job-scout.html",
+    "enabled": true,
+    "reason": "The user explicitly authorized recurring staging, committing, and pushing to main after every successful validated run on 22 Aug 2026."
+  }
+}

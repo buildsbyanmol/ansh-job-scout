@@ -135,6 +135,7 @@
     .card h3 { margin: 6px 0 10px; font-size: 21px; line-height: 1.18; letter-spacing: -.025em; }
     .status { flex: none; padding: 6px 8px; border-radius: 8px; color: #157448; background: #eaf8f0; font-size: 11px; font-weight: 790; }
     .status.verify { color: #7b4f00; background: #fff1ce; }
+    .status.closed { color: #8f2f43; background: #fdecef; }
     .applied-control { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 29px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); background: #fff; font-size: 11px; font-weight: 790; cursor: pointer; }
     .applied-control:hover { border-color: #74bd99; color: #157448; }
     .applied-control input { width: 15px; height: 15px; margin: 0; accent-color: #23885a; }
@@ -180,6 +181,12 @@
 
     .empty { display: none; padding: 34px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 14px; background: #fff; }
     .tracker-notice { display: none; margin: -6px 0 18px; padding: 11px 14px; border: 1px solid #8dceb0; border-radius: 11px; color: #116a40; background: #eef9f3; font-size: 13px; }
+    .archive { margin: 18px 0; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.82); }
+    .archive summary { padding: 14px 17px; color: var(--muted); font-size: 13px; font-weight: 760; cursor: pointer; }
+    .archive-row { display: grid; grid-template-columns: minmax(210px,1fr) minmax(240px,1.5fr) auto; gap: 18px; align-items: center; padding: 16px 17px; border-top: 1px solid var(--line); }
+    .archive-row h3 { margin: 3px 0 4px; font-size: 16px; }
+    .archive-row p { margin: 0; color: var(--muted); font-size: 12px; }
+    .archive-row a { color: var(--blue); font-size: 12px; font-weight: 760; }
     footer { padding: 36px 0 52px; color: var(--muted); font-size: 13px; }
     .hidden { display: none !important; }
 
@@ -189,6 +196,7 @@
       .lane-key { grid-template-columns: 1fr; }
       .controls { position: static; grid-template-columns: 1fr; }
       .control-actions { justify-content: flex-start; }
+      .archive-row { grid-template-columns: 1fr; }
     }
     @media (max-width: 560px) {
       .shell { width: min(100% - 20px, 1180px); }
@@ -222,7 +230,7 @@
           <a href="ansh-job-scout.html" aria-current="page">Jobs</a>
           <a href="tracker.html">Tracker <span class="nav-count" id="navTrackerCount">0</span></a>
         </nav>
-        <div class="stamp">Evidence snapshot<br><strong>19 Aug 2026, 9:18 AM IST</strong></div>
+        <div class="stamp">Evidence snapshot<br><strong>22 Aug 2026, 7:20 PM IST</strong></div>
       </div>
     </div>
   </header>
@@ -248,9 +256,9 @@
     <div class="notice"><strong>CV verification note:</strong> the source task retained a structured readout, but the original Ansh_Jain_CV.pdf is not accessible in this workspace. Matching currently uses the recovered skills baseline below. Attach the PDF here for a full line-by-line refresh.</div>
 
     <section class="stats" aria-label="Current scout summary">
-      <div class="stat"><b>13</b><span>tracked opportunities</span></div>
-      <div class="stat"><b>8</b><span>high-approachability leads</span></div>
-      <div class="stat"><b>7</b><span>posted or checked today</span></div>
+      <div class="stat"><b>62</b><span>active opportunities</span></div>
+      <div class="stat"><b>33</b><span>high-approachability leads</span></div>
+      <div class="stat"><b>62</b><span>direct links checked today</span></div>
       <div class="stat"><b id="appliedCount">0</b><span>applications in tracker</span></div>
     </section>
 
@@ -285,6 +293,438 @@
 
       <div class="cards-scroll">
       <div class="cards" id="cards">
+        <article class="card" data-tier="1" data-search="labcorp data analyst entry bengaluru python java etl data integration pipeline business intelligence analytics automation workday careers">
+          <div class="card-top"><div><div class="company">Labcorp</div><h3>Data Analyst Entry</h3></div><span class="status">Deadline 24 Aug</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">Entry level</span><span class="chip">Official Workday career page</span></div>
+          <div class="signal"><b>Why fit</b><span>Python, ETL, data integration, pipeline architecture, BI and advanced-analytics preparation, application testing, and process automation strongly overlap with Ansh's data-engineering baseline.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role also expects software-development fundamentals and familiarity with Java, C++, or JavaScript plus AWS or Azure.</span></div>
+          <div class="signal"><b>Access</b><span>A canonical employer listing explicitly titled entry level. The application deadline is close, so this should be treated as an immediate priority.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 3 days ago · apply by 24 Aug</strong>Official destination rechecked 22 Aug 2026</div><a class="open-link" href="https://labcorp.wd1.myworkdayjobs.com/External/job/Bengaluru-India/Data-Analyst-Entry_2627317" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="aon analyst ii innovation solutions gurugram fresher ai analytics automation research digital tools linkedin jobs">
+          <div class="card-top"><div><div class="company">Aon</div><h3>Analyst II · Innovation &amp; Solutions</h3></div><span class="status">Posted today</span></div>
+          <div class="meta"><span class="chip">Gurugram</span><span class="chip">Freshers accepted</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Analytics, research, automation, AI-enabled tools, structured problem solving, and business-facing innovation work overlap well with Ansh's technical and stakeholder baseline.</span></div>
+          <div class="signal"><b>Main gap</b><span>The scope is broader than a standard data-analyst role, so the application should connect technical projects to measurable process or decision improvements.</span></div>
+          <div class="signal"><b>Access</b><span>The current employer listing explicitly says prior work experience is not required, making this one of the strongest fresh graduate routes in the sweep.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 22 Aug 2026</strong>Apply control rechecked today</div><a class="open-link" href="https://in.linkedin.com/jobs/view/analyst-ii-innovation-solutions-at-aon-4457801564" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="ihg hotels resorts revenue navigator program trainee gurgaon recent graduate pricing forecasting data analytics excel commercial decisions linkedin jobs">
+          <div class="card-top"><div><div class="company">IHG Hotels &amp; Resorts</div><h3>Revenue Navigator Program Trainee</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Gurugram · Hybrid</span><span class="chip">Recent graduate</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Pricing cycles, forecasting, performance-trend analysis, reporting, business-mix planning, and insight-led commercial decisions are a strong adjacent analytics match.</span></div>
+          <div class="signal"><b>Main gap</b><span>Excel and general data tools are named rather than SQL or Python; hospitality and revenue-management interest will matter in screening.</span></div>
+          <div class="signal"><b>Access</b><span>A structured graduate programme with a live employer application route and explicit eligibility for Data Analytics, Business, Hospitality, or related graduates.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 3 hours before verification</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/revenue-navigator-program-trainee-india-at-ihg-hotels-resorts-4428229053" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="isourse business analytics internship dwarka delhi sql api dbms dashboards ai jira data requirements internshala">
+          <div class="card-top"><div><div class="company">Isourse</div><h3>Business Analytics Intern</h3></div><span class="status">Posted yesterday</span></div>
+          <div class="meta"><span class="chip">Dwarka, Delhi · On-site</span><span class="chip">6 months · ₹25k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, databases, APIs, dashboards, analytical requirements, Jira, documentation, and translating business problems into data-backed solutions map closely to Ansh's baseline.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role mixes analytics with product and delivery coordination, so examples of requirements gathering and cross-functional follow-through will strengthen the case.</span></div>
+          <div class="signal"><b>Access</b><span>A current direct application with a 20 September deadline and a strong stipend for an early-career analytics internship.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 20 Sep 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/business-analytics-internship-in-dwarka-at-isourse1787302094" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="suvitt service solutions ai automation internship gurgaon recent graduate python api json automation mis dashboard reporting pipelines internshala">
+          <div class="card-top"><div><div class="company">Suvitt Service Solutions</div><h3>AI Automation Intern</h3></div><span class="status">Posted yesterday</span></div>
+          <div class="meta"><span class="chip">Gurugram · On-site</span><span class="chip">6 months · ₹20k–25k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Python, APIs, JSON, workflow automation, MIS pipelines, dashboards, structured reporting, and data-backed operational improvements fit the data-ops and automation lane.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role is automation-led rather than pure analysis; candidates should show reliable scripting, API handling, and process ownership.</span></div>
+          <div class="signal"><b>Access</b><span>Final-year students and recent graduates are explicitly eligible, with a current application route and 20 September deadline.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 20 Sep 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/ai-automation-internship-in-gurgaon-at-suvitt-service-solutions-llp1787285507" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="joveo operations strategy intern bengaluru quantitative data analysis excel google sheets campaign performance roi optimization internshala">
+          <div class="card-top"><div><div class="company">Joveo</div><h3>Operations &amp; Strategy Intern</h3></div><span class="status">Posted today</span></div>
+          <div class="meta"><span class="chip">Bengaluru · On-site</span><span class="chip">Current student / recent graduate</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Complex dataset analysis, campaign performance, ROI, optimization, Excel/Sheets, and turning numbers into operating decisions create strong adjacent analytics experience.</span></div>
+          <div class="signal"><b>Main gap</b><span>The working shift is 2 PM to 11 PM and the role centers on digital recruitment campaigns rather than SQL-heavy product analytics.</span></div>
+          <div class="signal"><b>Access</b><span>The listing targets current or recent quantitative graduates and has a live, fresh route with no prior full-time experience threshold stated.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 22 Aug 2026</strong>Application route rechecked today</div><a class="open-link" href="https://internshala.com/internship/detail/operations-strategy-intern-internship-in-bangalore-at-joveo1787384423" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="jarvis technology strategy consulting operations internship delhi 0 2 years dashboards data validation reporting process improvement stakeholder internshala">
+          <div class="card-top"><div><div class="company">Jarvis Technology &amp; Strategy Consulting</div><h3>Operations Intern</h3></div><span class="status">Posted today</span></div>
+          <div class="meta"><span class="chip">Delhi · On-site</span><span class="chip">0–2 years · ₹19k–20k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Dashboard maintenance, data validation, reporting, process improvement, documentation, stakeholder coordination, and operational problem solving align with the data-ops lane.</span></div>
+          <div class="signal"><b>Main gap</b><span>SQL and Python are not central in the description, so position this as stakeholder-facing analytics and operational control work.</span></div>
+          <div class="signal"><b>Access</b><span>Six openings, a clear 0–2 year band, and a current 21 September application deadline materially improve approachability.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 21 Sep 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/operations-internship-in-delhi-at-jarvis-technology-strategy-consulting1787392038" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="training basket job basket data analyst noida fresher excel statistics kpi reporting linkedin jobs third party">
+          <div class="card-top"><div><div class="company">Training Basket / Job Basket</div><h3>Data Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Noida</span><span class="chip">Fresher</span><span class="chip">LinkedIn Jobs · Third-party</span></div>
+          <div class="signal"><b>Why fit</b><span>Data cleaning, Excel, statistics, KPIs, reporting, and analytical problem solving match the fundamentals of Ansh's profile.</span></div>
+          <div class="signal"><b>Main gap</b><span>The poster is a training and recruitment intermediary rather than the end employer; confirm employer identity, salary, and whether any fee is involved before proceeding.</span></div>
+          <div class="signal"><b>Access</b><span>The role is explicitly fresher-oriented and the LinkedIn destination is live, but source trust lowers it from Tier 1.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 8 hours before verification</strong>Direct page rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/data-analyst-at-training-basket-4456638227" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="zaprev nitin choudhary growth marketing internship gurgaon campaign analytics dashboards ctr cac roas excel google analytics mixpanel internshala">
+          <div class="card-top"><div><div class="company">Zaprev / Nitin Choudhary</div><h3>Growth Marketing Intern</h3></div><span class="status">Posted yesterday</span></div>
+          <div class="meta"><span class="chip">Gurugram · On-site</span><span class="chip">6 months · ₹25k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Campaign analytics, dashboards, CTR, CAC, ROAS, Excel, Google Analytics, and Mixpanel provide credible growth-analytics and decision-support experience.</span></div>
+          <div class="signal"><b>Main gap</b><span>The position is marketing-led and requires campaign execution, so it is less technical than the core data-analysis lane.</span></div>
+          <div class="signal"><b>Access</b><span>A live 20 September application route with a stated possible conversion up to ₹6.5 LPA, though the employer identity should be confirmed during screening.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 20 Sep 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/growth-marketing-internship-in-gurgaon-at-nitin-choudhary1787301138" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="thoughts2binary functional business analyst gurugram requirements process flows stakeholder documentation process improvement linkedin jobs">
+          <div class="card-top"><div><div class="company">Thoughts2Binary</div><h3>Functional Business Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Gurugram</span><span class="chip">Threshold not stated</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Requirements gathering, process flows, stakeholder communication, documentation, and process improvement align with Ansh's business-facing analytical work.</span></div>
+          <div class="signal"><b>Main gap</b><span>LinkedIn labels the role mid-senior even though the description only treats industry experience as a plus; verify the actual seniority early.</span></div>
+          <div class="signal"><b>Access</b><span>The direct listing is live and has no explicit years-of-experience minimum, making a targeted application reasonable with a strong requirements and UAT narrative.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 4 hours before verification</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/functional-business-analyst-at-thoughts2binary-4456635521" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="amongst founders office intern growth operations new delhi product catalog data accuracy master data qa operations linkedin jobs">
+          <div class="card-top"><div><div class="company">AMONGST</div><h3>Founder’s Office Intern · Growth &amp; Operations</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">New Delhi · On-site</span><span class="chip">Internship</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Catalog data accuracy, master-data upkeep, QA, operating checklists, launch support, and customer-experience analysis offer practical data-quality and operations exposure.</span></div>
+          <div class="signal"><b>Main gap</b><span>The startup role is broad and execution-heavy, with less emphasis on SQL, Python, or BI than Ansh's core profile.</span></div>
+          <div class="signal"><b>Access</b><span>A very fresh founder's-office internship at a small company where thoughtful direct outreach may be more effective than at a large employer.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 hour before verification</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/founder-s-office-intern-growth-operations-at-amongst-4456639946" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="scouto ai hr analytics trainee bengaluru btech mba power bi excel data ai fresher linkedin jobs">
+          <div class="card-top"><div><div class="company">Scouto AI</div><h3>HR Analytics Trainee</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru · On-site</span><span class="chip">Fresher · ₹4–5.5 LPA</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Power BI, Excel, data analysis, dashboards, AI-assisted insights, and business-facing reporting are directly relevant.</span></div>
+          <div class="signal"><b>Main gap</b><span>Both B.Tech and MBA are stated as mandatory. This is only actionable if Ansh meets the dual-degree filter.</span></div>
+          <div class="signal"><b>Access</b><span>Freshers are explicitly eligible and the direct listing is current, but the strict education requirement makes approachability profile-dependent.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 6 hours before verification</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/hr-analytics-trainee-b-tech-%2B-mba-at-scouto-ai-4456627398" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="3" data-search="simcorp financial data analyst reference data financial instruments noida 2 4 years data validation reconciliation integration workflow linkedin jobs">
+          <div class="card-top"><div><div class="company">SimCorp</div><h3>Financial Data Analyst · Reference Data</h3></div><span class="status">Fresh · stretch</span></div>
+          <div class="meta"><span class="chip">Noida</span><span class="chip">2–4 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Data validation, reconciliation, reference-data quality, integration workflows, exception handling, and stakeholder coordination strongly match Ansh's operating toolkit.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role asks for two to four years and financial-instrument knowledge, creating a real screening hurdle for a fresher.</span></div>
+          <div class="signal"><b>Access</b><span>The employer listing is live and the technical overlap is strong, but treat it as a selective stretch application rather than a priority lead.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 22 Aug 2026</strong>Apply control rechecked today</div><a class="open-link" href="https://in.linkedin.com/jobs/view/financial-data-analyst-reference-data-financial-instruments-at-simcorp-4447524983" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="3" data-search="mai labs founders office growth content ai research ncr market business startup research insights internshala">
+          <div class="card-top"><div><div class="company">MAI Labs</div><h3>Founder’s Office · Growth, Content &amp; AI Research Intern</h3></div><span class="status">Posted today</span></div>
+          <div class="meta"><span class="chip">Delhi NCR · Multiple offices</span><span class="chip">2 months · ₹15k–25k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Business, market, startup, and AI research with structured synthesis and insight communication offers adjacent research and strategy exposure.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role is much lighter on SQL, Python, ETL, and dashboards than Ansh's core strengths, and 30 openings may indicate a broad intake.</span></div>
+          <div class="signal"><b>Access</b><span>The application is live and fresh across NCR locations, but verify the day-to-day analytical depth before prioritizing it over core data roles.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 22 Aug 2026</strong>Application route rechecked today</div><a class="open-link" href="https://internshala.com/internship/detail/founders-office-growth-content-ai-research-internship-in-multiple-locations-at-mai-labs1787379827" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="ntt data digital technology junior analyst associate consultant business analyst bengaluru 0 6 months sql excel data validation power bi tableau linkedin jobs">
+          <div class="card-top"><div><div class="company">NTT DATA</div><h3>Digital Technology Junior Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">0–6 months</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Excel, data validation, data mapping, requirements, UAT, stakeholder work, and optional Power BI/Tableau align directly with Ansh's baseline.</span></div>
+          <div class="signal"><b>Main gap</b><span>Agile documentation, Jira/Confluence, APIs, and application-support exposure are useful additions, but the role explicitly accepts six months or less.</span></div>
+          <div class="signal"><b>Access</b><span>A current employer listing with a clear junior title and unusually precise fresher threshold. Lead with SQL validation and stakeholder-facing delivery.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 10 hours ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/digital-technology-junior-analyst-at-ntt-data-north-america-4457500483" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="american express apprentice product analytics gurugram sql hive sas excel python dashboards experiments ab testing cohort funnel data quality linkedin jobs">
+          <div class="card-top"><div><div class="company">American Express</div><h3>Apprentice · Product &amp; Analytics</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Gurugram</span><span class="chip">Apprenticeship · experience not required</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Excel, Python, dashboards, data quality, user analytics, A/B tests, cohorts, funnels, product health, and business-facing insight work are central.</span></div>
+          <div class="signal"><b>Main gap</b><span>Hive and SAS are listed alongside SQL; product documentation, PRDs, and Agile user stories expand beyond pure analytics.</span></div>
+          <div class="signal"><b>Access</b><span>A distinct live apprenticeship from the separate Data Analytics apprentice listing already on the board. Apply to both because the job IDs and scopes differ.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 day ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/apprentice-at-american-express-4456010848" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="candor capital research consulting intern delhi recent graduate finance economics excel power point market research risk analytics linkedin jobs">
+          <div class="card-top"><div><div class="company">Candor Capital</div><h3>Intern · Research &amp; Consulting</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">South Delhi · On-site</span><span class="chip">Final-year / recent graduate · 3 months</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Structured research, market sizing, competitor analysis, risk registers, Excel analysis, presentations, and decision-facing recommendations are credible adjacent signals.</span></div>
+          <div class="signal"><b>Main gap</b><span>Finance, economics, commerce, and investment-banking interest are preferred; the stipend is only ₹5,000 per month.</span></div>
+          <div class="signal"><b>Access</b><span>The listing names a current careers route and explicitly accepts under one year of experience, with a possible full-time conversion.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 day ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/intern-research-consulting-at-candor-capital-4455684404" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="exl associate business analyst noida requirements process analysis stakeholder fresher entry level linkedin jobs">
+          <div class="card-top"><div><div class="company">EXL</div><h3>Associate · Business Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Noida</span><span class="chip">Entry level · threshold unspecified</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>The role supports requirements gathering, process analysis, documentation, and project teams while explicitly working under senior analysts.</span></div>
+          <div class="signal"><b>Main gap</b><span>The description is unusually brief and does not name SQL or BI tools, so confirm the actual account, manager, and analytical depth before investing heavily.</span></div>
+          <div class="signal"><b>Access</b><span>A current direct employer listing with no stated experience minimum and an associate learning structure, though the applicant pool is already large.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 day ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/associate-business-analyst-at-exl-4446579538" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="bxp support solutions data analyst internship bengaluru pricing variance analytics excel google sheets power bi python sql tableau internshala">
+          <div class="card-top"><div><div class="company">BXP Support and Solutions</div><h3>Data Analyst Intern</h3></div><span class="status">Deadline live</span></div>
+          <div class="meta"><span class="chip">Bengaluru · On-site</span><span class="chip">5 months · ₹17.5k–20.5k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Pricing and variance analysis, SQL, Python, Power BI, Tableau, Excel, dashboards, written reporting, and dataset insight generation are a close match.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role prefers strong mathematics or economics scores and first-class graduation; it has already attracted more than 1,000 applicants.</span></div>
+          <div class="signal"><b>Access</b><span>Four openings, five-day week, active Apply Now route, and a clear 13 September deadline make this worth an immediate tailored application.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 13 Sep 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/data-analyst-internship-in-bangalore-at-bxp-support-and-solutions-private-limited1784897897" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="futurlytic data analytics internship bengaluru fresher excel tableau power bi python sql macros data validation reporting internshala">
+          <div class="card-top"><div><div class="company">Futurlytic</div><h3>Data Analytics Intern</h3></div><span class="status">Deadline live</span></div>
+          <div class="meta"><span class="chip">Bengaluru · On-site</span><span class="chip">Fresher · 6 months · ₹25k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Data validation, large-report automation, Tableau, Power BI, Python, SQL, Excel macros, data investigation, charts, and insight storytelling align strongly.</span></div>
+          <div class="signal"><b>Main gap</b><span>The degree filter favors engineering, computing, electronics, or statistics backgrounds, and the wording places heavy weight on English fluency.</span></div>
+          <div class="signal"><b>Access</b><span>The employer explicitly invites freshers, lists two openings, and maintains a live application with a 5 September deadline.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 5 Sep 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/data-analytics-internship-in-bangalore-at-futurlytic-private-limited1785992879" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="smartbridge data analytics internship noida part time 2025 2026 graduate sql python power bi tableau excel etl dashboards mentoring internshala">
+          <div class="card-top"><div><div class="company">SmartBridge Educational Services</div><h3>Data Analytics Intern</h3></div><span class="status">Deadline live</span></div>
+          <div class="meta"><span class="chip">Noida · Part-time</span><span class="chip">2025/2026 graduates · 6 months</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>End-to-end analytics projects, EDA, SQL, Python, ETL, Power BI/Tableau, data cleaning, automation, dashboards, and structured explanation are central.</span></div>
+          <div class="signal"><b>Main gap</b><span>The work includes mentoring students and reviewing their projects, so communication and teaching evidence matter alongside technical execution.</span></div>
+          <div class="signal"><b>Access</b><span>A live part-time route with two openings and explicit preference for 2025 or 2026 graduates. The deadline is close.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 29 Aug 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/data-analytics-internship-in-noida-at-smartbridge-educational-services-private-limited1785395986" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="times internet ad operations revenue optimization internship noida excel google sheets reporting analytics campaign quality control internshala">
+          <div class="card-top"><div><div class="company">Times Internet</div><h3>Ad Operations &amp; Revenue Optimization Intern</h3></div><span class="status">Posted today</span></div>
+          <div class="meta"><span class="chip">Noida · On-site</span><span class="chip">6 months · ₹15k–20k/month</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Campaign reporting, performance-gap analysis, quality checks, revenue optimization, Excel/Sheets, and coordination with sales, product, technology, and analytics are data-heavy.</span></div>
+          <div class="signal"><b>Main gap</b><span>It is an ad-operations role with limited SQL/Python depth. Candidates need their own laptop and must work from the Noida office.</span></div>
+          <div class="signal"><b>Access</b><span>Only about 30 applicants at verification, one opening, five-day week, and a live direct route through a company with a substantial Internshala hiring record.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 22 Aug · apply by 20 Sep</strong>Application route rechecked today</div><a class="open-link" href="https://internshala.com/internship/detail/ad-operations-revenue-optimization-internship-in-noida-at-times-internet-limited1787299050" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="edubridge market research internship gurgaon excel powerpoint surveys market analysis business analytics internshala">
+          <div class="card-top"><div><div class="company">EduBridge</div><h3>Market Research Intern</h3></div><span class="status">Posted today</span></div>
+          <div class="meta"><span class="chip">Gurugram · On-site</span><span class="chip">6 months · possible offer up to ₹5 LPA</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Research design, survey execution, market analysis, Excel, presentations, and converting evidence into business insight fit the adjacent research lane.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role is lighter on SQL, Python, ETL, and dashboards; BBA, MBA, BCom, or BA backgrounds are the stated preference.</span></div>
+          <div class="signal"><b>Access</b><span>A fresh posting with roughly 49 applicants at verification, a live route, and a stated conversion opportunity after the internship.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 22 Aug · apply by 20 Sep</strong>Application route rechecked today</div><a class="open-link" href="https://internshala.com/internship/detail/market-research-internship-in-gurgaon-at-edubridge1787306897" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="mufg cash recon reporting analyst bengaluru reconciliation data integrity excel macros sql oracle controls financial operations linkedin jobs">
+          <div class="card-top"><div><div class="company">MUFG</div><h3>Cash Recon &amp; Reporting Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Greater Bengaluru</span><span class="chip">Experience threshold unspecified</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Account reconciliation, discrepancy resolution, data integrity, root-cause analysis, reporting, Excel macros, SQL/Oracle, process automation, and stakeholder work match strongly.</span></div>
+          <div class="signal"><b>Main gap</b><span>Financial ledgers, Nostro/FX, IntelliMatch, suspense accounts, and control-governance knowledge are preferred and will shape the screening conversation.</span></div>
+          <div class="signal"><b>Access</b><span>A live employer route without a stated year minimum, but the domain learning curve and MNC applicant queue make this a positioning-led application.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 16 hours ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/cash-recon-reporting-analyst-at-mufg-4457329075" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="vedantu data analyst bengaluru 1 2 years sql excel tableau power bi looker dashboards stakeholders data quality linkedin jobs">
+          <div class="card-top"><div><div class="company">Vedantu</div><h3>Data Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1–2 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Excel, dashboarding, data accuracy, anomaly detection, stakeholder requirements, analytical frameworks, and clear recommendations closely match Ansh's evidence.</span></div>
+          <div class="signal"><b>Main gap</b><span>The listing asks for one to two years and already has a large applicant pool; direct business-impact examples will matter more than tool lists.</span></div>
+          <div class="signal"><b>Access</b><span>A current direct employer application at an India consumer-tech company. Position production reporting, data quality, and the “so what” behind insights.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 day ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/data-analyst-at-vedantu-4455499899" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="mufg customer data management analyst bengaluru sql oracle tableau data models requirements data warehouse linkedin jobs">
+          <div class="card-top"><div><div class="company">MUFG</div><h3>Analyst · Customer Data Management</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Greater Bengaluru</span><span class="chip">Some prior related experience</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL databases, Tableau, data models, data warehouse analysis, requirements, testing, CRM functions, data mining, quality, and stakeholder delivery overlap well.</span></div>
+          <div class="signal"><b>Main gap</b><span>The vague “some prior related experience” threshold and banking governance context create uncertainty despite the analyst-level scope.</span></div>
+          <div class="signal"><b>Access</b><span>The employer application is live. Treat this as realistic if Ansh can frame production data work as prior related experience.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 day ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/analyst-customer-data-management-at-mufg-4455281279" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="clearwater analytics data analyst revenue operations noida early career excel salesforce reporting crm data integrity two years linkedin jobs">
+          <div class="card-top"><div><div class="company">Clearwater Analytics</div><h3>Data Analyst · Revenue Operations</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Noida</span><span class="chip">2 years · master's preferred</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>The role explicitly targets an early-career analyst and centers on data integrity, recurring reports, Excel, CRM data, sales analytics, and stakeholder enablement.</span></div>
+          <div class="signal"><b>Main gap</b><span>It asks for a master's degree plus two years in data, secondary research, or reporting; Salesforce and revenue-operations context are preferred.</span></div>
+          <div class="signal"><b>Access</b><span>A current direct employer listing with a defined growth path, but the qualification hurdle makes a referral or highly specific cover note valuable.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 day ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/data-analyst-revenue-operations-at-clearwater-analytics-4456001007" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="3" data-search="ecoratings esg business analyst noida 1 3 years sustainability requirements ai ml research excel stakeholder linkedin jobs">
+          <div class="card-top"><div><div class="company">EcoRatings</div><h3>ESG Business Analyst</h3></div><span class="status verify">Domain stretch</span></div>
+          <div class="meta"><span class="chip">Noida</span><span class="chip">1–3 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Requirements, BRDs/FRDs, market research, stakeholder validation, product testing, reporting, and AI-product collaboration fit the business-analysis lane.</span></div>
+          <div class="signal"><b>Main gap</b><span>ESG frameworks such as GRI, SASB, TCFD, BRSR, ISSB, and CSRD are central, and the experience range extends to three years.</span></div>
+          <div class="signal"><b>Access</b><span>A live smaller-company route, but only worth prioritizing if Ansh can demonstrate genuine sustainability interest and rapid domain learning.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 23 hours ago</strong>Apply control rechecked 22 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/esg-business-analyst-at-ecoratings-4456083798" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="3" data-search="pika medical sales operations market intelligence internship bengaluru hospital database crm data hygiene market research excel kannada two wheeler internshala">
+          <div class="card-top"><div><div class="company">PIKA Medical</div><h3>Sales Operations &amp; Market Intelligence Intern</h3></div><span class="status verify">Eligibility check</span></div>
+          <div class="meta"><span class="chip">Bengaluru · On-site</span><span class="chip">6 months · ₹12k + incentive</span><span class="chip">Internshala</span></div>
+          <div class="signal"><b>Why fit</b><span>Master-database building, CRM data hygiene, stale-pipeline reporting, market research, competitor intelligence, opportunity analysis, and leadership reporting are data-heavy.</span></div>
+          <div class="signal"><b>Main gap</b><span>Spoken Kannada, a personal two-wheeler and licence, healthcare interest, and specific degree backgrounds are required; SQL and Python are not central.</span></div>
+          <div class="signal"><b>Access</b><span>One opening and an early-applicant signal with a live route. Apply only if every logistical requirement is satisfied.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Apply by 10 Sep 2026</strong>Application route rechecked 22 Aug 2026</div><a class="open-link" href="https://internshala.com/internship/detail/sales-operations-market-intelligence-internship-in-bangalore-at-pika-medical1786436833" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="american express apprentice data analytics gurugram sql excel power bi tableau python dashboards merchant marketing digital media 0 11 months linkedin jobs">
+          <div class="card-top"><div><div class="company">American Express</div><h3>Apprentice - Data Analytics</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Gurugram</span><span class="chip">0–11 months · 6-month apprenticeship</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL is mandatory, while dashboards, Power BI/Tableau, Python, business analysis, performance monitoring, and stakeholder recommendations closely match Ansh's evidence.</span></div>
+          <div class="signal"><b>Main gap</b><span>Merchant marketing, digital-media analytics, and risk-management context are useful differentiators, but they are interests rather than hard prerequisites.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current employer application and an explicit 0–11 month threshold. Competition is already high, so lead with SQL ownership and decision-facing analysis.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 2 days ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/apprentice-data-analytics-at-american-express-4454970922" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="funding societies modalku data intern delhi remote hybrid sql python visualization reporting data validation anomalies automation ai linkedin jobs">
+          <div class="card-top"><div><div class="company">Funding Societies | Modalku</div><h3>Data Intern</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Delhi · Flexible working</span><span class="chip">Student / recent graduate</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Python, visualization, recurring reports, anomaly investigation, dashboard QA, data validation, automation, and documentation are a direct stack match.</span></div>
+          <div class="signal"><b>Main gap</b><span>The listing spans several Asian locations; confirm the Delhi work arrangement and reporting timezone during screening.</span></div>
+          <div class="signal"><b>Access</b><span>Live employer application with explicit recent-graduate eligibility and a stated India allowance of ₹30,000 per month.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Current listing · refreshed today</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/data-intern-at-funding-societies-modalku-group-4448743920" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="freight tiger data analytics intern bengaluru sql python excel dashboards data quality validation discrepancies automation logistics linkedin jobs">
+          <div class="card-top"><div><div class="company">Freight Tiger</div><h3>Data Analytics Intern</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">Internship</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Python, large datasets, dashboards, validation, data-quality checks, discrepancy investigation, reporting automation, and stakeholder analysis are almost exact matches.</span></div>
+          <div class="signal"><b>Main gap</b><span>Databricks, Spark, Trino, Delta Lake, AWS, and streaming are learning opportunities rather than listed prerequisites.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current application at a logistics data platform. The applicant count is already high, so prioritize this role immediately.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 10 hours ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/data-analytics-intern-at-freight-tiger-4457083427" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="portcast data analyst intern remote india bangalore delhi sql python data quality qa automation integrations logistics lever careers">
+          <div class="card-top"><div><div class="company">Portcast</div><h3>Data Analyst Intern</h3></div><span class="status">Official apply live</span></div>
+          <div class="meta"><span class="chip">Remote · Bengaluru / Delhi eligible</span><span class="chip">Final-year / recent graduate</span><span class="chip">Official Lever careers</span></div>
+          <div class="signal"><b>Why fit</b><span>Python, SQL, QA checks, anomaly tracing, data-source integrations, dashboard upkeep, automation, and documentation map strongly to Ansh's ETL and reconciliation work.</span></div>
+          <div class="signal"><b>Main gap</b><span>A prior product-startup internship in logistics, e-commerce, or data-heavy B2B SaaS is preferred. The application also asks for a concrete messy-dataset example.</span></div>
+          <div class="signal"><b>Access</b><span>Canonical employer application with a live form, India locations, a September start, and a three-to-six-month commitment.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Official opening live today</strong>Application form rechecked 21 Aug 2026</div><a class="open-link" href="https://jobs.lever.co/portcast/f18cc64e-c34a-416c-b213-62a39906260e" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="give product analyst bengaluru 0 2 years sql bigquery metabase tableau python ga4 clevertap payments named recruiter linkedin jobs">
+          <div class="card-top"><div><div class="company">Give</div><h3>Product Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">0–2 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL joins, aggregations and windows, BI tools, basic Python, data-quality instincts, structured analysis, and clear written insight delivery fit well.</span></div>
+          <div class="signal"><b>Main gap</b><span>Subscription or recurring-revenue data, GA4/CleverTap, Metabase, and payments familiarity would strengthen the application.</span></div>
+          <div class="signal"><b>Access</b><span>A named talent-acquisition poster is available alongside the direct application. The explicit 0–2 year band keeps this highly approachable despite strong competition.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 10 hours ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/product-analyst-at-give-4456087783" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="pine labs product analyst payments bengaluru 1 2 years sql power bi tableau python funnels cohorts ab tests fintech linkedin jobs">
+          <div class="card-top"><div><div class="company">Pine Labs</div><h3>Product Analyst - Payments</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1–2 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, large datasets, dashboards, KPI ownership, funnels, cohorts, A/B tests, root-cause analysis, Python, and stakeholder communication align closely.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role expects independent product-analysis ownership and one to two years of experience; payments or UPI knowledge is preferred.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current employer application, but more than 200 applicants accumulated within hours. Position reconciliation and transaction-data work prominently.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 9 hours ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/product-analyst-payments-at-pine-labs-4454179382" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="fam fampay data analyst bengaluru sql reconciliation settlements transaction data dashboards python excel fintech linkedin jobs">
+          <div class="card-top"><div><div class="company">Fam</div><h3>Data Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">Experience threshold unspecified</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Complex SQL, transaction data, settlement cycles, reconciliation, anomaly monitoring, dashboards, Python/Excel, and large databases are exceptionally relevant.</span></div>
+          <div class="signal"><b>Main gap</b><span>The team expects independent work on complex payment data without heavy guidance. BigQuery, Redshift, ClickHouse, Metabase, Looker, or Mixpanel exposure would help.</span></div>
+          <div class="signal"><b>Access</b><span>Live employer application at a reachable fintech startup, though more than 200 applicants applied within the first few hours.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 3 hours ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/data-analyst-at-fam-4457340296" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="times internet associate product analyst noida 0 2 years sql python power bi tableau looker excel reporting automation named recruiter linkedin jobs">
+          <div class="card-top"><div><div class="company">Times Internet</div><h3>Associate Product Analyst</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Noida</span><span class="chip">1.5+ years · contract</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Advanced Excel, BI dashboards, Power BI/Tableau, Python automation, large datasets, data quality, reporting, and stakeholder management are strong overlaps.</span></div>
+          <div class="signal"><b>Main gap</b><span>The description asks for 1.5+ years despite the headline's 0–2 year range. Looker Studio, scraping, and Google Apps Script are useful additions.</span></div>
+          <div class="signal"><b>Access</b><span>Direct application plus a named talent-acquisition manager. Competition is high, so use production reporting and automation evidence.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 week ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/associate-product-analyst-consultant-0-2-years-experience-timesofindia-com-noida-at-times-internet-4450104839" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="3" data-search="travclan operations analyst delhi excel pricing data quality reports startup six days long hours official freshteam careers">
+          <div class="card-top"><div><div class="company">TravClan</div><h3>Operations Analyst</h3></div><span class="status verify">Verify work-style fit</span></div>
+          <div class="meta"><span class="chip">New Delhi · On-site</span><span class="chip">Experience unspecified</span><span class="chip">Official Freshteam careers</span></div>
+          <div class="signal"><b>Why fit</b><span>Excel, pricing and fulfilment data, error correction, data sanity, reports, customer insights, and operational process ownership are relevant.</span></div>
+          <div class="signal"><b>Main gap</b><span>The listing explicitly describes a six-day week, long hours, and three to six months of operations-heavy work; it is also lighter on SQL and Python.</span></div>
+          <div class="signal"><b>Access</b><span>Canonical employer application with an active Apply Now route. Treat this as a deliberate work-style choice rather than a default application.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Official opening live today</strong>Employer page rechecked 21 Aug 2026</div><a class="open-link" href="https://travclan.freshteam.com/jobs/NGtj7FEv9kfc/content-analyst-l" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="shopflo product analyst intern bengaluru sql excel dashboards funnels conversion retention ab testing growth ecommerce linkedin jobs">
+          <div class="card-top"><div><div class="company">shopflo</div><h3>Product Analyst Intern</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">Full-time internship</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Excel, dashboards, conversion funnels, feature adoption, A/B testing, growth experiments, and stakeholder-facing recommendations map directly to Ansh's toolkit.</span></div>
+          <div class="signal"><b>Main gap</b><span>Mixpanel, Amplitude, Retool, Metabase, and Looker are useful additions. More than 200 applicants make strong product-metric examples important.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current application at a product startup now backed by Pine Labs. Prioritize evidence on activation, retention, conversion, and experiment measurement.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 2 weeks ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/product-analyst-intern-at-shopflo-4449326708" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="instawork data operations analyst intern bengaluru excel power query sql data cleaning validation deduplication route planning operations linkedin jobs">
+          <div class="card-top"><div><div class="company">Instawork</div><h3>Data Operations Analyst Intern</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru · On-site</span><span class="chip">Internship</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Large-dataset hygiene, validation, deduplication, advanced Excel, Power Query, basic SQL, coverage reporting, documentation, and operations planning are a close match.</span></div>
+          <div class="signal"><b>Main gap</b><span>The work is spreadsheet and routing-heavy rather than Python-heavy. Mapping tools, QGIS, and logistics or territory-planning exposure are useful extras.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current employer application. The listing describes a fully on-site internship with clear weekly deliverables and performance incentives.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 3 days ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/data-operations-analyst-intern-at-instawork-4428369297" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="gnani ai business analytics internship bangalore business analyst product research market analysis data collection brd prd insights linkedin jobs">
+          <div class="card-top"><div><div class="company">gnani.ai</div><h3>Business Analytics Internship</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">Student / recent graduate</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Business research, data collection and analysis, product discovery, requirements, process flows, and cross-functional insight work suit Ansh's analyst profile.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role is lighter on SQL, Python, and BI than his strongest evidence. Product research, BRDs/PRDs, and market-analysis examples will carry more weight.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current application at an AI startup with explicit student eligibility, although the posting already shows more than 200 applicants.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 week ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/business-analytics-internship-in-bangalore-at-gnani-ai-4454344031" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="dehaat data analyst data engineer intern gurugram sql python etl elt reconciliation postgresql redshift aws api dashboards linkedin jobs">
+          <div class="card-top"><div><div class="company">DeHaat</div><h3>Data Analyst / Data Engineer Intern</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Gurugram · On-site</span><span class="chip">Internship · 6–9 months</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Python, ETL/ELT, reconciliation, PostgreSQL, APIs, data validation, dashboards, and production data pipelines are almost a line-for-line match.</span></div>
+          <div class="signal"><b>Main gap</b><span>Frappe/ERPNext, AWS Redshift, cron jobs, and basic JavaScript are useful additions, but the core requirements are already covered.</span></div>
+          <div class="signal"><b>Access</b><span>Direct employer listing with a live application control. Immediate joining and more than 200 early applicants make this the highest-priority role today.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 3 hours ago</strong>Direct page rechecked 21 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4455603847/" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="bytedance data analyst project intern training quality gurgaon reporting mis excel dashboards statistics operations linkedin jobs">
+          <div class="card-top"><div><div class="company">ByteDance</div><h3>Data Analyst Project Intern · Training &amp; Quality</h3></div><span class="status">Live</span></div>
+          <div class="meta"><span class="chip">Gurgaon</span><span class="chip">2026 project internship</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Reporting, MIS frameworks, statistical analysis, data collection, dashboards, complex datasets, and stakeholder-facing recommendations align strongly.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role is Excel/Sheets-heavy and sits in Trust &amp; Safety operations. Review the stated potential exposure to harmful content before applying.</span></div>
+          <div class="signal"><b>Access</b><span>Direct ByteDance application with rolling review. Competition is already high, so the application should emphasize recurring reporting and data-quality ownership.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 week ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4436777534/" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="appsforbharat sri mandir business analytics intern bengaluru sql large datasets power bi tableau python experiments growth product official kula careers">
+          <div class="card-top"><div><div class="company">AppsForBharat</div><h3>Business Analytics Intern</h3></div><span class="status">Official apply live</span></div>
+          <div class="meta"><span class="chip">Bengaluru · HSR Layout</span><span class="chip">Recent graduate · 6 months</span><span class="chip">Official Kula careers</span></div>
+          <div class="signal"><b>Why fit</b><span>Mandatory SQL, large datasets, dashboards, ad hoc analysis, A/B tests, business metrics, and stakeholder communication make this an excellent match.</span></div>
+          <div class="signal"><b>Main gap</b><span>Consumer-product funnels and customer-behaviour metrics should be made concrete through projects or prior work.</span></div>
+          <div class="signal"><b>Access</b><span>Canonical employer application and a named current hiring route. The stipend is ₹25k–30k per month.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Official opening live today</strong>Application form rechecked 21 Aug 2026</div><a class="open-link" href="https://careers.kula.ai/appsforbharat/52476?jobs=true" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="1" data-search="data eminence research analyst remote india 0 2 years excel sql power bi tableau quantitative qualitative research linkedin jobs">
+          <div class="card-top"><div><div class="company">Data Eminence</div><h3>Research Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Remote · India</span><span class="chip">0–2 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Quantitative research, Excel, SQL, Power BI/Tableau, visualizations, validation, and presentation of business insights are all relevant.</span></div>
+          <div class="signal"><b>Main gap</b><span>This is broader market and business research, not a deeply technical data role. Verify the company and contract terms during screening.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current application, entry-level classification, and fully remote work in India.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 23 hours ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4455617356/" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="appsforbharat product business analyst bengaluru sql excel large datasets cohorts funnels ab tests power bi tableau named recruiter linkedin jobs">
+          <div class="card-top"><div><div class="company">AppsForBharat</div><h3>Product / Business Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Bengaluru · HSR Layout</span><span class="chip">1–5 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, large datasets, dashboards, cohorts, funnels, experiments, and cross-functional product analysis are a strong technical and business match.</span></div>
+          <div class="signal"><b>Main gap</b><span>The experience band is broad and independent end-to-end analytics ownership is expected.</span></div>
+          <div class="signal"><b>Access</b><span>Named talent poster and direct application at a Series C consumer startup, but more than 200 people applied on day one.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 1 day ago</strong>Direct page rechecked 21 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4456154864/" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="shrinq consulting data analyst remote india sql visualizations 1 2 years big data recurring adhoc linkedin jobs">
+          <div class="card-top"><div><div class="company">ShrinQ Consulting Group</div><h3>Data Analyst</h3></div><span class="status">Fresh · live</span></div>
+          <div class="meta"><span class="chip">Remote · India</span><span class="chip">1–2 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, recurring and ad hoc analysis, business problem-solving, and clear data visualization are directly relevant.</span></div>
+          <div class="signal"><b>Main gap</b><span>The description is brief and asks for Statistics, Applied Mathematics, or equivalent experience. Validate the client and project scope.</span></div>
+          <div class="signal"><b>Access</b><span>Direct Easy Apply and remote eligibility, but more than 200 applicants accumulated within the first day.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 11 hours ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4455441587/" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="3" data-search="exl business analyst gurugram entry level requirements stakeholder process analysis linkedin jobs vague experience">
+          <div class="card-top"><div><div class="company">EXL</div><h3>Business Analyst</h3></div><span class="status verify">Verify eligibility</span></div>
+          <div class="meta"><span class="chip">Gurugram</span><span class="chip">Entry level · experience unspecified</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>Business-process analysis, requirements documentation, stakeholder work, and project implementation match his hybrid analyst experience.</span></div>
+          <div class="signal"><b>Main gap</b><span>The posting says strong experience is required without giving a threshold or naming the analytics tools used.</span></div>
+          <div class="signal"><b>Access</b><span>Direct current employer application, but the vague description and high early applicant count reduce confidence.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 15 hours ago</strong>Apply control rechecked 21 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4446582457/" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
         <article class="card" data-tier="1" data-search="is global web mis executive noida excel dashboards reporting data accuracy linkedin hiring post">
           <div class="card-top"><div><div class="company">IS Global Web</div><h3>MIS Executive</h3></div><span class="status">Live post</span></div>
           <div class="meta"><span class="chip">Noida</span><span class="chip">Experience preferred, not mandatory</span><span class="chip">LinkedIn hiring post</span></div>
@@ -292,42 +732,6 @@
           <div class="signal"><b>Main gap</b><span>The post is Excel-heavy. Make advanced Excel and recurring MIS ownership explicit on the resume.</span></div>
           <div class="signal"><b>Access</b><span>Named poster and direct CV route. This is the strongest outreach path in the current scan.</span></div>
           <div class="card-footer"><div class="source-age"><strong>Posted 13 hours ago</strong>Verified in signed-in LinkedIn search</div><a class="open-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7495346653705449472/" target="_blank" rel="noopener">Open post ↗</a></div>
-        </article>
-
-        <article class="card" data-tier="1" data-search="wake up whistle data analyst internship remote india excel sql dashboarding fresher linkedin jobs">
-          <div class="card-top"><div><div class="company">Wake Up Whistle</div><h3>Data Analyst Internship</h3></div><span class="status">Live</span></div>
-          <div class="meta"><span class="chip">India - Remote</span><span class="chip">Freshers encouraged</span><span class="chip">LinkedIn Jobs</span></div>
-          <div class="signal"><b>Why fit</b><span>Excel, SQL, dashboarding, cleaning, data accuracy, and business reporting are core requirements.</span></div>
-          <div class="signal"><b>Main gap</b><span>Small e-learning company and an off-platform application require basic legitimacy checks before sharing personal data.</span></div>
-          <div class="signal"><b>Access</b><span>Very low eligibility friction, but more than 100 people had already clicked apply.</span></div>
-          <div class="card-footer"><div class="source-age"><strong>Posted 7 hours ago</strong>Deadline: 31 Aug 2026</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4454716415/" target="_blank" rel="noopener">Open role ↗</a></div>
-        </article>
-
-        <article class="card" data-tier="1" data-search="oshodata statistical data analyst recent graduate noida sql python r power bi tableau statistics data modeling reporting automation linkedin jobs">
-          <div class="card-top"><div><div class="company">Oshodata</div><h3>Statistical Data Analyst (Recent Graduate)</h3></div><span class="status">Live</span></div>
-          <div class="meta"><span class="chip">Noida - On-site</span><span class="chip">Recent graduate / entry level</span><span class="chip">LinkedIn Jobs</span></div>
-          <div class="signal"><b>Why fit</b><span>SQL, Python, Power BI/Tableau, statistical analysis, reporting automation, data modeling, and stakeholder communication closely match Ansh's baseline.</span></div>
-          <div class="signal"><b>Main gap</b><span>Real-estate and proptech analytics are preferred context. Show inferential statistics and structured documentation work clearly.</span></div>
-          <div class="signal"><b>Access</b><span>Explicit recent-graduate role with a direct apply route, but applicant volume reached 198 within the first two hours.</span></div>
-          <div class="card-footer"><div class="source-age"><strong>Posted 2 hours ago</strong>Apply control present; verified today</div><a class="open-link" href="https://in.linkedin.com/jobs/view/statistical-data-analyst-recent-graduate-at-oshodata-4445464451" target="_blank" rel="noopener">Open role ↗</a></div>
-        </article>
-
-        <article class="card" data-tier="1" data-search="flip business analyst internship delhi gurgaon noida remote fintech loyalty commerce excel research operations reporting wellfound">
-          <div class="card-top"><div><div class="company">FLIP</div><h3>Business Analyst Intern</h3></div><span class="status">Live</span></div>
-          <div class="meta"><span class="chip">Delhi / Gurgaon / Noida / Remote</span><span class="chip">Recent graduates</span><span class="chip">Wellfound</span></div>
-          <div class="signal"><b>Why fit</b><span>Operational trackers, data collection, analysis, reporting, and fintech context suit Ansh's mixed business-data profile.</span></div>
-          <div class="signal"><b>Main gap</b><span>The role also includes research, content, and operations. It is not a pure analytics internship.</span></div>
-          <div class="signal"><b>Access</b><span>11-50 person actively hiring startup, recruiter recently active, and a broad location policy.</span></div>
-          <div class="card-footer"><div class="source-age"><strong>Posted today</strong>Recruiter recently active</div><a class="open-link" href="https://wellfound.com/jobs/4349709-internship-business-analyst" target="_blank" rel="noopener">Open role ↗</a></div>
-        </article>
-
-        <article class="card" data-tier="1" data-search="kskt agromart technical business analyst intern gurgaon product technology requirements brd frd no experience wellfound">
-          <div class="card-top"><div><div class="company">KSKT Agromart</div><h3>Technical Business Analyst Intern</h3></div><span class="status">Live</span></div>
-          <div class="meta"><span class="chip">Gurgaon</span><span class="chip">No experience required</span><span class="chip">Wellfound</span></div>
-          <div class="signal"><b>Why fit</b><span>Business data analysis, implementation support, and cross-functional exposure are strong bridges from Ansh's stakeholder-facing data work.</span></div>
-          <div class="signal"><b>Main gap</b><span>BRDs, FRDs, process maps, Jira, and Agile evidence need to be added or demonstrated.</span></div>
-          <div class="signal"><b>Access</b><span>Small startup, named hiring contact, freshers welcome, and potential conversion to analyst or product roles.</span></div>
-          <div class="card-footer"><div class="source-age"><strong>Posted 1 month ago</strong>Company marked actively hiring</div><a class="open-link" href="https://wellfound.com/jobs/4391284-technical-businsess-analyst-intern" target="_blank" rel="noopener">Open role ↗</a></div>
         </article>
 
         <article class="card" data-tier="1" data-search="gulf client fragma data systems fresher business analyst internship job bengaluru remote sql excel data warehouse reporting cutshort">
@@ -357,6 +761,15 @@
           <div class="card-footer"><div class="source-age"><strong>Posted 14 hours ago</strong>₹13k-15k/month; rechecked today</div><a class="open-link" href="https://www.linkedin.com/jobs/view/4454760462/" target="_blank" rel="noopener">Open role ↗</a></div>
         </article>
 
+        <article class="card" data-tier="1" data-search="paytm growth management intern insurance noida business analyst ba fintech six month official lever employer careers">
+          <div class="card-top"><div><div class="company">Paytm</div><h3>Growth Management Intern - Insurance</h3></div><span class="status">Official apply live</span></div>
+          <div class="meta"><span class="chip">Noida - On-site</span><span class="chip">6-month internship</span><span class="chip">Official Lever careers</span></div>
+          <div class="signal"><b>Why fit</b><span>A current growth internship with an explicit Business Analyst screening section offers a fresher-level path into data-backed fintech decisions.</span></div>
+          <div class="signal"><b>Main gap</b><span>The application page does not publish responsibilities or required tools. Confirm how much SQL, reporting, and analysis the team actually owns before over-tailoring.</span></div>
+          <div class="signal"><b>Access</b><span>Direct employer application with no agency layer. The form asks about previous internship experience, immediate availability, and a six-month commitment.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Official opening live</strong>Application form rechecked 20 Aug 2026</div><a class="open-link" href="https://jobs.lever.co/paytm/62bd3d00-f65c-4c70-b413-92d886a112e7/apply" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
         <article class="card" data-tier="2" data-search="tap invest data analyst bengaluru fintech sql python pandas dashboards production data automation 1 2 years cutshort">
           <div class="card-top"><div><div class="company">Tap Invest</div><h3>Data Analyst</h3></div><span class="status">Live</span></div>
           <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1-2 years</span><span class="chip">Cutshort</span></div>
@@ -375,13 +788,40 @@
           <div class="card-footer"><div class="source-age"><strong>Live this week</strong>Apply control present; checked today</div><a class="open-link" href="https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-Rentomojo-cTAi1nzB" target="_blank" rel="noopener">Open role ↗</a></div>
         </article>
 
-        <article class="card" data-tier="2" data-search="1digitalstack business analyst gurugram ecommerce analytics sql python power bi excel generative ai 1 2 years wellfound">
-          <div class="card-top"><div><div class="company">1DigitalStack.ai</div><h3>Business Analyst</h3></div><span class="status">Live</span></div>
-          <div class="meta"><span class="chip">Gurugram - Office</span><span class="chip">1-2 years</span><span class="chip">Wellfound</span></div>
-          <div class="signal"><b>Why fit</b><span>Advanced Excel, Power BI, SQL, Python, automation, client-facing work, and data storytelling match the profile well.</span></div>
-          <div class="signal"><b>Main gap</b><span>One year of experience and a degree from a reputed institute are stated filters. Client-facing stories need emphasis.</span></div>
-          <div class="signal"><b>Access</b><span>Named HR contact and a 201-500 person analytics company, but the listing was reposted two months ago.</span></div>
-          <div class="card-footer"><div class="source-age"><strong>Reposted 2 months ago</strong>Check activity before applying</div><a class="open-link" href="https://wellfound.com/jobs/3194845-business-analyst" target="_blank" rel="noopener">Open role ↗</a></div>
+        <article class="card" data-tier="2" data-search="headout data analyst bengaluru growth product operations marketplace ecommerce sql python tableau power bi metabase looker dbt airflow 1 3 years linkedin jobs">
+          <div class="card-top"><div><div class="company">Headout</div><h3>Data Analyst</h3></div><span class="status">LinkedIn apply live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1-3 years</span><span class="chip">LinkedIn Jobs</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, Python, BI dashboards, automation, data warehousing, and stakeholder-facing work are central. The role spans growth, product, operations, and marketplace analysis.</span></div>
+          <div class="signal"><b>Main gap</b><span>It expects independent complex SQL and at least one year in analytics, BI, or data science. dbt, Airflow, and marketplace exposure are useful differentiators.</span></div>
+          <div class="signal"><b>Access</b><span>Direct LinkedIn application at a recognizable product startup, but competition is high. Position production-data ownership and fast learning, not only tool familiarity.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Posted 2 weeks ago</strong>Direct page and apply control checked 20 Aug 2026</div><a class="open-link" href="https://in.linkedin.com/jobs/view/growth-analyst-at-headout-4436513787" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="phonepe operations analyst lending operations bengaluru business reporting funnel systems performance data excel google sheets stakeholder 1 years official greenhouse">
+          <div class="card-top"><div><div class="company">PhonePe</div><h3>Operations Analyst, Lending Operations</h3></div><span class="status">Official apply live</span></div>
+          <div class="meta"><span class="chip">Bengaluru - On-site</span><span class="chip">1+ years · B.Tech only</span><span class="chip">Official Greenhouse careers</span></div>
+          <div class="signal"><b>Why fit</b><span>Business reporting, funnel and systems monitoring, bottleneck analysis, Excel/G-Sheets, and cross-functional execution make this a credible data-heavy operations lane.</span></div>
+          <div class="signal"><b>Main gap</b><span>The role requires an operations background, prefers lending or fintech exposure, limits eligibility to B.Tech, and includes rotating shifts and week-offs.</span></div>
+          <div class="signal"><b>Access</b><span>Canonical employer application with the full form live. Tailor around reconciliation, issue resolution, operational metrics, and stakeholder coordination.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Official board live today</strong>Direct application rechecked 20 Aug 2026</div><a class="open-link" href="https://job-boards.greenhouse.io/phonepe/jobs/7834351003?gh_src=d4a2725a3us" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="fox corporation data analyst apprentice bengaluru hybrid business intelligence tableau power bi python 0 1 years 2024 engineering cutshort">
+          <div class="card-top"><div><div class="company">FOX Corporation</div><h3>Data Analyst Apprentice</h3></div><span class="status">Direct apply live</span></div>
+          <div class="meta"><span class="chip">Bengaluru - Hybrid</span><span class="chip">0-1 years · 2024 engineering graduate</span><span class="chip">Cutshort</span></div>
+          <div class="signal"><b>Why fit</b><span>BI platforms, reporting, data analysis, stakeholder communication, Power BI/Tableau, and Python are closely aligned with Ansh's baseline.</span></div>
+          <div class="signal"><b>Main gap</b><span>The listing explicitly asks for a 2024 engineering graduate. Confirm Ansh's graduation year before prioritizing.</span></div>
+          <div class="signal"><b>Access</b><span>Named poster Rizwan Ahmad and a direct Cutshort application route. This is a one-year apprentice contract.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Indexed within the past week</strong>Direct apply control checked 20 Aug 2026</div><a class="open-link" href="https://cutshort.io/job/Data-Analyst-Apprentice-1-Year-contract-Bengaluru-Bangalore-FOX-Corporation-mb7NBICk" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
+
+        <article class="card" data-tier="2" data-search="careernet business analyst anonymous education app bengaluru product analytics sql python power bi tableau 1 years cutshort">
+          <div class="card-top"><div><div class="company">Education app via CareerNet</div><h3>Business Analyst</h3></div><span class="status">Direct apply live</span></div>
+          <div class="meta"><span class="chip">Bengaluru</span><span class="chip">1+ years</span><span class="chip">Cutshort agency listing</span></div>
+          <div class="signal"><b>Why fit</b><span>SQL, advanced Excel, Python/R, Power BI/Tableau, dashboards, product analysis, and stakeholder-facing insight work match strongly.</span></div>
+          <div class="signal"><b>Main gap</b><span>The employer is anonymous and asks for at least one year in analytics, preferably as a product analyst.</span></div>
+          <div class="signal"><b>Access</b><span>Current CareerNet apply route, but recruiter access remains indirect until the client is disclosed.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Indexed 4 days ago</strong>Direct apply control checked 20 Aug 2026</div><a class="open-link" href="https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-CareerNet-Technologies-Pvt-Ltd-8n5cJMih" target="_blank" rel="noopener">Apply / source ↗</a></div>
         </article>
 
         <article class="card" data-tier="2" data-search="fintech startup business data analyst bengaluru qrata sql python tableau powerbi excel data operations 1 2 years cutshort">
@@ -401,9 +841,81 @@
           <div class="signal"><b>Access</b><span>Anonymous employer and contradictory experience range make this a low-effort application only.</span></div>
           <div class="card-footer"><div class="source-age"><strong>Live 2 weeks ago</strong>Eligibility needs confirmation</div><a class="open-link" href="https://cutshort.io/job/E-commerce-Data-Analyst-Bengaluru-Bangalore-Mumbai-Qrata-xkYJq5sm" target="_blank" rel="noopener">Open role ↗</a></div>
         </article>
+
+        <article class="card" data-tier="3" data-search="bharat intelligence associate product manager bengaluru data analytics sql excel business analysis operations 0 2 years cutshort adjacent">
+          <div class="card-top"><div><div class="company">Bharat Intelligence</div><h3>Associate Product Manager</h3></div><span class="status verify">Adjacent role</span></div>
+          <div class="meta"><span class="chip">Bengaluru - On-site</span><span class="chip">0-2 years</span><span class="chip">Cutshort</span></div>
+          <div class="signal"><b>Why fit</b><span>The role accepts analytics backgrounds and uses SQL, spreadsheets, operating metrics, requirements, launches, and stakeholder coordination.</span></div>
+          <div class="signal"><b>Main gap</b><span>This is a product role, not a data-analyst role. Product discovery, shipping, and field-operations evidence will matter more than dashboard depth.</span></div>
+          <div class="signal"><b>Access</b><span>Named poster Pranjali Kulkarni and a direct application route at a 20-100 person funded company.</span></div>
+          <div class="card-footer"><div class="source-age"><strong>Indexed today</strong>Direct apply control checked 20 Aug 2026</div><a class="open-link" href="https://cutshort.io/job/Associate-Product-Manager-Bengaluru-Bangalore-Bharat-Intelligence-YjcOBQWB" target="_blank" rel="noopener">Apply / source ↗</a></div>
+        </article>
       </div>
       </div>
       <div class="empty" id="empty">No roles match this filter. Try a broader keyword or another tier.</div>
+    </section>
+
+    <details class="archive">
+      <summary>Closed or invalidated (10)</summary>
+      <div class="archive-row">
+        <div><div class="company">Amazon</div><h3>Business Analyst · Automation, Reporting &amp; Tech Sciences</h3><p>Bengaluru · LinkedIn Jobs</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">The direct listing now states that it is no longer accepting applications.</p></div>
+        <div><p><strong>Closed 22 Aug 2026</strong></p><a href="https://in.linkedin.com/jobs/view/business-analyst-rbs-arts-automation-reporting-and-tech-sciences-at-amazon-4457388055" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">MediNex Workforce</div><h3>Business Analyst Intern</h3><p>Remote India · LinkedIn Jobs</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">LinkedIn now states that the role is no longer accepting applications.</p></div>
+        <div><p><strong>Closed 21 Aug 2026</strong></p><a href="https://www.linkedin.com/jobs/view/4455481895/" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">CODEHOOD</div><h3>Data Scientist Intern</h3><p>Remote India · LinkedIn Jobs</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">LinkedIn now states that the role is no longer accepting applications.</p></div>
+        <div><p><strong>Closed 21 Aug 2026</strong></p><a href="https://www.linkedin.com/jobs/view/4451751983/" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">F6 IT Services via Nexal IIT</div><h3>Data Analyst Intern</h3><p>Remote India · LinkedIn partner listing</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">The direct LinkedIn destination now returns HTTP 404.</p></div>
+        <div><p><strong>Closed 21 Aug 2026</strong></p><a href="https://www.linkedin.com/jobs/view/4456083374/" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">Wake Up Whistle</div><h3>Data Analyst Internship</h3><p>Remote · LinkedIn Jobs</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">The direct LinkedIn job URL now returns HTTP 404. It is no longer treated as active.</p></div>
+        <div><p><strong>Closed 20 Aug 2026</strong></p><a href="https://www.linkedin.com/jobs/view/4455404669/" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">FLIP</div><h3>Business Analyst Intern</h3><p>Delhi NCR / Remote · Wellfound</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">Wellfound now returns HTTP 410 Gone for the role URL.</p></div>
+        <div><p><strong>Closed 20 Aug 2026</strong></p><a href="https://wellfound.com/jobs/4349709-internship-business-analyst" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">KSKT Agromart</div><h3>Technical Business Analyst Intern</h3><p>Gurgaon · Wellfound</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">Wellfound now returns HTTP 410 Gone for the role URL.</p></div>
+        <div><p><strong>Closed 20 Aug 2026</strong></p><a href="https://wellfound.com/jobs/4391284-technical-businsess-analyst-intern" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">1DigitalStack.ai</div><h3>Business Analyst</h3><p>Gurugram · Wellfound</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">The Wellfound role returns HTTP 410; a separate internship form found in a hiring post also returns 404.</p></div>
+        <div><p><strong>Closed 20 Aug 2026</strong></p><a href="https://wellfound.com/jobs/3194845-business-analyst" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">Snapmint</div><h3>Business Analyst Intern</h3><p>Bengaluru · LinkedIn / Wellfound</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">LinkedIn redirects the job ID to its expired-jobs search and the Wellfound copy returns HTTP 410.</p></div>
+        <div><p><strong>Closed 20 Aug 2026</strong></p><a href="https://in.linkedin.com/jobs/view/business-analyst-intern-at-snapmint-4444433658" target="_blank" rel="noopener">View archived URL ↗</a></div>
+      </div>
+      <div class="archive-row">
+        <div><div class="company">Oshodata</div><h3>Statistical Data Analyst (Recent Graduate)</h3><p>Noida · LinkedIn Jobs</p></div>
+        <div><span class="status closed">Closed</span><p style="margin-top:7px">LinkedIn now states “No longer accepting applications.” The role was removed from the active board.</p></div>
+        <div><p><strong>Closed 19 Aug 2026</strong></p><a href="https://www.linkedin.com/jobs/view/4445464451/" target="_blank" rel="noopener">View archived listing ↗</a></div>
+      </div>
+    </details>
+
+    <section class="panel" aria-labelledby="coverage-heading">
+      <div class="section-head"><div><div class="eyebrow">Quality-control audit</div><h2 id="coverage-heading">What changed in this scout</h2></div><p>Search-result snippets are discovery hints only. A role enters the active board only after its direct destination is checked.</p></div>
+      <div class="profile-grid">
+        <div class="mini"><h3>LinkedIn is split in two</h3><p>LinkedIn Jobs and normal employee or recruiter hiring posts are searched separately. Exact titles are supplemented with fresher, graduate, apprentice, associate, decision science, insights, reporting, and operations-analytics terms.</p></div>
+        <div class="mini"><h3>More source families</h3><p>Employer ATS pages on Lever, Greenhouse, Ashby, SmartRecruiters, Workday, and Taleo now form a separate lane alongside Internshala, Unstop, Hirist, YC, Wellfound, Cutshort, Instahyre, Foundit, Naukri, and Indeed.</p></div>
+        <div class="mini"><h3>Direct link still gates entry</h3><p>Every active card has a checked destination. Cached results that looked fresh but redirected to expired LinkedIn searches or Greenhouse error pages were excluded, and closed IDs stay deduplicated in the archive.</p></div>
+      </div>
     </section>
 
     <section class="panel" aria-labelledby="profile-heading">
@@ -411,16 +923,16 @@
       <div class="profile-grid">
         <div class="mini"><h3>Core toolkit</h3><ul><li>SQL and PostgreSQL</li><li>Python and data processing</li><li>Power BI, Tableau, Power Query</li><li>ETL pipelines and reconciliation</li></ul></div>
         <div class="mini"><h3>Credible work signals</h3><ul><li>Production data and quality checks</li><li>Large dataset analysis</li><li>Stakeholder-facing delivery</li><li>Hypothesis testing and dashboards</li></ul></div>
-        <div class="mini"><h3>Role families in scope</h3><ul><li>Data / BI / Reporting Analyst</li><li>Business / Product Analyst</li><li>Analytics Intern</li><li>Data Ops, junior DE, analytics engineering</li></ul></div>
+        <div class="mini"><h3>Role families in scope</h3><ul><li>Data / BI / Reporting / MIS</li><li>Business / Product / Growth analyst</li><li>Analytics, insights, risk, pricing, and ops</li><li>Data quality, Data Ops, junior DE / AE</li></ul></div>
       </div>
     </section>
 
     <section class="panel" aria-labelledby="method-heading">
       <div class="section-head"><div><div class="eyebrow">Search method</div><h2 id="method-heading">How each run works</h2></div><p>The workflow is designed to find fresh openings without letting low-trust aggregator noise dominate the list.</p></div>
       <div class="method-grid">
-        <div class="mini"><h3>1. Discover</h3><p>Search LinkedIn Jobs, normal LinkedIn hiring posts, Wellfound, Cutshort, Instahyre, Foundit, Naukri when useful, YC/startup boards, and company career pages.</p></div>
-        <div class="mini"><h3>2. Verify</h3><p>Open the strongest source, confirm that the role is accepting applications, capture date/freshness, and mark contradictions or expired redirects.</p></div>
-        <div class="mini"><h3>3. Rank</h3><p>Compare eligibility, CV evidence, location, employer/recruiter access, competition, and source trust. Deduplicate by company plus role plus location.</p></div>
+        <div class="mini"><h3>1. Discover by lane</h3><p>Run exact and adjacent role families against every target city on LinkedIn Jobs, normal LinkedIn hiring posts, specialist portals, startup boards, broad job portals, employer ATS pages, and company careers. Use the past 24 hours first and past 7 days second.</p></div>
+        <div class="mini"><h3>2. Verify the destination</h3><p>Open the final URL. Require a live apply control or a current named hiring post. Reject 404/410 responses, expired redirects, closed notices, blocked or unidentified forms, and snippets whose destination cannot be verified.</p></div>
+        <div class="mini"><h3>3. Canonicalize and rank</h3><p>Deduplicate by platform job ID, normalized final URL, and company + role + location. Keep closed IDs in the archive, then rank the surviving roles by eligibility, CV fit, access, freshness, and source trust.</p></div>
       </div>
 
       <div style="overflow-x:auto; margin-top:18px">
@@ -430,6 +942,7 @@
             <tr><td><strong>Eligibility</strong></td><td>Fresher, intern, or 0-1 years</td><td>1-2 years with strong overlap</td><td>2+ years, degree/domain filter, or contradiction</td></tr>
             <tr><td><strong>Fit</strong></td><td>Several proven CV skills are central</td><td>Core fit plus one meaningful gap</td><td>Adjacent role or missing evidence</td></tr>
             <tr><td><strong>Approach</strong></td><td>Named poster/contact or small active startup</td><td>Platform recruiter or reachable team</td><td>Anonymous agency, MNC queue, or stale source</td></tr>
+            <tr><td><strong>Link gate</strong></td><td colspan="3">No active card without a direct, checked source URL; expired or unverifiable destinations go to the archive or are excluded.</td></tr>
             <tr><td><strong>Action</strong></td><td>Apply today and tailor outreach</td><td>Tailor resume, then apply</td><td>Verify first or spend minimal time</td></tr>
           </tbody>
         </table>
@@ -439,9 +952,9 @@
     <section class="panel" aria-labelledby="queries-heading">
       <div class="section-head"><div><div class="eyebrow">Reusable search bank</div><h2 id="queries-heading">Queries worth repeating</h2></div></div>
       <div class="profile-grid">
-        <div class="mini"><h3>LinkedIn Jobs</h3><p>“data analyst” OR “BI analyst” OR “reporting analyst” OR “business analyst” OR “analytics intern” with Internship + Entry level, Past 24 hours/Past week, and each target city separately.</p></div>
-        <div class="mini"><h3>LinkedIn posts</h3><p>“data analyst” intern, “business analyst” hiring, “MIS executive” Noida, “analytics intern” Gurugram, “fresher SQL Power BI” Bengaluru, sorted for current activity.</p></div>
-        <div class="mini"><h3>Adjacent roles</h3><p>Data operations, revenue ops analyst, marketing analyst, product analyst, junior analytics engineer, ETL analyst, data quality analyst, and reporting/MIS executive.</p></div>
+        <div class="mini"><h3>LinkedIn Jobs + posts</h3><p>Combine exact titles with fresher, graduate, apprentice, associate, junior, intern, SQL, Power BI, decision science, business insights, and operations analytics. Search normal posts independently from the Jobs tab.</p></div>
+        <div class="mini"><h3>ATS + portal sweep</h3><p>Repeat the same city and role grid across Lever, Greenhouse, Ashby, SmartRecruiters, Workday, Taleo, Internshala, Unstop, Hirist, YC, Wellfound, Cutshort, Instahyre, Foundit, Naukri, and Indeed.</p></div>
+        <div class="mini"><h3>Adjacent-role vocabulary</h3><p>Growth, revenue ops, product ops, sales ops, customer or commercial insights, pricing, risk, fraud, credit, supply planning, decision support, data quality, master data, reconciliation, and implementation analyst.</p></div>
       </div>
     </section>
   </main>
