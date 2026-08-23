@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-23T10:11:00+05:30",
+  "updatedAt": "2026-08-23T19:12:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,9 +9,9 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-08-23T10:11:00+05:30",
-    "activeRoles": 76,
-    "tier1Roles": 40,
+    "completedAt": "2026-08-23T19:12:00+05:30",
+    "activeRoles": 84,
+    "tier1Roles": 42,
     "closedOrInvalidated": 23,
     "linkAudit": "passed",
     "materialChanges": true
@@ -19,56 +19,56 @@
   "nextRun": {
     "startWithLane": "startup_boards",
     "then": "fresh_all_lane_sweep",
-    "notes": "Resume the blocked startup-board lane with fresh Wellfound and Instahyre attempts and traverse more Cutshort API detail pages. Then recheck the 24–26 August employer deadlines, page further through Indeed and LinkedIn variants, and sweep every lane again."
+    "notes": "Resume the blocked startup-board lane with fresh Wellfound and Instahyre attempts and traverse additional current Cutshort and YC detail pages. Then recheck the 24–26 August employer deadlines, page further through the 63 LinkedIn requests that rate-limited this evening, and sweep every lane again."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T09:30:00+05:30",
-      "resumeFrom": "Fresh page-100-plus results and narrower city variants for pricing, fraud, planning, insights, reporting, and junior data-engineering queries, then recheck today's additions for closure",
-      "notes": "The past-24-hour sweep covered 18 keyword families across four target locations and starts 0, 25, 50, and 75, producing 288 result requests and 162 unseen IDs. Six direct listings were verified and added: Festo India, PrepClever, PW, Synchrony, RWS, and Dalm. Senior mismatches and unpaid low-signal internships were rejected. Synchrony was canonicalized to its current employer career page."
+      "lastAttemptAt": "2026-08-23T18:54:00+05:30",
+      "resumeFrom": "Retry the 63 rate-limited or blocked requests, then continue page-150-plus results and narrower pricing, fraud, planning, insights, reporting, reconciliation, and junior data-engineering variants",
+      "notes": "The evening past-24-hour sweep expanded to 24 keyword families across four target locations and starts 0, 25, 50, 75, 100, and 125: 576 query-location-page combinations. Sixty-three requests were blocked or rate-limited and remain explicitly incomplete. Eight live roles were verified and added: Moissani, Ethos, Green Positive, Neolytix, Enfinity Global, NTT DATA, Kroll, and RSM. Neolytix and Kroll were canonicalized to employer career pages. Misleading entry-level labels that actually required 4–9 or more years were rejected."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T09:35:00+05:30",
-      "resumeFrom": "fresh employee and recruiter posts using reporting, revenue operations, risk, data engineering, fresher, graduate, and referral variants after public indexing refreshes",
-      "notes": "Normal LinkedIn posts were searched independently across four query families. Publicly indexed results were one month to one year old, reposts, already closed, or lacked an inspectable current hiring route. No normal post was promoted without a current original post and usable application or contact destination."
+      "lastAttemptAt": "2026-08-23T19:02:00+05:30",
+      "resumeFrom": "fresh original employee, recruiter, and founder posts using reporting, RevOps, risk, data engineering, fresher, graduate, referral, SQL, and Power BI variants after indexing refreshes",
+      "notes": "Normal LinkedIn posts were searched independently across four evening query families. Results were older reposts, candidate open-to-work posts, unrelated locations, or posts that withheld the official application route behind comments or groups. No normal post passed the current-original-post plus usable-route gate, so none was promoted. A fresh Neolytix job result surfaced in this lane but was treated as a LinkedIn Jobs discovery and canonicalized to the employer page."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T09:45:00+05:30",
-      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, and company-hosted pages, prioritizing roles with deadlines inside seven days",
-      "notes": "The ATS and company-career sweep found Ameriprise Financial's Data Analyst role in Gurugram and Noida. Its current canonical Workday page explicitly counts internships, academic projects, and coursework toward the 1–3 year range and has a 26 August deadline, so it was added as Tier 1. An expired Labcorp duplicate and senior or out-of-scope ATS results were rejected."
+      "lastAttemptAt": "2026-08-23T19:08:00+05:30",
+      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then inspect current Paytm analytical listings whose true seniority is not exposed on the board",
+      "notes": "The evening ATS and company-career sweep searched Workday, Greenhouse, Lever, Ashby, SmartRecruiters, and employer-hosted pages. Neolytix's live canonical RCM MIS and Reporting Analyst form and Kroll's live canonical Restructuring Analyst page were added. Paytm's current board was traversed, but its new visible internships were not sufficiently data-heavy and the analytical roles lacked verified early-career thresholds."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T09:25:00+05:30",
-      "resumeFrom": "More Cutshort API detail pagination, current YC company boards, then retry Wellfound and Instahyre with accessible sessions",
-      "notes": "The oldest incomplete lane was resumed first. Instahyre still returned HTTP 403. Wellfound search results were discoverable, but the two relevant direct pages for FOXO and My Type returned HTTP 410 and were excluded. RegisterKaro's Cutshort role was live but dated to 2 January 2025 with no recent refresh evidence, so it was also excluded. The current YC query returned only a 3+ year role. The lane remains partial."
+      "lastAttemptAt": "2026-08-23T18:36:00+05:30",
+      "resumeFrom": "More Cutshort API detail pagination, current YC company boards, then retry Wellfound and Instahyre with an accessible authenticated session",
+      "notes": "The oldest incomplete lane was resumed first. Instahyre remained inaccessible. Wellfound did not yield a new current direct role, and fresh Cutshort results were duplicates or senior mismatches. YC Work at a Startup exposed Codingal's Operations Associate Intern and Emergent's Data Analyst with live Apply controls, but the pages were crawled roughly 1.2 years and 9 months ago with no recent post or refresh evidence, so they were not published as current. The lane remains partial."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T09:40:00+05:30",
-      "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics; then Unstop and Hirist detail pages",
-      "notes": "Eight Internshala role categories were swept across four target cities, producing 480 unseen slugs. Nine roles posted on or after 22 August were inspected directly. Seasoul Cosmetics' Finance and Accounts Intern and The Pet Point's Supply Chain and Logistics Operations Intern were relevant, live, and added. The remaining fresh roles were unrelated HR, marketing, or electrical positions. Unstop and Hirist remain partial."
+      "lastAttemptAt": "2026-08-23T19:05:00+05:30",
+      "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics once direct detail access returns; then Unstop and Hirist detail pages",
+      "notes": "The evening specialist sweep retried Internshala, Unstop, Hirist, and Cutshort query variants. Internshala detail access was blocked by robots in this pass, Unstop and Hirist returned no inspectable fresh detail pages, and Cutshort's current pages surfaced no new distinct early-career analytics role beyond existing board entries. The lane remains partial rather than being labelled complete."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T09:58:00+05:30",
-      "resumeFrom": "Page further through current Indeed city and synonym searches, then retry Foundit and Naukri client-rendered detail extraction and canonicalize employer destinations where available",
-      "notes": "Naukri remained blocked and Foundit results were stale or closed. Indeed discovery and direct job IDs were accessible this run. Five current role pages were verified and added: Simply Vyapar Apps, Learnurture, V Patrol AI, OcIT, and Customs Wise India. Existing ByteDance and American Express discoveries were correctly deduplicated. OcIT was kept in Tier 3 because its fresher label conflicts with leadership expectations."
+      "lastAttemptAt": "2026-08-23T19:07:00+05:30",
+      "resumeFrom": "Page further through current Indeed city and synonym searches when the automation gate clears, then retry Foundit and Naukri client-rendered detail extraction and canonicalize destinations",
+      "notes": "Naukri and Indeed direct discovery were blocked in the evening web pass. Foundit results were stale, internally inconsistent, or generic search pages rather than trustworthy current destinations; for example, GreenCell Mobility displayed a current-looking label alongside a January-to-March 2025 start window. None passed the freshness and direct-destination gate. The lane remains partial."
     }
   ],
   "publication": {
