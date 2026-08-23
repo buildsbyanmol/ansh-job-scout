@@ -5,7 +5,7 @@ import process from 'node:process';
 
 const sourcePath = new URL('../outputs/ansh-job-scout.html', import.meta.url);
 const html = await readFile(sourcePath, 'utf8');
-const cardPattern = /<article class="card"[^>]*>([\s\S]*?)<\/article>/g;
+const cardPattern = /<article class="card"([^>]*)>([\s\S]*?)<\/article>/g;
 const stripTags = value => value.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
 const extract = (body, pattern) => stripTags(body.match(pattern)?.[1] || '');
 
@@ -22,7 +22,8 @@ function normalizeUrl(rawUrl) {
 }
 
 const jobs = [...html.matchAll(cardPattern)].map((match, index) => {
-  const body = match[1];
+  const attributes = match[1];
+  const body = match[2];
   const link = body.match(/<a class="open-link" href="([^"]+)"/)?.[1] || '';
   const chips = [...body.matchAll(/<span class="chip">([\s\S]*?)<\/span>/g)].map(item => stripTags(item[1]));
   return {
@@ -32,8 +33,16 @@ const jobs = [...html.matchAll(cardPattern)].map((match, index) => {
     location: chips[0] || '',
     url: link,
     normalizedUrl: link ? normalizeUrl(link) : '',
+    browserVerifiedDate: attributes.match(/data-audit="browser-verified-(\d{4}-\d{2}-\d{2})"/)?.[1] || '',
   };
 });
+
+const todayInIndia = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Kolkata',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(new Date());
 
 const structuralIssues = [];
 const seenUrls = new Map();
@@ -77,11 +86,17 @@ async function audit(job) {
     const linkedInJobRedirectedAway = /linkedin\.com\/jobs\/view/.test(job.url) && !/linkedin\.com\/jobs\/view/.test(finalUrl);
     const closureText = /no longer accepting applications|this job is (?:no longer available|closed|expired)|job has expired/.test(body);
     const hardClosed = [404, 410].includes(response.status) || redirectedToExpiredSearch || linkedInJobRedirectedAway || closureText;
+    const indeedAutomationGate = /(^|\.)indeed\.com$/.test(new URL(job.url).hostname)
+      && /^[0-9a-f]{16}$/.test(new URL(job.url).searchParams.get('jk') || '')
+      && [401, 403].includes(response.status)
+      && job.browserVerifiedDate === todayInIndia;
     return {
       ...job,
-      result: hardClosed ? 'CLOSED' : response.ok ? 'OK' : 'CHECK',
+      result: hardClosed ? 'CLOSED' : response.ok || indeedAutomationGate ? 'OK' : 'CHECK',
       finalUrl,
-      detail: `HTTP ${response.status}${finalUrl !== job.url ? ' redirected' : ''}`,
+      detail: indeedAutomationGate
+        ? `HTTP ${response.status} automation gate; browser verified ${job.browserVerifiedDate}`
+        : `HTTP ${response.status}${finalUrl !== job.url ? ' redirected' : ''}`,
     };
   } catch (error) {
     return { ...job, result: 'CHECK', finalUrl: '', detail: error?.name || 'Network error' };

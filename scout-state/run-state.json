@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-22T20:43:00+05:30",
+  "updatedAt": "2026-08-23T10:11:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,66 +9,66 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-08-22T19:28:00+05:30",
-    "activeRoles": 62,
-    "tier1Roles": 33,
-    "closedOrInvalidated": 20,
+    "completedAt": "2026-08-23T10:11:00+05:30",
+    "activeRoles": 76,
+    "tier1Roles": 40,
+    "closedOrInvalidated": 23,
     "linkAudit": "passed",
     "materialChanges": true
   },
   "nextRun": {
     "startWithLane": "startup_boards",
     "then": "fresh_all_lane_sweep",
-    "notes": "Resume the blocked startup-board lane with fresh Wellfound and Instahyre attempts and traverse more Cutshort API detail pages, then refresh expiring Workday roles and sweep every lane again."
+    "notes": "Resume the blocked startup-board lane with fresh Wellfound and Instahyre attempts and traverse more Cutshort API detail pages. Then recheck the 24–26 August employer deadlines, page further through Indeed and LinkedIn variants, and sweep every lane again."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-08-22T19:05:00+05:30",
-      "resumeFrom": "Fresh page-75-plus results for pricing, fraud, planning, insights, reporting, and junior data-engineering variants, then recheck today's roles for closures",
-      "notes": "The evening past-24-hour sweep traversed starts 0, 25, 50, and 75 across 15 role families and four target locations. Seven verified listings were added: Aon, IHG, Training Basket, Thoughts2Binary, AMONGST, Scouto AI, and SimCorp. Senior mismatches at McAfee, Chevron, Optum, and Umanist were rejected. NTT DATA Power BI remained unpublished because its advanced enterprise scope had no stated early-career threshold."
+      "lastAttemptAt": "2026-08-23T09:30:00+05:30",
+      "resumeFrom": "Fresh page-100-plus results and narrower city variants for pricing, fraud, planning, insights, reporting, and junior data-engineering queries, then recheck today's additions for closure",
+      "notes": "The past-24-hour sweep covered 18 keyword families across four target locations and starts 0, 25, 50, and 75, producing 288 result requests and 162 unseen IDs. Six direct listings were verified and added: Festo India, PrepClever, PW, Synchrony, RWS, and Dalm. Senior mismatches and unpaid low-signal internships were rejected. Synchrony was canonicalized to its current employer career page."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-22T19:08:00+05:30",
-      "resumeFrom": "fresh employee and recruiter posts using reporting, revenue operations, risk, and data-engineering variants after public indexing refreshes",
-      "notes": "Normal hiring posts were searched independently again. Indexed results remained old, reposted, or inaccessible behind sign-up, including a recent Goldman Sachs post with no usable public application or contact route. No post was promoted without an inspectable original and current destination."
+      "lastAttemptAt": "2026-08-23T09:35:00+05:30",
+      "resumeFrom": "fresh employee and recruiter posts using reporting, revenue operations, risk, data engineering, fresher, graduate, and referral variants after public indexing refreshes",
+      "notes": "Normal LinkedIn posts were searched independently across four query families. Publicly indexed results were one month to one year old, reposts, already closed, or lacked an inspectable current hiring route. No normal post was promoted without a current original post and usable application or contact destination."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-08-22T19:22:00+05:30",
-      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, and Greenhouse pages, prioritizing roles with deadlines inside seven days",
-      "notes": "A fresh ATS-domain sweep found and verified Labcorp's canonical Data Analyst Entry role in Bengaluru, posted three days ago with a 24 August deadline. It was added as Tier 1. Other surfaced Workday pages were expired or senior, including Fidelity, Rockwell, Broadridge, FedEx, Gartner, and MarketStar results."
+      "lastAttemptAt": "2026-08-23T09:45:00+05:30",
+      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, and company-hosted pages, prioritizing roles with deadlines inside seven days",
+      "notes": "The ATS and company-career sweep found Ameriprise Financial's Data Analyst role in Gurugram and Noida. Its current canonical Workday page explicitly counts internships, academic projects, and coursework toward the 1–3 year range and has a 26 August deadline, so it was added as Tier 1. An expired Labcorp duplicate and senior or out-of-scope ATS results were rejected."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-08-22T18:22:00+05:30",
+      "lastAttemptAt": "2026-08-23T09:25:00+05:30",
       "resumeFrom": "More Cutshort API detail pagination, current YC company boards, then retry Wellfound and Instahyre with accessible sessions",
-      "notes": "The oldest incomplete lane was resumed first. Wellfound and Instahyre still returned HTTP 403. Cutshort's public job-detail API was identified and sampled using current sitemap slugs, but the relevant results were stale, with the newest suitable MyOperator roles from October 2025. No stale listing was published and the blocked lane remains partial."
+      "notes": "The oldest incomplete lane was resumed first. Instahyre still returned HTTP 403. Wellfound search results were discoverable, but the two relevant direct pages for FOXO and My Type returned HTTP 410 and were excluded. RegisterKaro's Cutshort role was live but dated to 2 January 2025 with no recent refresh evidence, so it was also excluded. The current YC query returned only a 3+ year role. The lane remains partial."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-22T19:14:00+05:30",
+      "lastAttemptAt": "2026-08-23T09:40:00+05:30",
       "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics; then Unstop and Hirist detail pages",
-      "notes": "Six role-family result sweeps across four target locations produced 359 unseen Internshala detail pages. Fifteen fresh candidates were inspected directly and six were published: Isourse, Suvitt, Joveo, Jarvis, Zaprev, and MAI Labs. Each has a current direct application and stated September deadline or fresh posting. Unstop and Hirist remain partial."
+      "notes": "Eight Internshala role categories were swept across four target cities, producing 480 unseen slugs. Nine roles posted on or after 22 August were inspected directly. Seasoul Cosmetics' Finance and Accounts Intern and The Pet Point's Supply Chain and Logistics Operations Intern were relevant, live, and added. The remaining fresh roles were unrelated HR, marketing, or electrical positions. Unstop and Hirist remain partial."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-22T19:24:00+05:30",
-      "resumeFrom": "Foundit and Naukri client-rendered detail extraction, then retry Indeed and canonicalize any discoveries",
-      "notes": "Broad-portal discovery was retried. Naukri remained inaccessible to the search fetch and the available Foundit results did not expose a fresh canonical early-career destination. Indeed remains blocked. No cached or generic search result was promoted, so the lane remains partial."
+      "lastAttemptAt": "2026-08-23T09:58:00+05:30",
+      "resumeFrom": "Page further through current Indeed city and synonym searches, then retry Foundit and Naukri client-rendered detail extraction and canonicalize employer destinations where available",
+      "notes": "Naukri remained blocked and Foundit results were stale or closed. Indeed discovery and direct job IDs were accessible this run. Five current role pages were verified and added: Simply Vyapar Apps, Learnurture, V Patrol AI, OcIT, and Customs Wise India. Existing ByteDance and American Express discoveries were correctly deduplicated. OcIT was kept in Tier 3 because its fresher label conflicts with leadership expectations."
     }
   ],
   "publication": {

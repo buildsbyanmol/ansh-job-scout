@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-22T19:28:00+05:30",
+  "updatedAt": "2026-08-23T10:11:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -201,6 +201,30 @@
       "url": "https://in.linkedin.com/jobs/view/business-analyst-rbs-arts-automation-reporting-and-tech-sciences-at-amazon-4457388055",
       "reason": "no_longer_accepting_applications",
       "lastCheckedAt": "2026-08-22T19:28:00+05:30"
+    },
+    {
+      "key": "wellfound:4414185",
+      "company": "FOXO",
+      "title": "Product Analytics Intern",
+      "url": "https://wellfound.com/jobs/4414185-product-analytics-intern",
+      "reason": "direct_role_returns_410_gone",
+      "lastCheckedAt": "2026-08-23T09:20:00+05:30"
+    },
+    {
+      "key": "wellfound:3731152",
+      "company": "My Type",
+      "title": "Data Science Intern",
+      "url": "https://wellfound.com/jobs/3731152-data-science-intern",
+      "reason": "direct_role_returns_410_gone",
+      "lastCheckedAt": "2026-08-23T09:20:00+05:30"
+    },
+    {
+      "key": "cutshort:registerkaro:axh2tgpr",
+      "company": "RegisterKaro",
+      "title": "Data Analyst",
+      "url": "https://cutshort.io/job/Data-Analyst-Gurugram-RegisterKaro-axh2tgpr",
+      "reason": "stale_listing_created_2025_01_02_no_recent_refresh",
+      "lastCheckedAt": "2026-08-23T09:25:00+05:30"
     }
   ]
 }
