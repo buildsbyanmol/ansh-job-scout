@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-24T10:01:00+05:30",
+  "updatedAt": "2026-08-24T19:08:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -265,6 +265,54 @@
       "url": "https://in.indeed.com/viewjob?jk=55cd6a58cf286065",
       "reason": "direct_role_blocked_by_indeed_auth_gate_in_both_browser_sessions",
       "lastCheckedAt": "2026-08-24T09:40:00+05:30"
+    },
+    {
+      "key": "linkedin:4456627580",
+      "company": "Moissani",
+      "title": "Management Information System Executive",
+      "url": "https://www.linkedin.com/jobs/view/4456627580/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-24T19:08:00+05:30"
+    },
+    {
+      "key": "synchrony:99170704112",
+      "company": "Synchrony",
+      "title": "Analyst - Consumer and Commercial Analytics",
+      "url": "https://www.synchronycareers.com/job/hyderabad/analyst-analytics-consumer-and-commercial-analytics-l08/49398/99170704112",
+      "reason": "canonical_employer_destination_returns_404",
+      "lastCheckedAt": "2026-08-24T19:08:00+05:30"
+    },
+    {
+      "key": "linkedin:4456666086",
+      "company": "PrepClever",
+      "title": "Growth Intern",
+      "url": "https://www.linkedin.com/jobs/view/4456666086/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-24T19:08:00+05:30"
+    },
+    {
+      "key": "linkedin:4456638227",
+      "company": "Training Basket / Job Basket",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-training-basket-4456638227",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-24T19:08:00+05:30"
+    },
+    {
+      "key": "linkedin:4455684404",
+      "company": "Candor Capital",
+      "title": "Intern - Research and Consulting",
+      "url": "https://in.linkedin.com/jobs/view/intern-research-consulting-at-candor-capital-4455684404",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-24T19:08:00+05:30"
+    },
+    {
+      "key": "linkedin:4457083427",
+      "company": "Freight Tiger",
+      "title": "Data Analytics Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analytics-intern-at-freight-tiger-4457083427",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-24T19:08:00+05:30"
     }
   ]
 }
