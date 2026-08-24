@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-23T10:11:00+05:30",
+  "updatedAt": "2026-08-24T10:01:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -225,6 +225,46 @@
       "url": "https://cutshort.io/job/Data-Analyst-Gurugram-RegisterKaro-axh2tgpr",
       "reason": "stale_listing_created_2025_01_02_no_recent_refresh",
       "lastCheckedAt": "2026-08-23T09:25:00+05:30"
+    },
+    {
+      "key": "indeed:fade033bbdd3403e",
+      "company": "Simply Vyapar Apps",
+      "title": "Data Analyst - Fresher",
+      "url": "https://in.indeed.com/viewjob?jk=fade033bbdd3403e",
+      "reason": "direct_role_blocked_by_indeed_auth_gate_in_both_browser_sessions",
+      "lastCheckedAt": "2026-08-24T09:40:00+05:30"
+    },
+    {
+      "key": "indeed:2e934249bc801034",
+      "company": "Learnurture",
+      "title": "Operations and Data Analytics Intern",
+      "url": "https://in.indeed.com/viewjob?jk=2e934249bc801034",
+      "reason": "direct_role_blocked_by_indeed_auth_gate_in_both_browser_sessions",
+      "lastCheckedAt": "2026-08-24T09:40:00+05:30"
+    },
+    {
+      "key": "indeed:13ba18ef2fb43a57",
+      "company": "V Patrol AI",
+      "title": "Data Analyst Intern",
+      "url": "https://in.indeed.com/viewjob?jk=13ba18ef2fb43a57",
+      "reason": "direct_role_blocked_by_indeed_auth_gate_in_both_browser_sessions",
+      "lastCheckedAt": "2026-08-24T09:40:00+05:30"
+    },
+    {
+      "key": "indeed:f7df834ebf620f22",
+      "company": "Customs Wise India",
+      "title": "Data Operations Executive / Data Analyst",
+      "url": "https://in.indeed.com/viewjob?jk=f7df834ebf620f22",
+      "reason": "direct_role_blocked_by_indeed_auth_gate_in_both_browser_sessions",
+      "lastCheckedAt": "2026-08-24T09:40:00+05:30"
+    },
+    {
+      "key": "indeed:55cd6a58cf286065",
+      "company": "OcIT",
+      "title": "Data Analyst - Freshers",
+      "url": "https://in.indeed.com/viewjob?jk=55cd6a58cf286065",
+      "reason": "direct_role_blocked_by_indeed_auth_gate_in_both_browser_sessions",
+      "lastCheckedAt": "2026-08-24T09:40:00+05:30"
     }
   ]
 }

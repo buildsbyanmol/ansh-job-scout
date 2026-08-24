@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-23T19:12:00+05:30",
+  "updatedAt": "2026-08-24T10:05:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,66 +9,66 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-08-23T19:12:00+05:30",
-    "activeRoles": 84,
-    "tier1Roles": 42,
-    "closedOrInvalidated": 23,
+    "completedAt": "2026-08-24T10:05:00+05:30",
+    "activeRoles": 90,
+    "tier1Roles": 45,
+    "closedOrInvalidated": 28,
     "linkAudit": "passed",
     "materialChanges": true
   },
   "nextRun": {
     "startWithLane": "startup_boards",
     "then": "fresh_all_lane_sweep",
-    "notes": "Resume the blocked startup-board lane with fresh Wellfound and Instahyre attempts and traverse additional current Cutshort and YC detail pages. Then recheck the 24–26 August employer deadlines, page further through the 63 LinkedIn requests that rate-limited this evening, and sweep every lane again."
+    "notes": "Resume the blocked startup-board lane with fresh Wellfound and Instahyre attempts, then traverse more Cutshort and YC detail pages. Retry the 306 LinkedIn query-location-page combinations throttled this morning in smaller sequential batches, recheck the 26–27 August deadlines, and sweep every lane again."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T18:54:00+05:30",
-      "resumeFrom": "Retry the 63 rate-limited or blocked requests, then continue page-150-plus results and narrower pricing, fraud, planning, insights, reporting, reconciliation, and junior data-engineering variants",
-      "notes": "The evening past-24-hour sweep expanded to 24 keyword families across four target locations and starts 0, 25, 50, 75, 100, and 125: 576 query-location-page combinations. Sixty-three requests were blocked or rate-limited and remain explicitly incomplete. Eight live roles were verified and added: Moissani, Ethos, Green Positive, Neolytix, Enfinity Global, NTT DATA, Kroll, and RSM. Neolytix and Kroll were canonicalized to employer career pages. Misleading entry-level labels that actually required 4–9 or more years were rejected."
+      "lastAttemptAt": "2026-08-24T09:45:00+05:30",
+      "resumeFrom": "Retry the 306 rate-limited requests in small sequential batches, then continue page-100-plus results and narrower pricing, fraud, planning, insights, reporting, reconciliation, and junior data-engineering variants",
+      "notes": "The morning past-24-hour sweep ran 21 keyword families across four target locations and starts 0, 25, 50, and 75: 336 query-location-page combinations. LinkedIn throttled 306 concurrent public requests, so the lane remains incomplete. The surviving candidates were individually inspected and ten LinkedIn listings were added: Onified.ai, MetLife, Convin, Grain Analytics, Goldman Sachs via IMA India, Khan Academy, Palette Hire, Cloudstaff, plus Swiss Re and JLL discoveries that were canonicalized to employer pages. Senior roles requiring 3-9 or more years were rejected unless retained as clearly labelled adjacent stretches."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T19:02:00+05:30",
+      "lastAttemptAt": "2026-08-24T09:50:00+05:30",
       "resumeFrom": "fresh original employee, recruiter, and founder posts using reporting, RevOps, risk, data engineering, fresher, graduate, referral, SQL, and Power BI variants after indexing refreshes",
-      "notes": "Normal LinkedIn posts were searched independently across four evening query families. Results were older reposts, candidate open-to-work posts, unrelated locations, or posts that withheld the official application route behind comments or groups. No normal post passed the current-original-post plus usable-route gate, so none was promoted. A fresh Neolytix job result surfaced in this lane but was treated as a LinkedIn Jobs discovery and canonicalized to the employer page."
+      "notes": "Normal LinkedIn posts were searched independently across four morning query families covering analyst, MIS and RevOps, data engineering and Data Ops, and risk, research, supply, and insights variants. The indexed posts were weeks to more than a year old, candidate open-to-work posts, comment-gated lead-generation posts, or lacked a current direct application route. No normal post passed the current-original-post plus usable-route gate, so none was promoted."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T19:08:00+05:30",
-      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then inspect current Paytm analytical listings whose true seniority is not exposed on the board",
-      "notes": "The evening ATS and company-career sweep searched Workday, Greenhouse, Lever, Ashby, SmartRecruiters, and employer-hosted pages. Neolytix's live canonical RCM MIS and Reporting Analyst form and Kroll's live canonical Restructuring Analyst page were added. Paytm's current board was traversed, but its new visible internships were not sufficiently data-heavy and the analytical roles lacked verified early-career thresholds."
+      "lastAttemptAt": "2026-08-24T09:58:00+05:30",
+      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then inspect current Paytm and Insurity analytical listings whose true seniority is not exposed on their boards",
+      "notes": "The morning ATS sweep covered Workday, Lever, Greenhouse, Ashby, and employer-hosted pages. Portcast's existing canonical Data Analyst Intern was reverified; JLL's canonical MIS Data Analyst Apprentice and Swiss Re's canonical Business Services Analyst I were added. Khan Academy's official board confirmed its M&E Analyst opening. CommerceIQ Business Analyst I was rechecked but still redirects to an ATS error page and remains excluded. Paytm's board exposes analytical titles without verifiable early-career thresholds, while Anaplan and Aspora asked for stronger prior experience or lacked fresh posting evidence."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T18:36:00+05:30",
+      "lastAttemptAt": "2026-08-24T09:47:00+05:30",
       "resumeFrom": "More Cutshort API detail pagination, current YC company boards, then retry Wellfound and Instahyre with an accessible authenticated session",
-      "notes": "The oldest incomplete lane was resumed first. Instahyre remained inaccessible. Wellfound did not yield a new current direct role, and fresh Cutshort results were duplicates or senior mismatches. YC Work at a Startup exposed Codingal's Operations Associate Intern and Emergent's Data Analyst with live Apply controls, but the pages were crawled roughly 1.2 years and 9 months ago with no recent post or refresh evidence, so they were not published as current. The lane remains partial."
+      "notes": "The oldest incomplete lane was resumed first. Instahyre remained inaccessible and fresh Wellfound search results pointed to role IDs already archived as HTTP 410. Cutshort returned live current pages: Ally Software's fresher-friendly Business Analyst was added, while the Fragma and CareerNet roles were existing duplicates and senior agency roles were rejected. YC search returned no newly verifiable fresh target-city role. The lane remains partial."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T19:05:00+05:30",
+      "lastAttemptAt": "2026-08-24T09:54:00+05:30",
       "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics once direct detail access returns; then Unstop and Hirist detail pages",
-      "notes": "The evening specialist sweep retried Internshala, Unstop, Hirist, and Cutshort query variants. Internshala detail access was blocked by robots in this pass, Unstop and Hirist returned no inspectable fresh detail pages, and Cutshort's current pages surfaced no new distinct early-career analytics role beyond existing board entries. The lane remains partial rather than being labelled complete."
+      "notes": "The morning specialist sweep retried Internshala, Unstop, Hirist, and Cutshort variants. Internshala detail discovery remained blocked by robots; indexed examples had expired March deadlines. Unstop returned no inspectable current target-city detail, and Hirist results were months old or required 4-16 years. Ally Software's fresh Cutshort listing was promoted through the startup-board lane. This lane remains partial."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-23T19:07:00+05:30",
-      "resumeFrom": "Page further through current Indeed city and synonym searches when the automation gate clears, then retry Foundit and Naukri client-rendered detail extraction and canonicalize destinations",
-      "notes": "Naukri and Indeed direct discovery were blocked in the evening web pass. Foundit results were stale, internally inconsistent, or generic search pages rather than trustworthy current destinations; for example, GreenCell Mobility displayed a current-looking label alongside a January-to-March 2025 start window. None passed the freshness and direct-destination gate. The lane remains partial."
+      "lastAttemptAt": "2026-08-24T09:56:00+05:30",
+      "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction",
+      "notes": "Indeed's five previously published direct links now route to a sign-in and bot-detection gate in both the in-app browser and Chrome. Employer and cross-platform searches found no public canonical application destinations, so Simply Vyapar Apps, Learnurture, V Patrol AI, Customs Wise India, and OcIT were removed from active status and archived. Search-index snippets remain discovery evidence only. Foundit and Naukri yielded no independently verifiable new current destination. The lane remains partial."
     }
   ],
   "publication": {
