@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-24T19:08:00+05:30",
+  "updatedAt": "2026-08-25T09:17:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -313,6 +313,46 @@
       "url": "https://in.linkedin.com/jobs/view/data-analytics-intern-at-freight-tiger-4457083427",
       "reason": "no_longer_accepting_applications",
       "lastCheckedAt": "2026-08-24T19:08:00+05:30"
+    },
+    {
+      "key": "linkedin:4456888816",
+      "company": "Target",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4456888816/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-25T09:17:00+05:30"
+    },
+    {
+      "key": "linkedin:4455026174",
+      "company": "Green Positive",
+      "title": "ESG and GHG Reporting Internship",
+      "url": "https://www.linkedin.com/jobs/view/4455026174/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-25T09:17:00+05:30"
+    },
+    {
+      "key": "wellfound:4349709",
+      "company": "FLIP",
+      "title": "Internship: Business Analyst",
+      "url": "https://wellfound.com/jobs/4349709-internship-business-analyst",
+      "reason": "direct_role_returns_410_despite_current_indexed_rendering",
+      "lastCheckedAt": "2026-08-25T09:17:00+05:30"
+    },
+    {
+      "key": "wellfound:3523284",
+      "company": "ParallelDots",
+      "title": "Data Analyst",
+      "url": "https://wellfound.com/jobs/3523284-data-analyst",
+      "reason": "direct_role_returns_410_despite_current_indexed_rendering",
+      "lastCheckedAt": "2026-08-25T09:17:00+05:30"
+    },
+    {
+      "key": "wellfound:3543560",
+      "company": "Quant Global",
+      "title": "AI Developer Intern",
+      "url": "https://wellfound.com/jobs/3543560-ai-developer-intern",
+      "reason": "direct_role_returns_410_despite_current_indexed_rendering",
+      "lastCheckedAt": "2026-08-25T09:17:00+05:30"
     }
   ]
 }
