@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25T09:17:00+05:30",
+  "updatedAt": "2026-08-25T23:01:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,66 +9,66 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-08-25T09:17:00+05:30",
-    "activeRoles": 100,
-    "tier1Roles": 46,
-    "closedOrInvalidated": 36,
+    "completedAt": "2026-08-25T23:01:00+05:30",
+    "activeRoles": 108,
+    "tier1Roles": 50,
+    "closedOrInvalidated": 40,
     "linkAudit": "passed",
     "materialChanges": true
   },
   "nextRun": {
     "startWithLane": "startup_boards",
     "then": "fresh_all_lane_sweep",
-    "notes": "Resume the startup-board lane with authenticated Instahyre and deeper YC and Cutshort pagination, then retry LinkedIn Growth Analyst for Noida at start 25 after the HTTP 429 and continue selected high-yield queries beyond start 50. Recheck all active links and fresh 24-hour listings across every lane."
+    "notes": "Resume authenticated Instahyre, deeper Cutshort and YC pagination, and blocked Internshala detail pages. Then repeat the complete 24-hour LinkedIn Jobs matrix, fresh normal-post queries, broad portals, employer ATS pages, missing-listing trails, and the full active-link audit."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T08:42:00+05:30",
-      "resumeFrom": "Retry Growth Analyst for Noida at start 25 after the HTTP 429, then continue high-yield role and city combinations beyond start 50",
-      "notes": "The morning public LinkedIn Jobs sweep traversed 17 role families, four target locations, and starts 0, 25, and 50: 204 query-location-page combinations. Two hundred and three succeeded; Growth Analyst for Noida at start 25 returned HTTP 429 and is preserved as the checkpoint. Candidates were deduplicated against active and excluded IDs before detail inspection. Six fresh roles passed direct-page verification: United Airlines Tech Ops Business Intelligence, Goldman Sachs Data Quality and Governance, Rama Vision ecommerce reconciliation, Glean AI Data Analyst, Citi Python Data Analyst, and ProBuddy Business Analyst. The Glean, Citi, and ProBuddy experience-gap roles are explicitly Tier 3. The final audit also closed Target Data Analyst and Green Positive ESG internship after both listings changed to no longer accepting applications."
+      "lastAttemptAt": "2026-08-25T22:20:00+05:30",
+      "resumeFrom": "Repeat the complete 17-role-family by four-location matrix at starts 0, 25, and 50, then continue selected high-yield queries beyond start 50",
+      "notes": "The evening public LinkedIn Jobs sweep traversed 17 role families, four target locations, and starts 0, 25, and 50: all 204 query-location-page combinations succeeded, including the morning Noida Growth Analyst checkpoint. Ten fresh direct listings passed verification and were added: Nutrabay Analytics Engineer, ClanX Data Engineer Intern, Target Data Analyst under a new repost ID, CSK Technologies Data Analyst Intern, Cuemath Operations and Analytics Associate, Counterpoint Research Associate, FRND Strategy Analyst, SmartHelio Junior Marketing Analyst, Origin Supply Chain Planning Intern, and Precision AQ Reporting Analyst. The final audit archived Rama Vision, ProBuddy, Workfall, and Palette Hire after each changed to no longer accepting applications."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T08:48:00+05:30",
+      "lastAttemptAt": "2026-08-25T22:31:00+05:30",
       "resumeFrom": "fresh original employee, recruiter, and founder posts using reporting, RevOps, risk, data engineering, fresher, graduate, referral, SQL, and Power BI variants after indexing refreshes",
-      "notes": "Normal LinkedIn employee, recruiter, and founder posts were searched independently across four query families covering fresher analytics, MIS and RevOps, junior data engineering and Data Ops, and risk, research, supply, and insights. Discoverable results were one month to two years old, expired dated walk-ins, or comment, DM, and Telegram-gated posts without a current employer destination. No fresh original post passed both the current-post and usable-route gates."
+      "notes": "Normal LinkedIn employee, recruiter, founder, and company posts were searched independently using fresher, junior, intern, SQL, Power BI, analytics, reporting, and target-city combinations. Discoverable candidates were one month or more old, older edited posts, or comment and DM-gated third-party posts without a current employer destination. No fresh original post passed both the current-post and usable-route gates."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T09:03:00+05:30",
-      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then inspect current Citi entry-level analytics listings adjacent to the newly canonicalized requisition",
-      "notes": "The canonicalization pass searched employer and ATS destinations for United Airlines, Goldman Sachs, Citi, Glean, Stanza Living, PlanetSpark, and ParallelDots. Citi's Python Data Analyst was promoted to its live canonical employer page, posted 24 Aug under requisition 26989180. Search indexing did not expose current exact employer pages for the other published requisitions, while their direct LinkedIn or Cutshort pages remained live with Apply. A Goldman result with a similar title was a separate vice-president role and was not substituted. ParallelDots was withheld after its direct Wellfound endpoint returned HTTP 410. No existing employer-hosted card failed the full link audit."
+      "lastAttemptAt": "2026-08-25T22:47:00+05:30",
+      "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added startup and LinkedIn roles where an exact employer requisition appears",
+      "notes": "The canonicalization and ATS pass searched exact employer destinations for Nutrabay, FRND, Origin, ClanX, Cuemath, SmartHelio, TopGrep, Wissen, Target, and other new listings, plus fresh Lever, Greenhouse, Ashby, SmartRecruiters, and Workday queries. No exact canonical employer page displaced the verified direct LinkedIn or Cutshort route. Search results for TopGrep exposed a different senior Wellfound role and were not substituted."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T08:18:00+05:30",
+      "lastAttemptAt": "2026-08-25T21:58:00+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, and current YC company boards, then recheck previously unavailable Wellfound IDs for state reversals",
-      "notes": "The oldest incomplete lane was resumed first across Wellfound, Cutshort, Instahyre, and YC. Stanza Living Data Analyst and PlanetSpark Data Analytics passed direct verification and were added. Indexed Wellfound renderings showed current-looking Apply content for FLIP, ParallelDots, and Quant Global, but each direct endpoint returned HTTP 410 during the required audit, so none was published and all three were added to exclusions for later state-reversal checks. Instahyre remained inaccessible or generic, and the lane stays partial."
+      "notes": "The oldest incomplete lane was resumed first across Wellfound, Cutshort, Instahyre, and YC. TopGrep Junior Power BI Developer and Wissen Technology Data Analyst passed direct Cutshort verification and were added. Instahyre remained inaccessible or generic, YC did not expose a suitable current target-location early-career role, and the previously rejected Wellfound endpoints were not republished. The lane remains partial for authenticated and deeper pagination."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T08:54:00+05:30",
+      "lastAttemptAt": "2026-08-25T22:38:00+05:30",
       "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics once direct detail access returns; then Unstop and Hirist detail pages",
-      "notes": "Internshala, Unstop, Hirist, and specialist Cutshort variants were searched independently. Internshala remained blocked, Hirist results were old or senior, and no Unstop listing passed the current-detail and route gates. The two verified Cutshort roles were recorded in the startup lane to preserve one source-family owner. No additional specialist listing was promoted."
+      "notes": "Internshala, Unstop, Hirist, and specialist variants were searched independently. Internshala detail access remained blocked by robots, the visible Unstop Data Analyst result had a July deadline, and Hirist results were old or required two to twelve years. The two verified Cutshort additions are owned by the startup lane. No additional specialist listing passed the freshness and direct-route gates."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T08:58:00+05:30",
+      "lastAttemptAt": "2026-08-25T22:42:00+05:30",
       "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction",
-      "notes": "Indeed, Foundit, and Naukri were searched for current fresher and early-career analyst roles. Naukri remained blocked; Foundit largely exposed old, closed, or duplicate index copies, including Jarvis and Nexdigm roles already represented on the board. A current-looking Sattva research-intern discovery lacked a verified canonical destination, while other discoveries resolved to archived IDs. No broad-portal listing independently passed the direct-route gate."
+      "notes": "Indeed, Foundit, and Naukri were searched for fresh fresher, junior, internship, and zero-to-two-year analytics variants in the target cities. Accessible results were generic result pages, stale indexed copies, blocked client-rendered pages, or roles already represented by a better direct destination. No broad-portal discovery independently passed the current-detail and live-route gates."
     }
   ],
   "publication": {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25T09:17:00+05:30",
+  "updatedAt": "2026-08-25T23:01:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -353,6 +353,38 @@
       "url": "https://wellfound.com/jobs/3543560-ai-developer-intern",
       "reason": "direct_role_returns_410_despite_current_indexed_rendering",
       "lastCheckedAt": "2026-08-25T09:17:00+05:30"
+    },
+    {
+      "key": "linkedin:4456507079",
+      "company": "Rama Vision Limited",
+      "title": "MIS Executive - Ecommerce Reconciliation",
+      "url": "https://www.linkedin.com/jobs/view/4456507079/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-25T23:01:00+05:30"
+    },
+    {
+      "key": "linkedin:4456871677",
+      "company": "ProBuddy Software",
+      "title": "Business Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4456871677/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-25T23:01:00+05:30"
+    },
+    {
+      "key": "linkedin:4456839676",
+      "company": "Workfall",
+      "title": "BA-QA Internship",
+      "url": "https://www.linkedin.com/jobs/view/4456839676/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-25T23:01:00+05:30"
+    },
+    {
+      "key": "linkedin:4456852309",
+      "company": "Palette Hire",
+      "title": "Product Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4456852309/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-25T23:01:00+05:30"
     }
   ]
 }
