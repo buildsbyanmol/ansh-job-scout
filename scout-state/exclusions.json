@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25T23:01:00+05:30",
+  "updatedAt": "2026-08-26T10:12:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -385,6 +385,70 @@
       "url": "https://www.linkedin.com/jobs/view/4456852309/",
       "reason": "no_longer_accepting_applications",
       "lastCheckedAt": "2026-08-25T23:01:00+05:30"
+    },
+    {
+      "key": "citi:26989180",
+      "company": "Citi",
+      "title": "Python Data Analyst",
+      "url": "https://jobs.citi.com/job/bengaluru/python-data-analyst/287/99664824544",
+      "reason": "canonical_employer_requisition_returns_404",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "linkedin:4456810687",
+      "company": "Grain Analytics",
+      "title": "Product Information Specialist & AI Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4456810687/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "freshteam:travclan:NGtj7FEv9kfc",
+      "company": "TravClan",
+      "title": "Operations Analyst",
+      "url": "https://travclan.freshteam.com/jobs/NGtj7FEv9kfc/content-analyst-l",
+      "reason": "employer_application_route_returns_502",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "linkedin:4412690182",
+      "company": "IndiaGold",
+      "title": "Business Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-intern-at-indiagold-4412690182",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "internshala:august-assortments:1771068206",
+      "company": "August Assortments Private Limited",
+      "title": "Data Analytics Specialist",
+      "url": "https://internshala.com/job/detail/fresher-data-analytics-specialist-job-in-bangalore-at-august-assortments-private-limited1771068206",
+      "reason": "direct_page_says_job_is_not_available",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "linkedin:4452390841",
+      "company": "FlixStock",
+      "title": "Business Operations Intern",
+      "url": "https://in.linkedin.com/jobs/view/business-operations-intern-at-flixstock-4452390841",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "linkedin:4447171141",
+      "company": "Nutrabay",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-nutrabay-4447171141",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "linkedin:4412707954",
+      "company": "MakeMyTrip",
+      "title": "Data Analyst, Hotels",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-hotels-at-makemytrip-4412707954",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-08-26T10:12:00+05:30"
     }
   ]
 }

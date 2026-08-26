@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25T23:01:00+05:30",
+  "updatedAt": "2026-08-26T10:12:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,66 +9,66 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-08-25T23:01:00+05:30",
-    "activeRoles": 108,
-    "tier1Roles": 50,
-    "closedOrInvalidated": 40,
+    "completedAt": "2026-08-26T10:12:00+05:30",
+    "activeRoles": 111,
+    "tier1Roles": 51,
+    "closedOrInvalidated": 43,
     "linkAudit": "passed",
     "materialChanges": true
   },
   "nextRun": {
     "startWithLane": "startup_boards",
     "then": "fresh_all_lane_sweep",
-    "notes": "Resume authenticated Instahyre, deeper Cutshort and YC pagination, and blocked Internshala detail pages. Then repeat the complete 24-hour LinkedIn Jobs matrix, fresh normal-post queries, broad portals, employer ATS pages, missing-listing trails, and the full active-link audit."
+    "notes": "Resume authenticated Instahyre, deeper Cutshort and YC pagination, then retry the 199 rate-limited LinkedIn Jobs checkpoints after cooldown before a new complete matrix. Continue fresh normal-post queries, blocked Internshala details, broad portals, employer ATS pages, missing-listing trails, and the full active-link audit."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T22:20:00+05:30",
-      "resumeFrom": "Repeat the complete 17-role-family by four-location matrix at starts 0, 25, and 50, then continue selected high-yield queries beyond start 50",
-      "notes": "The evening public LinkedIn Jobs sweep traversed 17 role families, four target locations, and starts 0, 25, and 50: all 204 query-location-page combinations succeeded, including the morning Noida Growth Analyst checkpoint. Ten fresh direct listings passed verification and were added: Nutrabay Analytics Engineer, ClanX Data Engineer Intern, Target Data Analyst under a new repost ID, CSK Technologies Data Analyst Intern, Cuemath Operations and Analytics Associate, Counterpoint Research Associate, FRND Strategy Analyst, SmartHelio Junior Marketing Analyst, Origin Supply Chain Planning Intern, and Precision AQ Reporting Analyst. The final audit archived Rama Vision, ProBuddy, Workfall, and Palette Hire after each changed to no longer accepting applications."
+      "lastAttemptAt": "2026-08-26T09:42:00+05:30",
+      "resumeFrom": "Retry the 199 rate-limited query-location-page checkpoints from the 17-role-family by four-location matrix at starts 0, 25, and 50, then continue selected high-yield queries beyond start 50",
+      "notes": "The morning public LinkedIn Jobs matrix attempted all 204 role-family, location, and page combinations, but only five succeeded after the endpoint rate-limited 199 checkpoints with HTTP 429. Those failures are preserved for retry and the lane remains partial. Three fresh direct listings passed verification and were added through search fallback: Zebra Technologies Data Engineer.I (Power BI), Skydo Operations Associate, and Trelleborg Business Intelligence Specialist. Fresh FlixStock, Nutrabay Data Analyst, and MakeMyTrip candidates were rejected immediately before saving because their direct IDs redirected to expired LinkedIn searches. The active-link audit closed Grain Analytics and removed TravClan while its employer route returns HTTP 502."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T22:31:00+05:30",
+      "lastAttemptAt": "2026-08-26T09:51:00+05:30",
       "resumeFrom": "fresh original employee, recruiter, and founder posts using reporting, RevOps, risk, data engineering, fresher, graduate, referral, SQL, and Power BI variants after indexing refreshes",
-      "notes": "Normal LinkedIn employee, recruiter, founder, and company posts were searched independently using fresher, junior, intern, SQL, Power BI, analytics, reporting, and target-city combinations. Discoverable candidates were one month or more old, older edited posts, or comment and DM-gated third-party posts without a current employer destination. No fresh original post passed both the current-post and usable-route gates."
+      "notes": "Normal LinkedIn employee, recruiter, founder, and company posts were searched independently across four fresh query families using fresher, junior, intern, hiring, SQL, Python, Power BI, analytics, reporting, and target-city combinations. Discoverable candidates were one month or more old, edited older posts, or DM and email-gated posts without a fresh employer destination. No original post passed both the current-post and usable-route gates."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T22:47:00+05:30",
+      "lastAttemptAt": "2026-08-26T10:03:00+05:30",
       "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added startup and LinkedIn roles where an exact employer requisition appears",
-      "notes": "The canonicalization and ATS pass searched exact employer destinations for Nutrabay, FRND, Origin, ClanX, Cuemath, SmartHelio, TopGrep, Wissen, Target, and other new listings, plus fresh Lever, Greenhouse, Ashby, SmartRecruiters, and Workday queries. No exact canonical employer page displaced the verified direct LinkedIn or Cutshort route. Search results for TopGrep exposed a different senior Wellfound role and were not substituted."
+      "notes": "The canonicalization pass searched exact employer destinations for Athelas, Cityfurnish, Enerjazz, Zebra, Skydo, Trelleborg, FlixStock, Nutrabay, and MakeMyTrip, plus fresh Lever, Greenhouse, Ashby, SmartRecruiters, Workday, and company-hosted queries. No exact canonical employer page displaced the six verified YC or LinkedIn routes. The FlixStock, Nutrabay Data Analyst, and MakeMyTrip IDs failed the final redirect gate and were excluded rather than published."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T21:58:00+05:30",
+      "lastAttemptAt": "2026-08-26T09:18:00+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, and current YC company boards, then recheck previously unavailable Wellfound IDs for state reversals",
-      "notes": "The oldest incomplete lane was resumed first across Wellfound, Cutshort, Instahyre, and YC. TopGrep Junior Power BI Developer and Wissen Technology Data Analyst passed direct Cutshort verification and were added. Instahyre remained inaccessible or generic, YC did not expose a suitable current target-location early-career role, and the previously rejected Wellfound endpoints were not republished. The lane remains partial for authenticated and deeper pagination."
+      "notes": "The oldest incomplete lane was resumed first across YC, Cutshort, Wellfound, and Instahyre. Three previously missed live YC employer listings passed the direct Apply gate and were added: Cityfurnish Data Analytics AI Specialist, Athelas Data Operation Analyst, and Enerjazz MIS, Process Excellence and Automation Associate. Cutshort's current index surfaced only roles already represented on the board, while Instahyre and Wellfound remained inaccessible or generic. The lane remains partial for authenticated and deeper pagination."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T22:38:00+05:30",
+      "lastAttemptAt": "2026-08-26T09:57:00+05:30",
       "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics once direct detail access returns; then Unstop and Hirist detail pages",
-      "notes": "Internshala, Unstop, Hirist, and specialist variants were searched independently. Internshala detail access remained blocked by robots, the visible Unstop Data Analyst result had a July deadline, and Hirist results were old or required two to twelve years. The two verified Cutshort additions are owned by the startup lane. No additional specialist listing passed the freshness and direct-route gates."
+      "notes": "Internshala, Unstop, Hirist, and specialist variants were searched independently. Internshala indexed Wadhwani Foundation, Propelld, and Groww candidates, but their direct destinations were inaccessible; August Assortments explicitly said the job was unavailable and was excluded. Unstop results had expired deadlines and Hirist results were old or senior. No specialist listing passed the direct-page gate."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-25T22:42:00+05:30",
+      "lastAttemptAt": "2026-08-26T10:00:00+05:30",
       "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction",
-      "notes": "Indeed, Foundit, and Naukri were searched for fresh fresher, junior, internship, and zero-to-two-year analytics variants in the target cities. Accessible results were generic result pages, stale indexed copies, blocked client-rendered pages, or roles already represented by a better direct destination. No broad-portal discovery independently passed the current-detail and live-route gates."
+      "notes": "Foundit, Naukri, Indeed, and broad-portal variants were searched for fresh early-career analytics roles in the target cities. Accessible results were generic search pages, stale indexed copies, client-rendered destinations, or duplicates without a stronger direct route. Foundit surfaced the same MakeMyTrip role, but neither a canonical employer requisition nor a live LinkedIn job destination could be verified. No broad-portal discovery passed the direct-page gate."
     }
   ],
   "publication": {
