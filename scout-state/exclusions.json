@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T10:12:00+05:30",
+  "updatedAt": "2026-08-27T03:32:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -449,6 +449,102 @@
       "url": "https://in.linkedin.com/jobs/view/data-analyst-hotels-at-makemytrip-4412707954",
       "reason": "expired_linkedin_redirect",
       "lastCheckedAt": "2026-08-26T10:12:00+05:30"
+    },
+    {
+      "key": "linkedin:4456584307",
+      "company": "ClanX",
+      "title": "Data Engineer Intern",
+      "url": "https://www.linkedin.com/jobs/view/4456584307/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4455617356",
+      "company": "Data Eminence",
+      "title": "Research Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4455617356/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4459162970",
+      "company": "Wells Fargo",
+      "title": "Quantitative Analytics Program Intern",
+      "url": "https://www.linkedin.com/jobs/view/4459162970/",
+      "reason": "posting_deadline_passed_2026_08_26",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4449126006",
+      "company": "Circle K",
+      "title": "Logistics Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4449126006/",
+      "reason": "canonical_employer_requisition_returns_410_filled",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4459190133",
+      "company": "Multiplier AI",
+      "title": "MIS Executive",
+      "url": "https://www.linkedin.com/jobs/view/4459190133/",
+      "reason": "direct_posting_date_outside_30_day_window",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4440957473",
+      "company": "nVent",
+      "title": "Pricing Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4440957473/",
+      "reason": "direct_posting_date_outside_30_day_window",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "lever:paytm:8a118b61-3e1a-4d5c-835a-04d05197c2aa",
+      "company": "Paytm",
+      "title": "Business Analyst",
+      "url": "https://jobs.lever.co/paytm/8a118b61-3e1a-4d5c-835a-04d05197c2aa",
+      "reason": "posting_date_outside_30_day_window",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "ashby:aspora:f93cc2e3-dae9-49c3-825b-789da03cf07d",
+      "company": "Aspora",
+      "title": "Financial Data Analyst",
+      "url": "https://jobs.ashbyhq.com/Aspora/f93cc2e3-dae9-49c3-825b-789da03cf07d",
+      "reason": "removed_from_current_ashby_job_board",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4452210990",
+      "company": "RWS",
+      "title": "Associate Pricing Analyst",
+      "url": "https://in.linkedin.com/jobs/view/associate-pricing-analyst-at-rws-4452210990",
+      "reason": "older_id_no_longer_accepting_new_id_verified_separately",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin-post:7487544782378979328",
+      "company": "Unidentified employer via Janhavi Jadhav",
+      "title": "Data Analytics Intern",
+      "url": "https://www.linkedin.com/posts/jadhavjanhavi_hiring-dataanalytics-internship-activity-7487544782378979328-urCG",
+      "reason": "three_week_old_post_with_unverifiable_short_application_route",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4459146193",
+      "company": "AppsForBharat",
+      "title": "Business Analyst Intern",
+      "url": "https://www.linkedin.com/jobs/view/4459146193/",
+      "reason": "duplicate_of_live_canonical_employer_listing",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4457664862",
+      "company": "CSK Technologies OPC Private Limited",
+      "title": "Data Analyst Intern",
+      "url": "https://www.linkedin.com/jobs/view/4457664862/",
+      "reason": "duplicate_of_existing_live_listing_same_company_role_location",
+      "lastCheckedAt": "2026-08-27T03:32:00+05:30"
     }
   ]
 }
