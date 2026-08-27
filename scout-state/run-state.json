@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T03:32:00+05:30",
+  "updatedAt": "2026-08-27T10:49:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,9 +9,9 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-08-27T03:32:00+05:30",
-    "activeRoles": 116,
-    "tier1Roles": 50,
+    "completedAt": "2026-08-27T10:49:00+05:30",
+    "activeRoles": 125,
+    "tier1Roles": 52,
     "closedOrInvalidated": 45,
     "linkAudit": "passed",
     "materialChanges": true
@@ -19,56 +19,56 @@
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "Retry the 26 rate-limited LinkedIn Jobs query-location-page checkpoints after cooldown, then perform a new complete matrix. Continue authenticated Instahyre, deeper Cutshort and Wellfound pagination, fresh normal-post queries, blocked specialist details, broad portals, employer ATS pages, missing-listing trails, and the full active-link audit."
+    "notes": "Retry the three remaining LinkedIn query-location-page checkpoints after cooldown, then perform a new complete past-24-hour matrix. Continue authenticated Instahyre, deeper Cutshort and Wellfound pagination, fresh normal-post queries, blocked specialist details, broad portals, employer ATS pages, missing-listing trails, and the full active-link audit."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-08-27T02:20:00+05:30",
-      "resumeFrom": "Retry the 26 HTTP 429 checkpoints from the 17-role-family by four-location matrix at starts 0, 25, and 50, then repeat the complete past-24-hour matrix and selected high-yield queries beyond start 50",
-      "notes": "The public LinkedIn Jobs endpoint recovered enough to attempt all 204 role-family, location, and page combinations: 178 succeeded and 26 returned HTTP 429. The sweep discovered 1,565 rows and 642 unique IDs before active and exclusion deduplication. Six direct listings passed freshness, eligibility, and live-route verification: RWS Associate Pricing Analyst, Target Analyst Promotions Insight, BlackRock Analyst Data Management, Talview Business Analytics Internship, Kroll Business Intelligence Analyst I, and Numerix Market Data Ops Analyst. Misleading same-day index refreshes were checked against the direct posting date; expired, over-30-day, canonical-closed, and duplicate candidates were excluded. The active audit closed ClanX and Data Eminence."
+      "lastAttemptAt": "2026-08-27T10:15:00+05:30",
+      "resumeFrom": "Retry Fraud Analyst in Noida at start 50, Data Analyst in Noida at start 0, and Risk Analyst in Delhi at start 25, then repeat the complete past-24-hour matrix and selected high-yield queries beyond start 50",
+      "notes": "The 26 saved checkpoints were retried first at low concurrency, followed by the complete 17-role-family by four-location matrix at starts 0, 25, and 50. The controlled pass completed 227 of 230 checkpoint-plus-fresh requests; only three network failures remain. Eight direct LinkedIn listings passed freshness, location, relevance, live-route, and deduplication gates: Surya Sangam Data & AI Intern, OnGrid Analyst I Operations Quality Assurance, NuvoRetail E-Commerce Analyst Trainee, Amazon Business Analyst OHL, Fortrea Clinical Data Analyst, Mobility Global Automotive Market Analyst, HPE Sales Process Analyst, and Fulfil Product Consultant Associate. Misleading same-day index refreshes were checked against direct posting dates; the old JPMorgan Product Associate result and other over-30-day or senior candidates were excluded. The full 116-role pre-update active audit found no closures."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-27T02:52:00+05:30",
+      "lastAttemptAt": "2026-08-27T10:32:00+05:30",
       "resumeFrom": "fresh original employee, recruiter, and founder posts using reporting, RevOps, risk, data engineering, fresher, graduate, referral, SQL, and Power BI variants after indexing refreshes",
-      "notes": "Normal LinkedIn employee, recruiter, founder, and company posts were searched independently across four query families. Search surfaced Nference, OneGuardian, Intervue, and an unidentified Bengaluru Data Analytics Intern post, but the posts were three weeks to several months old, deadline-expired, DM-gated, or had an unverifiable shortened route. No original post passed both the fresh-post and usable-destination gates."
+      "notes": "Normal LinkedIn employee, recruiter, founder, and company posts were searched independently. Search surfaced a promising Bengaluru Business Analyst Intern post claiming 0-6 months, SQL, and basic Python, but the signed-in original page says the post cannot be displayed and the public URL returns 404. Older MoveInSync and Wiingy posts were stale or explicitly closed. No normal post passed both the current-original-post and usable-destination gates."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-08-27T03:15:00+05:30",
+      "lastAttemptAt": "2026-08-27T10:38:00+05:30",
       "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added startup and LinkedIn roles where an exact employer requisition appears",
-      "notes": "The ATS and missing-listing pass searched Lever, Greenhouse, Ashby, Workday, SmartRecruiters, and company-hosted pages. Exact employer pages replaced discovery links for Target, BlackRock, and Kroll; Paytm Deputy Manager Data Analyst (Finance) was added from its current Lever listing. Wells Fargo's internship deadline had passed, Circle K's canonical requisition returned 410 filled, Aspora had disappeared from its current Ashby board, and an older Paytm Business Analyst listing exceeded the 30-day window."
+      "notes": "Lever, Greenhouse, Ashby, Workday, SmartRecruiters, and employer-career variants were refreshed and missing-listing trails were checked for the new candidates. No additional canonical employer requisition could be verified during this pass, so the eight LinkedIn roles retain their direct live LinkedIn destinations. The active-board audit found no ATS closures."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-08-27T02:47:00+05:30",
+      "lastAttemptAt": "2026-08-27T10:35:00+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, and current YC company boards, then recheck previously unavailable Wellfound IDs for state reversals",
-      "notes": "YC, Cutshort, Wellfound, and Instahyre were refreshed after the LinkedIn checkpoint recovery. YC surfaced only the three roles added in the morning plus a 3-year Explorex role. Cutshort results were senior or already represented. Wellfound search snippets claimed current FLIP, Snapmint, and KSKT roles, but every direct page returned HTTP 403 in this run and previously returned 410; they were not republished. Instahyre remained inaccessible without authentication."
+      "notes": "Cutshort, Wellfound, YC, and Instahyre variants were refreshed. RegisterKaro Data Analyst in Gurugram passed a live Cutshort apply-control check and was added at Tier 2. Fresh-looking FLIP, FreightFox, Snapmint, and KSKT Wellfound renderings still resolved to HTTP 410 on the direct destinations and were excluded; KSKT was added to the durable exclusion cache. Instahyre remains authentication-gated."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-27T03:00:00+05:30",
+      "lastAttemptAt": "2026-08-27T10:40:00+05:30",
       "resumeFrom": "Additional Internshala pages for BI, MIS, research, risk, and operations analytics once direct detail access returns; then Unstop and Hirist detail pages",
-      "notes": "Internshala, Unstop, Hirist, AICTE, and specialist variants were searched independently. Internshala remained robots-blocked; LinkedIn exposed the fresh Talview internship and it was verified in the LinkedIn lane. Unstop and AICTE results had passed deadlines, while Hirist results were old or senior. No additional specialist-hosted destination passed the freshness and direct-page gates."
+      "notes": "Internshala and specialist variants were searched independently. Internshala remained robots-blocked in automated discovery and indexed results were stale; no fresh Unstop, Hirist, or AICTE destination passed the direct-page and freshness gates. No specialist-hosted role was added."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-27T03:05:00+05:30",
+      "lastAttemptAt": "2026-08-27T10:42:00+05:30",
       "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction",
-      "notes": "Foundit, Naukri, Indeed, Grapevine, and broad-portal variants were searched for fresh early-career analytics roles. Results were stale copies, generic or client-rendered pages, senior roles, or duplicates for which a better employer destination was found. Broad portals helped confirm BlackRock and Target trails but contributed no independent active destination."
+      "notes": "Foundit, Naukri, Indeed, Grapevine, and broad-portal variants were refreshed for the same role and city families. Results remained generic, client-rendered, senior, stale, or duplicates without a better current employer destination. No broad-portal role was added."
     }
   ],
   "publication": {

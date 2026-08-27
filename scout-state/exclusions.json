@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T03:32:00+05:30",
+  "updatedAt": "2026-08-27T10:49:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -545,6 +545,30 @@
       "url": "https://www.linkedin.com/jobs/view/4457664862/",
       "reason": "duplicate_of_existing_live_listing_same_company_role_location",
       "lastCheckedAt": "2026-08-27T03:32:00+05:30"
+    },
+    {
+      "key": "linkedin:4459601122",
+      "company": "JPMorganChase",
+      "title": "Product Associate - Client Analytics Platform",
+      "url": "https://www.linkedin.com/jobs/view/4459601122/",
+      "reason": "direct_posting_date_outside_30_day_window_despite_fresh_index_refresh",
+      "lastCheckedAt": "2026-08-27T10:49:00+05:30"
+    },
+    {
+      "key": "wellfound:4391284",
+      "company": "KSKT Agromart",
+      "title": "Technical Business Analyst Intern",
+      "url": "https://wellfound.com/jobs/4391284-technical-businsess-analyst-intern",
+      "reason": "direct_role_returns_410_despite_current_indexed_rendering",
+      "lastCheckedAt": "2026-08-27T10:49:00+05:30"
+    },
+    {
+      "key": "linkedin-post:7482752228689100802",
+      "company": "Unidentified mobility company via Sangeetha B",
+      "title": "Business Analyst Intern",
+      "url": "https://www.linkedin.com/posts/sang7_were-hiring-business-analyst-intern-activity-7482752228689100802-ey7Z",
+      "reason": "original_post_cannot_be_displayed_and_public_url_returns_404",
+      "lastCheckedAt": "2026-08-27T10:49:00+05:30"
     }
   ]
 }
