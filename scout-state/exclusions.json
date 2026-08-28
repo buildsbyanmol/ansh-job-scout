@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T10:49:00+05:30",
+  "updatedAt": "2026-08-28T12:35:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -569,6 +569,110 @@
       "url": "https://www.linkedin.com/posts/sang7_were-hiring-business-analyst-intern-activity-7482752228689100802-ey7Z",
       "reason": "original_post_cannot_be_displayed_and_public_url_returns_404",
       "lastCheckedAt": "2026-08-27T10:49:00+05:30"
+    },
+    {
+      "key": "linkedin:4457441922",
+      "company": "Nutrabay",
+      "title": "Analytics Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4457441922/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4457443321",
+      "company": "Cuemath",
+      "title": "Associate - Operations & Analytics",
+      "url": "https://www.linkedin.com/jobs/view/4457443321/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4458330799",
+      "company": "ISIR AI",
+      "title": "Data Science Intern",
+      "url": "https://www.linkedin.com/jobs/view/4458330799/",
+      "reason": "direct_posting_date_outside_30_day_window_despite_fresh_index_refresh",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4459801191",
+      "company": "DP World",
+      "title": "Executive - Regional Data Analytics",
+      "url": "https://www.linkedin.com/jobs/view/4459801191/",
+      "reason": "location_and_experience_requirements_are_materially_contradictory",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4459861347",
+      "company": "Garden City Games",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-garden-city-games-4459861347",
+      "reason": "minimum_3_years_exceeds_early_career_scope",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4459679251",
+      "company": "Namshi.com",
+      "title": "Category Growth Analyst",
+      "url": "https://in.linkedin.com/jobs/view/senior-business-analyst-category-growth-at-namshi-com-4459679251",
+      "reason": "two_to_five_year_requirement_exceeds_priority_scope",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4458659832",
+      "company": "Target",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4458659832/",
+      "reason": "duplicate_of_existing_live_same_company_role_location",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4458698320",
+      "company": "American Express",
+      "title": "Analyst - Data Analytics",
+      "url": "https://www.linkedin.com/jobs/view/4458698320/",
+      "reason": "duplicate_of_existing_live_same_company_role_location",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "internshala:zippee:1773141221",
+      "company": "Zippee",
+      "title": "MIS Internship",
+      "url": "https://internshala.com/internship/detail/mis-internship-in-gurgaon-at-zippee1773141221",
+      "reason": "application_deadline_passed_2026_04_09",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "internshala:zomunk:1774947640",
+      "company": "Zomunk Technology Private Limited",
+      "title": "Data Operations Internship",
+      "url": "https://internshala.com/internship/detail/data-operations-internship-in-gurgaon-at-zomunk-technology-private-limited1774947640",
+      "reason": "application_deadline_passed_2026_04_30",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "internshala:isourse:1749804082",
+      "company": "Isourse",
+      "title": "Product Analyst Internship",
+      "url": "https://internshala.com/internship/detail/product-analyst-internship-in-delhi-at-isourse1749804082",
+      "reason": "application_deadline_passed_2025_07_13",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4458380080",
+      "company": "Scoutit",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4458380080/",
+      "reason": "direct_page_no_longer_accepting_despite_fresh_search_rendering",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4454784945",
+      "company": "TechWise Digital",
+      "title": "Data Analyst - Fresher",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-%E2%80%93-fresher-b-sc-bca-bangalore-at-techwise-digital-4454784945",
+      "reason": "direct_page_no_longer_accepting_despite_fresh_search_rendering",
+      "lastCheckedAt": "2026-08-28T12:35:00+05:30"
     }
   ]
 }
