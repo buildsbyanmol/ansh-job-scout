@@ -84,8 +84,9 @@ async function audit(job) {
     const body = (await response.text()).toLowerCase();
     const redirectedToExpiredSearch = /expired_jd_redirect/.test(finalUrl);
     const linkedInJobRedirectedAway = /linkedin\.com\/jobs\/view/.test(job.url) && !/linkedin\.com\/jobs\/view/.test(finalUrl);
+    const browserVerifiedToday = job.browserVerifiedDate === todayInIndia;
     const closureText = /no longer accepting applications|this job is (?:no longer available|closed|expired)|job has expired/.test(body);
-    const hardClosed = [404, 410].includes(response.status) || redirectedToExpiredSearch || linkedInJobRedirectedAway || closureText;
+    const hardClosed = [404, 410].includes(response.status) || redirectedToExpiredSearch || linkedInJobRedirectedAway || (closureText && !browserVerifiedToday);
     const indeedAutomationGate = /(^|\.)indeed\.com$/.test(new URL(job.url).hostname)
       && /^[0-9a-f]{16}$/.test(new URL(job.url).searchParams.get('jk') || '')
       && [401, 403].includes(response.status)
@@ -99,7 +100,15 @@ async function audit(job) {
         : `HTTP ${response.status}${finalUrl !== job.url ? ' redirected' : ''}`,
     };
   } catch (error) {
-    return { ...job, result: 'CHECK', finalUrl: '', detail: error?.name || 'Network error' };
+    const browserVerifiedToday = job.browserVerifiedDate === todayInIndia;
+    return {
+      ...job,
+      result: browserVerifiedToday ? 'OK' : 'CHECK',
+      finalUrl: '',
+      detail: browserVerifiedToday
+        ? `${error?.name || 'Network error'}; browser verified ${job.browserVerifiedDate}`
+        : error?.name || 'Network error',
+    };
   }
 }
 

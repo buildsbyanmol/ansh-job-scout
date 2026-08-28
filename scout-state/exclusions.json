@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T12:35:00+05:30",
+  "updatedAt": "2026-08-28T16:50:00+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -673,6 +673,46 @@
       "url": "https://in.linkedin.com/jobs/view/data-analyst-%E2%80%93-fresher-b-sc-bca-bangalore-at-techwise-digital-4454784945",
       "reason": "direct_page_no_longer_accepting_despite_fresh_search_rendering",
       "lastCheckedAt": "2026-08-28T12:35:00+05:30"
+    },
+    {
+      "key": "linkedin:4459801455",
+      "company": "Hero FinCorp",
+      "title": "Risk Analyst",
+      "url": "https://in.linkedin.com/jobs/view/risk-analyst-at-hero-fincorp-4459801455",
+      "reason": "six_to_nine_year_requirement_exceeds_early_career_scope",
+      "lastCheckedAt": "2026-08-28T16:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4459897110",
+      "company": "Trinity Life Sciences",
+      "title": "Solutions Analyst - Operations and Analytics",
+      "url": "https://in.linkedin.com/jobs/view/solutions-analyst-operations-and-analytics-at-trinity-life-sciences-4459897110",
+      "reason": "two_to_four_year_requirement_exceeds_priority_scope",
+      "lastCheckedAt": "2026-08-28T16:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4449488147",
+      "company": "Rockwell Automation",
+      "title": "Global Logistics Data Analytics Analyst",
+      "url": "https://in.linkedin.com/jobs/view/global-logistics-data-analytics-analyst-at-rockwell-automation-4449488147",
+      "reason": "two_to_five_year_requirement_exceeds_priority_scope",
+      "lastCheckedAt": "2026-08-28T16:50:00+05:30"
+    },
+    {
+      "key": "wellfound:3281147",
+      "company": "Emergent Labs",
+      "title": "Analytics Intern (Fresher)",
+      "url": "https://wellfound.com/jobs/3281147-analytics-intern-fresher",
+      "reason": "posted_one_year_ago_despite_current_index_and_live_apply",
+      "lastCheckedAt": "2026-08-28T16:50:00+05:30"
+    },
+    {
+      "key": "wellfound:4408616",
+      "company": "fintoric capital",
+      "title": "Data Analytics Intern (with PPO)",
+      "url": "https://wellfound.com/jobs/4408616-data-analytics-intern-with-ppo",
+      "reason": "repost_outside_30_day_freshness_window",
+      "lastCheckedAt": "2026-08-28T16:50:00+05:30"
     }
   ]
 }
