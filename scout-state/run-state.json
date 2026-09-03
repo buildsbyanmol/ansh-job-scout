@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T16:50:00+05:30",
+  "updatedAt": "2026-09-03T17:31:42+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,10 +9,10 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-08-28T16:50:00+05:30",
-    "activeRoles": 135,
-    "tier1Roles": 56,
-    "closedOrInvalidated": 47,
+    "completedAt": "2026-09-03T17:31:42+05:30",
+    "activeRoles": 115,
+    "tier1Roles": 51,
+    "closedOrInvalidated": 68,
     "linkAudit": "passed",
     "materialChanges": true
   },
@@ -26,15 +26,15 @@
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-08-28T16:35:00+05:30",
+      "lastAttemptAt": "2026-09-03T17:31:42+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep then completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. Direct verification produced one new role: Arrow Electronics Business Intelligence Analyst in Gurugram, posted within two days, live Apply, entry-level label, strong Power BI/reporting/automation fit, and a two-year experience hurdle. Hero FinCorp, Trinity Life Sciences, and Rockwell Automation candidates were excluded for six-to-nine, two-to-four, and two-to-five year requirements. The active-link audit initially surfaced eazyway and SmartQ through false-positive text matching, but fresh direct pages showed live Apply controls; both correctly remain active."
+      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. This morning's fresh indexed-role sweep confirmed Target as a duplicate, found Enerture and Care.fi closed, and removed SmartQ when its current page no longer exposed a live apply control. Level AI and eazyway.io were directly rechecked with live apply controls. The full failed matrix remains the next LinkedIn Jobs priority. Fresh audit archived 18 listings whose direct route is now closed or unavailable."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-28T16:38:00+05:30",
+      "lastAttemptAt": "2026-08-29T08:55:00+05:30",
       "resumeFrom": "fresh employee, recruiter, founder, and company posts using reporting, MIS, RevOps, risk, data engineering, fresher, graduate, referral, SQL, Python, and Power BI variants after indexing refreshes",
       "notes": "Fresh normal hiring-post searches were run independently from LinkedIn Jobs across data, BI, MIS, risk, operations, SQL, Python, Power BI, fresher, graduate, intern, referral, recruiter, and founder variants. Results were older repost farms, undated comment-to-DM posts, or previously known roles; no post-only opportunity passed the current-original-post and usable-route gates."
     },
@@ -42,33 +42,33 @@
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-08-28T16:44:00+05:30",
+      "lastAttemptAt": "2026-08-29T09:01:00+05:30",
       "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added LinkedIn roles where exact employer requisitions appear",
-      "notes": "Lever, Greenhouse, Ashby, Workday, and company-career variants were refreshed independently. Current Paytm, Portcast, Aspora, and other results were already active, previously excluded for experience, or outside the freshness and early-career gates. No additional canonical employer requisition passed the exact-role verification gate."
+      "notes": "Lever, Greenhouse, Ashby, Workday, and company-career variants were refreshed independently. Genpact's indexed Business Data Services listing had a past 30 June end date and was excluded. FabHotels has a live page but only an indirect email route and stale age. No additional canonical employer requisition passed the exact-role verification gate."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-08-28T16:41:00+05:30",
+      "lastAttemptAt": "2026-08-29T08:58:00+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, current YC company boards, accelerator portfolio boards, and state-reversal checks for excluded Wellfound IDs",
-      "notes": "Wellfound, Cutshort, YC Work at a Startup, and startup-board variants were refreshed independently. Fragma remained live and already active. Emergent Labs had a live button but was posted one year ago, and fintoric capital was reposted outside the 30-day freshness window; both were excluded from the active board. FOXO remains excluded pending a confirmed state reversal, and Instahyre remains authentication-gated."
+      "notes": "Wellfound, Cutshort, YC Work at a Startup, and startup-board variants were refreshed independently. FOXO again appeared in search but its direct page still returned 410. Emergent Labs and fintoric capital remained outside the freshness window. No startup-board-only role passed verification."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-28T16:42:00+05:30",
+      "lastAttemptAt": "2026-08-29T09:00:00+05:30",
       "resumeFrom": "Recover current direct Internshala detail links for Galytix, Zomunk, Isourse, Zippee, Innerbhakti, and other fresh search-page results; then continue Unstop and Hirist detail pages",
-      "notes": "Internshala, Unstop, and Hirist variants were refreshed. Internshala direct detail remained robots-blocked; Hirist results were stale or senior, and no current specialist role passed the direct-page, freshness, and early-career gates."
+      "notes": "Internshala, Unstop, and Hirist variants were refreshed. Search pages exposed fresh-looking India listings, but direct-detail verification remained robots-blocked or led to expired roles. No specialist role was published without a verified current direct destination."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-08-28T16:45:00+05:30",
+      "lastAttemptAt": "2026-08-29T09:14:00+05:30",
       "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction and fresh city-role pagination",
-      "notes": "Foundit, Naukri, Indeed, and broad-portal variants were searched independently. Naukri direct detail remained robots-blocked, current search results were stale or senior, and no broad-portal discovery could be canonicalized to a fresh verified employer destination. No broad-portal role passed publication."
+      "notes": "Foundit, Naukri, Indeed, and broad-portal variants were searched independently. Weblink's 18 Aug Data Analyst discovery was canonicalized to its live employer job board and added: Delhi, 0–2 years, Excel, SQL, Power BI, reporting, and data-quality work. PhonePe's previously published canonical Greenhouse route now redirects to an ATS error page and was archived. Naukri direct detail remained robots-blocked; other candidates were stale, senior, or lacked a usable current route."
     }
   ],
   "publication": {

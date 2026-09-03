@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T16:50:00+05:30",
+  "updatedAt": "2026-09-03T17:31:42+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -713,6 +713,190 @@
       "url": "https://wellfound.com/jobs/4408616-data-analytics-intern-with-ppo",
       "reason": "repost_outside_30_day_freshness_window",
       "lastCheckedAt": "2026-08-28T16:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4385685878",
+      "company": "Enerture Technologies",
+      "title": "Assistant Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/assistant-data-analyst-at-enerture-technologies-pvt-ltd-4385685878",
+      "reason": "no_longer_accepting_applications_and_location_contradiction",
+      "lastCheckedAt": "2026-08-29T09:06:00+05:30"
+    },
+    {
+      "key": "workday:genpact:JR10004379",
+      "company": "Genpact",
+      "title": "Analyst - Business Data Services 5B",
+      "url": "https://genpact.wd108.myworkdayjobs.com/en-US/External_Careers/job/Analyst---Business-Data-Services-5B_JR10004379",
+      "reason": "listed_end_date_2026_06_30_is_past_despite_stale_index_refresh",
+      "lastCheckedAt": "2026-08-29T09:06:00+05:30"
+    },
+    {
+      "key": "linkedin:4457752166",
+      "company": "Care.fi",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4457752166/",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-08-29T09:14:00+05:30"
+    },
+    {
+      "key": "linkedin:4456852871",
+      "company": "SmartQ",
+      "title": "Executive - Business Process (MIS)",
+      "url": "https://www.linkedin.com/jobs/view/4456852871/",
+      "reason": "current_direct_page_has_no_live_apply_control",
+      "lastCheckedAt": "2026-08-29T09:14:00+05:30"
+    },
+    {
+      "key": "greenhouse:phonepe:7834351003",
+      "company": "PhonePe",
+      "title": "Operations Analyst, Lending Operations",
+      "url": "https://job-boards.greenhouse.io/phonepe/jobs/7834351003?gh_src=d4a2725a3us",
+      "reason": "canonical_employer_application_redirects_to_ats_error_page",
+      "lastCheckedAt": "2026-08-29T09:14:00+05:30"
+    },
+    {
+      "key": "linkedin:4457757303",
+      "company": "NEMA AI",
+      "title": "Business & Market Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/business-market-analyst-intern-at-nema-ai-4457757303",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4460116356",
+      "company": "Level AI",
+      "title": "AI Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4460116356/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4458944154",
+      "company": "eazyway.io via Hyrn.ai",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-eazyway-io-4458944154",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4458370155",
+      "company": "Metasys Technologies",
+      "title": "Data & Analytics Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4458370155/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4459619333",
+      "company": "Amazon",
+      "title": "Business Analyst · OHL",
+      "url": "https://www.linkedin.com/jobs/view/4459619333/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4427566257",
+      "company": "Fulfil",
+      "title": "Product Consultant · Associate, Sep 2026 Start",
+      "url": "https://www.linkedin.com/jobs/view/4427566257/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "audit:kroll:21014026",
+      "company": "Kroll",
+      "title": "Business Intelligence Analyst I · Technology",
+      "url": "https://careers.kroll.com/en/job/mumbai/business-intelligence-analyst-i-technology/21014026",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4457418538",
+      "company": "Skydo",
+      "title": "Operations Associate",
+      "url": "https://www.linkedin.com/jobs/view/4457418538/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4457466479",
+      "company": "SmartHelio",
+      "title": "Junior Marketing Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4457466479/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4456871220",
+      "company": "Wind Pioneers",
+      "title": "Intern · Wind Data Management",
+      "url": "https://www.linkedin.com/jobs/view/4456871220/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4456639524",
+      "company": "Onified.ai",
+      "title": "Business Analyst · Enterprise Applications",
+      "url": "https://www.linkedin.com/jobs/view/4456639524/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4458101890",
+      "company": "MetLife",
+      "title": "Associate Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4458101890/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4456818373",
+      "company": "Convin",
+      "title": "Data Labs Intern",
+      "url": "https://www.linkedin.com/jobs/view/4456818373/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4456695964",
+      "company": "Enfinity Global",
+      "title": "Financial Analyst · Renewable Energy",
+      "url": "https://www.linkedin.com/jobs/view/4456695964/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4456627398",
+      "company": "Scouto AI",
+      "title": "HR Analytics Trainee",
+      "url": "https://in.linkedin.com/jobs/view/hr-analytics-trainee-b-tech-%2B-mba-at-scouto-ai-4456627398",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4455499899",
+      "company": "Vedantu",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-vedantu-4455499899",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4456083798",
+      "company": "EcoRatings",
+      "title": "ESG Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/esg-business-analyst-at-ecoratings-4456083798",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "linkedin:4457340296",
+      "company": "Fam",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-fam-4457340296",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-03T17:31:42+05:30"
     }
   ]
 }
