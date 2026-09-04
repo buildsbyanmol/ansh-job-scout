@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T11:03:06+05:30",
+  "updatedAt": "2026-09-04T11:08:39+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,17 +9,17 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-09-04T11:03:06+05:30",
-    "activeRoles": 114,
-    "tier1Roles": 51,
-    "closedOrInvalidated": 69,
+    "completedAt": "2026-09-04T11:08:39+05:30",
+    "activeRoles": 65,
+    "tier1Roles": 33,
+    "closedOrInvalidated": 118,
     "linkAudit": "passed",
     "materialChanges": true
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "Resume the rate-limited past-24-hour LinkedIn matrix at the oldest failed page after cooldown, beginning with Business Analyst in Delhi at start 0, and rerun every failed matrix page without assuming coverage from search snippets. Then continue current normal-post variants, authenticated Instahyre, deeper Cutshort and Wellfound traversal, specialist detail recovery, broad portals, employer ATS pages, missing-listing trails, and the complete active-link audit."
+    "notes": "Apply the user-requested eight-day freshness rule before each sweep. Resume the rate-limited past-24-hour LinkedIn matrix at the oldest failed page after cooldown, beginning with Business Analyst in Delhi at start 0, and rerun every failed matrix page without assuming coverage from search snippets. Then continue current normal-post variants, authenticated Instahyre, deeper Cutshort and Wellfound traversal, specialist detail recovery, broad portals, employer ATS pages, missing-listing trails, and the complete active-link audit."
   },
   "sourceLanes": [
     {

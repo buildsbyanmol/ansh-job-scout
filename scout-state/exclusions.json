@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T11:03:06+05:30",
+  "updatedAt": "2026-09-04T11:08:39+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -905,6 +905,398 @@
       "url": "https://careers.blackrock.com/job/bengaluru/analyst-data-management/45831/99710028864",
       "reason": "fresh_active_link_audit_found_closed_or_unavailable",
       "lastCheckedAt": "2026-09-04T11:03:06+05:30"
+    },
+    {
+      "key": "freshness:weblink-in:1454345",
+      "company": "Weblink.In",
+      "title": "Data Analyst",
+      "url": "https://jobs.weblink.in/vacancy-detail-1454345.htm",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458244263",
+      "company": "Arrow Electronics",
+      "title": "Business Intelligence (BI) Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-intelligence-bi-analyst-at-arrow-electronics-4458244263",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4459068990",
+      "company": "myfollo.com",
+      "title": "Market Research Intern",
+      "url": "https://www.linkedin.com/jobs/view/4459068990/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4459394913",
+      "company": "Surya Sangam",
+      "title": "Data & AI Intern",
+      "url": "https://www.linkedin.com/jobs/view/4459394913/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4459186304",
+      "company": "OnGrid",
+      "title": "Analyst I · Operations Quality Assurance",
+      "url": "https://www.linkedin.com/jobs/view/4459186304/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457264197",
+      "company": "NuvoRetail",
+      "title": "E-Commerce Analyst Trainee / Intern",
+      "url": "https://www.linkedin.com/jobs/view/4457264197/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4459174338",
+      "company": "Fortrea",
+      "title": "Clinical Data Analyst · CPS Data Management",
+      "url": "https://www.linkedin.com/jobs/view/4459174338/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:registerkaro:data-analyst",
+      "company": "RegisterKaro",
+      "title": "Data Analyst",
+      "url": "https://cutshort.io/job/Data-Analyst-Gurugram-RegisterKaro-axh2tgpr",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457287278",
+      "company": "Mobility Global",
+      "title": "Automotive Market Analyst · India & ASEAN",
+      "url": "https://www.linkedin.com/jobs/view/4457287278/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4459168307",
+      "company": "HPE Aruba Networking",
+      "title": "Sales Process Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4459168307/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457286369",
+      "company": "RWS",
+      "title": "Associate Pricing Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4457286369/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4459076409",
+      "company": "Talview",
+      "title": "Business Analytics Internship",
+      "url": "https://www.linkedin.com/jobs/view/4459076409/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4459333269",
+      "company": "Numerix",
+      "title": "Market Data Ops Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4459333269/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:paytm:deputy-manager-data-analyst-finance",
+      "company": "Paytm",
+      "title": "Deputy Manager · Data Analyst, Finance",
+      "url": "https://jobs.lever.co/paytm/494a9ea6-28af-4334-b887-5d1e6b57060c",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456598933",
+      "company": "Zebra Technologies",
+      "title": "Data Engineer.I · Power BI",
+      "url": "https://www.linkedin.com/jobs/view/4456598933/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457677679",
+      "company": "Trelleborg Group",
+      "title": "Business Intelligence Specialist",
+      "url": "https://www.linkedin.com/jobs/view/4457677679/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458713885",
+      "company": "Target",
+      "title": "Data Analyst · Fresh Repost",
+      "url": "https://www.linkedin.com/jobs/view/4458713885/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458759444",
+      "company": "CSK Technologies OPC Private Limited",
+      "title": "Data Analyst Intern",
+      "url": "https://www.linkedin.com/jobs/view/4458759444/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456579515",
+      "company": "Counterpoint Research",
+      "title": "Research Associate · Consumer IoT",
+      "url": "https://www.linkedin.com/jobs/view/4456579515/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458734529",
+      "company": "FRND",
+      "title": "Strategy Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4458734529/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458159550",
+      "company": "Origin",
+      "title": "Supply Chain Planning Intern",
+      "url": "https://www.linkedin.com/jobs/view/4458159550/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457415315",
+      "company": "Precision AQ",
+      "title": "Reporting Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4457415315/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458239571",
+      "company": "United Airlines India Knowledge Center",
+      "title": "Analyst · Tech Ops Business Intelligence",
+      "url": "https://www.linkedin.com/jobs/view/4458239571/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456883403",
+      "company": "Goldman Sachs",
+      "title": "Engineering · Data Quality & Governance Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4456883403/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457411067",
+      "company": "Glean",
+      "title": "AI Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4457411067/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456876533",
+      "company": "American Express",
+      "title": "Analyst · Data Analytics",
+      "url": "https://www.linkedin.com/jobs/view/4456876533/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456875371",
+      "company": "Lowe's India",
+      "title": "IND · Associate Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4456875371/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456880511",
+      "company": "American Express",
+      "title": "Analyst · Data Governance & Management",
+      "url": "https://www.linkedin.com/jobs/view/4456880511/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458184811",
+      "company": "Nexdigm",
+      "title": "Trainee · Market Research",
+      "url": "https://www.linkedin.com/jobs/view/4458184811/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458188813",
+      "company": "HSBC",
+      "title": "Analyst · Front to Back Data Control",
+      "url": "https://www.linkedin.com/jobs/view/4458188813/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458166880",
+      "company": "Gunnebo Entrance Control",
+      "title": "BI Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4458166880/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:swiss-re:1428981633",
+      "company": "Swiss Re",
+      "title": "Business Services Analyst I",
+      "url": "https://careers.swissre.com/job/Bangalore-Business-Services-Analyst-I-KA/1428981633/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457890473",
+      "company": "Goldman Sachs via IMA India",
+      "title": "AWM Engineering & Operations Finance Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4457890473/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4458152108",
+      "company": "Cloudstaff",
+      "title": "Sales Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4458152108/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4420945146",
+      "company": "Ethos",
+      "title": "Junior Revenue Operations Associate",
+      "url": "https://www.linkedin.com/jobs/view/4420945146/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4411624476",
+      "company": "NTT DATA North America",
+      "title": "BPO Trade Settlement Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4411624476/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4423935179",
+      "company": "RSM US LLP",
+      "title": "Billing Associate 1",
+      "url": "https://www.linkedin.com/jobs/view/4423935179/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456632608",
+      "company": "Festo India",
+      "title": "HR Intern · Operations & Analytics",
+      "url": "https://www.linkedin.com/jobs/view/4456632608/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4445224278",
+      "company": "PW (PhysicsWallah)",
+      "title": "Management Intern",
+      "url": "https://www.linkedin.com/jobs/view/4445224278/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4455046513",
+      "company": "Dalm",
+      "title": "Data Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4455046513/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:seasoul-cosmetics:1787402097",
+      "company": "Seasoul Cosmetics",
+      "title": "Associate · Finance & Accounts Intern",
+      "url": "https://internshala.com/internship/detail/associate--finance-accounts-internship-in-gurgaon-at-seasoul-cosmetics-private-limited1787402097",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4456682826",
+      "company": "RWS",
+      "title": "AI Data Specialist · Kannada",
+      "url": "https://www.linkedin.com/jobs/view/4456682826/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:the-pet-point:1787386549",
+      "company": "The Pet Point",
+      "title": "Supply Chain & Logistics Operations Intern",
+      "url": "https://internshala.com/internship/detail/supply-chain-logistics-operations-internship-in-delhi-at-the-pet-point-private-limited1787386549",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457801564",
+      "company": "Aon",
+      "title": "Analyst II · Innovation & Solutions",
+      "url": "https://in.linkedin.com/jobs/view/analyst-ii-innovation-solutions-at-aon-4457801564",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:joveo:1787384423",
+      "company": "Joveo",
+      "title": "Operations & Strategy Intern",
+      "url": "https://internshala.com/internship/detail/operations-strategy-intern-internship-in-bangalore-at-joveo1787384423",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4447524983",
+      "company": "SimCorp",
+      "title": "Financial Data Analyst · Reference Data",
+      "url": "https://in.linkedin.com/jobs/view/financial-data-analyst-reference-data-financial-instruments-at-simcorp-4447524983",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:mai-labs:1787379827",
+      "company": "MAI Labs",
+      "title": "Founder’s Office · Growth, Content & AI Research Intern",
+      "url": "https://internshala.com/internship/detail/founders-office-growth-content-ai-research-internship-in-multiple-locations-at-mai-labs1787379827",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:times-internet:1787299050",
+      "company": "Times Internet",
+      "title": "Ad Operations & Revenue Optimization Intern",
+      "url": "https://internshala.com/internship/detail/ad-operations-revenue-optimization-internship-in-noida-at-times-internet-limited1787299050",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "freshness:edubridge:1787306897",
+      "company": "EduBridge",
+      "title": "Market Research Intern",
+      "url": "https://internshala.com/internship/detail/market-research-internship-in-gurgaon-at-edubridge1787306897",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-04T11:08:39+05:30"
     }
   ]
 }
