@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-03T17:31:42+05:30",
+  "updatedAt": "2026-09-04T11:03:06+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,10 +9,10 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-09-03T17:31:42+05:30",
-    "activeRoles": 115,
+    "completedAt": "2026-09-04T11:03:06+05:30",
+    "activeRoles": 114,
     "tier1Roles": 51,
-    "closedOrInvalidated": 68,
+    "closedOrInvalidated": 69,
     "linkAudit": "passed",
     "materialChanges": true
   },
@@ -26,15 +26,15 @@
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-09-03T17:31:42+05:30",
+      "lastAttemptAt": "2026-09-04T11:03:06+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. This morning's fresh indexed-role sweep confirmed Target as a duplicate, found Enerture and Care.fi closed, and removed SmartQ when its current page no longer exposed a live apply control. Level AI and eazyway.io were directly rechecked with live apply controls. The full failed matrix remains the next LinkedIn Jobs priority. Fresh audit archived 18 listings whose direct route is now closed or unavailable."
+      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. This morning's fresh indexed-role sweep confirmed Target as a duplicate, found Enerture and Care.fi closed, and removed SmartQ when its current page no longer exposed a live apply control. Level AI and eazyway.io were directly rechecked with live apply controls. The full failed matrix remains the next LinkedIn Jobs priority. Fresh audit archived 18 listings whose direct route is now closed or unavailable. The 4 Sep normal-post sweep only surfaced one-month-old posts or routes without a verifiable current employer listing; no role was added. Fresh audit archived 1 listings whose direct route is now closed or unavailable."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-08-29T08:55:00+05:30",
+      "lastAttemptAt": "2026-09-04T09:18:00+05:30",
       "resumeFrom": "fresh employee, recruiter, founder, and company posts using reporting, MIS, RevOps, risk, data engineering, fresher, graduate, referral, SQL, Python, and Power BI variants after indexing refreshes",
       "notes": "Fresh normal hiring-post searches were run independently from LinkedIn Jobs across data, BI, MIS, risk, operations, SQL, Python, Power BI, fresher, graduate, intern, referral, recruiter, and founder variants. Results were older repost farms, undated comment-to-DM posts, or previously known roles; no post-only opportunity passed the current-original-post and usable-route gates."
     },

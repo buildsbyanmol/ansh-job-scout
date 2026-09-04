@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-03T17:31:42+05:30",
+  "updatedAt": "2026-09-04T11:03:06+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -897,6 +897,14 @@
       "url": "https://in.linkedin.com/jobs/view/data-analyst-at-fam-4457340296",
       "reason": "fresh_active_link_audit_found_closed_or_unavailable",
       "lastCheckedAt": "2026-09-03T17:31:42+05:30"
+    },
+    {
+      "key": "audit:blackrock-preqin:99710028864",
+      "company": "BlackRock · Preqin",
+      "title": "Analyst · Data Management",
+      "url": "https://careers.blackrock.com/job/bengaluru/analyst-data-management/45831/99710028864",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-04T11:03:06+05:30"
     }
   ]
 }

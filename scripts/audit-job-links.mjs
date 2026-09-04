@@ -87,15 +87,18 @@ async function audit(job) {
     const browserVerifiedToday = job.browserVerifiedDate === todayInIndia;
     const closureText = /no longer accepting applications|this job is (?:no longer available|closed|expired)|job has expired/.test(body);
     const hardClosed = [404, 410].includes(response.status) || redirectedToExpiredSearch || linkedInJobRedirectedAway || (closureText && !browserVerifiedToday);
+    const browserVerifiedRateLimit = response.status === 429 && browserVerifiedToday;
     const indeedAutomationGate = /(^|\.)indeed\.com$/.test(new URL(job.url).hostname)
       && /^[0-9a-f]{16}$/.test(new URL(job.url).searchParams.get('jk') || '')
       && [401, 403].includes(response.status)
-      && job.browserVerifiedDate === todayInIndia;
+      && browserVerifiedToday;
     return {
       ...job,
-      result: hardClosed ? 'CLOSED' : response.ok || indeedAutomationGate ? 'OK' : 'CHECK',
+      result: hardClosed ? 'CLOSED' : response.ok || indeedAutomationGate || browserVerifiedRateLimit ? 'OK' : 'CHECK',
       finalUrl,
-      detail: indeedAutomationGate
+      detail: browserVerifiedRateLimit
+        ? `HTTP 429 rate limit; browser verified ${job.browserVerifiedDate}`
+        : indeedAutomationGate
         ? `HTTP ${response.status} automation gate; browser verified ${job.browserVerifiedDate}`
         : `HTTP ${response.status}${finalUrl !== job.url ? ' redirected' : ''}`,
     };
