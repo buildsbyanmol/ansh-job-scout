@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T11:08:39+05:30",
+  "updatedAt": "2026-09-05T12:23:38+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,26 +9,26 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-09-04T11:08:39+05:30",
-    "activeRoles": 65,
-    "tier1Roles": 33,
-    "closedOrInvalidated": 118,
+    "completedAt": "2026-09-05T12:23:38+05:30",
+    "activeRoles": 58,
+    "tier1Roles": 30,
+    "closedOrInvalidated": 125,
     "linkAudit": "passed",
     "materialChanges": true
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "Apply the user-requested eight-day freshness rule before each sweep. Resume the rate-limited past-24-hour LinkedIn matrix at the oldest failed page after cooldown, beginning with Business Analyst in Delhi at start 0, and rerun every failed matrix page without assuming coverage from search snippets. Then continue current normal-post variants, authenticated Instahyre, deeper Cutshort and Wellfound traversal, specialist detail recovery, broad portals, employer ATS pages, missing-listing trails, and the complete active-link audit."
+    "notes": "Apply the user-requested eight-day freshness rule before each sweep. Apply the user-requested eight-day freshness rule before each sweep. Resume the rate-limited past-24-hour LinkedIn matrix at the oldest failed page after cooldown, beginning with Business Analyst in Delhi at start 0, and rerun every failed matrix page without assuming coverage from search snippets. Then continue current normal-post variants, authenticated Instahyre, deeper Cutshort and Wellfound traversal, specialist detail recovery, broad portals, employer ATS pages, missing-listing trails, and the complete active-link audit."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-09-04T11:03:06+05:30",
+      "lastAttemptAt": "2026-09-05T12:23:38+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. This morning's fresh indexed-role sweep confirmed Target as a duplicate, found Enerture and Care.fi closed, and removed SmartQ when its current page no longer exposed a live apply control. Level AI and eazyway.io were directly rechecked with live apply controls. The full failed matrix remains the next LinkedIn Jobs priority. Fresh audit archived 18 listings whose direct route is now closed or unavailable. The 4 Sep normal-post sweep only surfaced one-month-old posts or routes without a verifiable current employer listing; no role was added. Fresh audit archived 1 listings whose direct route is now closed or unavailable."
+      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. This morning's fresh indexed-role sweep confirmed Target as a duplicate, found Enerture and Care.fi closed, and removed SmartQ when its current page no longer exposed a live apply control. Level AI and eazyway.io were directly rechecked with live apply controls. The full failed matrix remains the next LinkedIn Jobs priority. Fresh audit archived 18 listings whose direct route is now closed or unavailable. The 4 Sep normal-post sweep only surfaced one-month-old posts or routes without a verifiable current employer listing; no role was added. Fresh audit archived 1 listings whose direct route is now closed or unavailable. Fresh audit archived 1 listings whose direct route is now closed or unavailable. Fresh audit archived 1 listings whose direct route is now closed or unavailable."
     },
     {
       "id": "linkedin_normal_posts",

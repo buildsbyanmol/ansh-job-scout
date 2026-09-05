@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T11:08:39+05:30",
+  "updatedAt": "2026-09-05T12:23:38+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -1297,6 +1297,62 @@
       "url": "https://internshala.com/internship/detail/market-research-internship-in-gurgaon-at-edubridge1787306897",
       "reason": "older_than_8_days_user_requested",
       "lastCheckedAt": "2026-09-04T11:08:39+05:30"
+    },
+    {
+      "key": "linkedin:4457755904",
+      "company": "Mastercard",
+      "title": "Associate Analyst · Analytics & Metrics",
+      "url": "https://in.linkedin.com/jobs/view/associate-analyst-analytics-metrics-at-mastercard-4457755904",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-05T12:20:01+05:30"
+    },
+    {
+      "key": "linkedin:4457906374",
+      "company": "Wissen Technology",
+      "title": "MIS Executive / Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4457906374/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-05T12:20:01+05:30"
+    },
+    {
+      "key": "linkedin:4432268939",
+      "company": "Clearwater Analytics",
+      "title": "Reconciliation Associate",
+      "url": "https://www.linkedin.com/jobs/view/4432268939/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-05T12:20:01+05:30"
+    },
+    {
+      "key": "linkedin:4459663591",
+      "company": "Intralox",
+      "title": "Junior BI Developer / Data Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4459663591/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-05T12:20:01+05:30"
+    },
+    {
+      "key": "linkedin:4458377422",
+      "company": "Lowe's India",
+      "title": "Analyst · Supply Chain",
+      "url": "https://www.linkedin.com/jobs/view/4458377422/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-09-05T12:20:01+05:30"
+    },
+    {
+      "key": "linkedin:4449326708",
+      "company": "shopflo",
+      "title": "Product Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/product-analyst-intern-at-shopflo-4449326708",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-05T12:21:31+05:30"
+    },
+    {
+      "key": "linkedin:4454179382",
+      "company": "Pine Labs",
+      "title": "Product Analyst - Payments",
+      "url": "https://in.linkedin.com/jobs/view/product-analyst-payments-at-pine-labs-4454179382",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-05T12:23:38+05:30"
     }
   ]
 }
