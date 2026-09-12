@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-05T12:23:38+05:30",
+  "updatedAt": "2026-09-12T22:18:32+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -1353,6 +1353,38 @@
       "url": "https://in.linkedin.com/jobs/view/product-analyst-payments-at-pine-labs-4454179382",
       "reason": "fresh_active_link_audit_found_closed_or_unavailable",
       "lastCheckedAt": "2026-09-05T12:23:38+05:30"
+    },
+    {
+      "key": "linkedin:4450104839",
+      "company": "Times Internet",
+      "title": "Associate Product Analyst",
+      "url": "https://in.linkedin.com/jobs/view/associate-product-analyst-consultant-0-2-years-experience-timesofindia-com-noida-at-times-internet-4450104839",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-12T22:18:32+05:30"
+    },
+    {
+      "key": "linkedin:4454344031",
+      "company": "gnani.ai",
+      "title": "Business Analytics Internship",
+      "url": "https://in.linkedin.com/jobs/view/business-analytics-internship-in-bangalore-at-gnani-ai-4454344031",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-12T22:18:32+05:30"
+    },
+    {
+      "key": "audit:appsforbharat:business-analytics-intern",
+      "company": "AppsForBharat",
+      "title": "Business Analytics Intern",
+      "url": "https://careers.kula.ai/appsforbharat/52476?jobs=true",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-12T22:18:32+05:30"
+    },
+    {
+      "key": "linkedin:4454760462",
+      "company": "Codemonk",
+      "title": "Product / Business Analyst Intern",
+      "url": "https://www.linkedin.com/jobs/view/4454760462/",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-12T22:18:32+05:30"
     }
   ]
 }
