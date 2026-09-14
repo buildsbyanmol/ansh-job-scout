@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T22:18:32+05:30",
+  "updatedAt": "2026-09-14T09:10:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,12 +9,12 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-09-12T22:18:32+05:30",
+    "completedAt": "2026-09-14T09:10:00+05:30",
     "activeRoles": 54,
     "tier1Roles": 27,
     "closedOrInvalidated": 129,
-    "linkAudit": "pending-rerun",
-    "materialChanges": true
+    "linkAudit": "passed",
+    "materialChanges": false
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
