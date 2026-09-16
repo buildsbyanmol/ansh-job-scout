@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T22:18:32+05:30",
+  "updatedAt": "2026-09-16T19:03:12+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -1385,6 +1385,14 @@
       "url": "https://www.linkedin.com/jobs/view/4454760462/",
       "reason": "fresh_active_link_audit_found_closed_or_unavailable",
       "lastCheckedAt": "2026-09-12T22:18:32+05:30"
+    },
+    {
+      "key": "linkedin:4457500483",
+      "company": "NTT DATA",
+      "title": "Digital Technology Junior Analyst",
+      "url": "https://in.linkedin.com/jobs/view/digital-technology-junior-analyst-at-ntt-data-north-america-4457500483",
+      "reason": "fresh_active_link_audit_found_closed_or_unavailable",
+      "lastCheckedAt": "2026-09-16T19:03:12+05:30"
     }
   ]
 }
