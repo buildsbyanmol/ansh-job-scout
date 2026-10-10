@@ -18,33 +18,72 @@ const months = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7,
 const strip = value => value.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
 const escape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-function extractDatedFreshness(body) {
-  const text = strip(body).toLowerCase();
-  const match = text.match(/(?:posted|fresh|indexed|reposted)\s+(\d{1,2})\s+(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(?:\s+(20\d{2}))?/i);
+function parseDate(match, defaultYear = indiaToday.getFullYear()) {
   if (!match) return null;
   const monthKey = match[2].slice(0, 3).toLowerCase();
-  const year = Number(match[3] || indiaToday.getFullYear());
+  const year = Number(match[3] || defaultYear);
   return new Date(year, months[monthKey], Number(match[1]));
 }
 
+function extractVerifiedAt(body, snapshotDate, fallbackDate) {
+  const text = strip(body);
+  const full = text.match(/(?:rechecked|checked)\s+(\d{1,2})\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:\s+(20\d{2}))?/i);
+  if (full) return parseDate(full, snapshotDate.getFullYear());
+  const iso = text.match(/(?:rechecked|checked)\s+(20\d{2})-(\d{2})-(\d{2})/i);
+  if (iso) return new Date(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3]));
+  return fallbackDate || snapshotDate;
+}
+
+function extractDatedFreshness(body, snapshotDate, fallbackDate) {
+  const text = strip(body);
+  const absolute = text.match(/(?:posted|fresh|indexed|reposted)\s+(\d{1,2})\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:\s+(20\d{2}))?/i);
+  if (absolute) return { postedOn: parseDate(absolute, snapshotDate.getFullYear()), reason: 'older_than_window' };
+
+  const relative = text.match(/(?:posted|fresh|indexed|reposted)\s+(\d+)\s+(hour|day|week|month)s?\s+(?:ago|before verification)/i);
+  if (relative) {
+    const verifiedAt = extractVerifiedAt(body, snapshotDate, fallbackDate);
+    const amount = Number(relative[1]);
+    const unit = relative[2].toLowerCase();
+    const daysAgo = unit === 'hour' ? amount / 24 : unit === 'day' ? amount : unit === 'week' ? amount * 7 : amount * 30;
+    const postedOn = new Date(verifiedAt);
+    postedOn.setDate(postedOn.getDate() - Math.ceil(daysAgo));
+    return { postedOn, reason: 'older_than_window' };
+  }
+
+  const deadline = text.match(/apply by\s+(\d{1,2})\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:\s+(20\d{2}))?/i);
+  if (deadline) {
+    const applyBy = parseDate(deadline, snapshotDate.getFullYear());
+    if (applyBy < indiaToday) return { postedOn: applyBy, reason: 'application_deadline_passed' };
+  }
+
+  const verifiedAt = extractVerifiedAt(body, snapshotDate, fallbackDate);
+  if (verifiedAt < cutoff) return { postedOn: verifiedAt, reason: 'freshness_unverified_for_eight_days' };
+  return null;
+}
+
 let html = await readFile(boardPath, 'utf8');
+const state = JSON.parse(await readFile(statePath, 'utf8'));
+const snapshotMatch = strip(html.match(/Evidence snapshot[\s\S]*?<strong>([\s\S]*?)<\/strong>/)?.[1] || '').match(/(\d{1,2})\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:\s+(20\d{2}))?/i);
+const snapshotDate = snapshotMatch ? parseDate(snapshotMatch) : new Date(indiaToday);
+const fallbackRunDate = state.lastRun?.completedAt ? new Date(state.lastRun.completedAt.slice(0, 10) + 'T00:00:00') : snapshotDate;
 const archived = [];
 html = html.replace(/\n?\s*<article class="card"([^>]*)>([\s\S]*?)<\/article>/g, (whole, attrs, body) => {
-  const postedOn = extractDatedFreshness(body);
-  if (!postedOn || postedOn >= cutoff) return whole;
+  const freshness = extractDatedFreshness(body, snapshotDate, fallbackRunDate);
+  if (!freshness || freshness.postedOn >= cutoff) return whole;
   const company = strip(body.match(/<div class="company">([\s\S]*?)<\/div>/)?.[1] || 'Unknown company');
   const title = strip(body.match(/<h3>([\s\S]*?)<\/h3>/)?.[1] || 'Unknown role');
   const link = body.match(/<a class="open-link" href="([^"]+)"/)?.[1] || '';
   const location = strip(body.match(/<span class="chip">([\s\S]*?)<\/span>/)?.[1] || 'Location not stated');
   const tier = Number(attrs.match(/data-tier="(\d+)"/)?.[1] || 3);
-  archived.push({ company, title, link, location, tier, postedOn });
+  archived.push({ company, title, link, location, tier, postedOn: freshness.postedOn, reason: freshness.reason });
   return '\n';
 });
 if (!archived.length) {
   console.log(`No explicitly dated cards older than ${days} days.`);
   process.exit(0);
 }
-const rows = archived.map(job => `      <div class="archive-row">\n        <div><div class="company">${escape(job.company)}</div><h3>${escape(job.title)}</h3><p>${escape(job.location)} · Direct listing</p></div>\n        <div><span class="status closed">Archived</span><p style="margin-top:7px">Published ${new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(job.postedOn)}. Archived under the eight-day freshness rule.</p></div>\n        <div><p><strong>Archived ${displayDate}</strong></p><a href="${job.link}" target="_blank" rel="noopener">View archived URL ↗</a></div>\n      </div>`).join('\n');
+const reasonText = reason => reason === 'application_deadline_passed' ? 'Application deadline passed.' : reason === 'freshness_unverified_for_eight_days' ? 'No posting date or source verification within the last eight days could be confirmed; archived until refreshed.' : `Last evidenced posting date was ${new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(archived.find(job => job.reason === reason)?.postedOn || indiaToday)}.`;
+const rows = archived.map(job => `      <div class="archive-row">\n        <div><div class="company">${escape(job.company)}</div><h3>${escape(job.title)}</h3><p>${escape(job.location)} · Direct listing</p></div>\n        <div><span class="status closed">Archived</span><p style="margin-top:7px">${escape(reasonText(job.reason))} Archived under the eight-day freshness rule.</p></div>\n        <div><p><strong>Archived ${displayDate}</strong></p><a href="${job.link}" target="_blank" rel="noopener">View archived URL ↗</a></div>\n      </div>`).join('\n');
 html = html.replace(/(<summary>Closed or invalidated \()(\d+)(\)<\/summary>)/, (_, before, count, after) => `${before}${Number(count) + archived.length}${after}\n${rows}`);
 const active = [...html.matchAll(/<article class="card"/g)].length;
 const tier1 = [...html.matchAll(/<article class="card"[^>]*data-tier="1"/g)].length;
@@ -57,14 +96,14 @@ const exclusions = JSON.parse(await readFile(exclusionsPath, 'utf8'));
 for (const job of archived) {
   const id = job.link.match(/(\d{7,})(?:\D*$)/)?.[1];
   const key = job.link.includes('linkedin.com') && id ? `linkedin:${id}` : `freshness:${job.company.toLowerCase().replace(/[^a-z0-9]+/g, '-')}:${id || job.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-  if (!exclusions.entries.some(entry => entry.key === key)) exclusions.entries.push({ key, company: job.company, title: job.title, url: job.link, reason: `older_than_${days}_days_user_requested`, lastCheckedAt: timestamp });
+  if (!exclusions.entries.some(entry => entry.key === key)) exclusions.entries.push({ key, company: job.company, title: job.title, url: job.link, reason: job.reason === 'application_deadline_passed' ? job.reason : `older_than_${days}_days_user_requested`, lastCheckedAt: timestamp });
 }
 exclusions.updatedAt = timestamp;
 await writeFile(exclusionsPath, `${JSON.stringify(exclusions, null, 2)}\n`);
 
-const state = JSON.parse(await readFile(statePath, 'utf8'));
 state.updatedAt = timestamp;
 state.lastRun = { ...state.lastRun, completedAt: timestamp, activeRoles: active, tier1Roles: tier1, closedOrInvalidated: state.lastRun.closedOrInvalidated + archived.length, linkAudit: 'pending-rerun', materialChanges: true };
-state.nextRun.notes = `Apply the user-requested eight-day freshness rule before each sweep. ${state.nextRun.notes}`;
+state.nextRun.notes = state.nextRun.notes.replace(/^(?:Apply the user-requested eight-day freshness rule before each sweep\.\s*)+/, '');
+state.nextRun.notes = `Eight-day freshness filter archived ${archived.length} listings on ${displayDate}. ${state.nextRun.notes}`;
 await writeFile(statePath, `${JSON.stringify(state, null, 2)}\n`);
-console.log(`Archived ${archived.length} explicitly dated roles older than ${days} days. ${active} active roles remain.`);
+console.log(`Archived ${archived.length} stale or expired roles under the ${days}-day freshness rule. ${active} active roles remain.`);

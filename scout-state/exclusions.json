@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T19:03:12+05:30",
+  "updatedAt": "2026-10-10T19:02:13+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -1393,6 +1393,430 @@
       "url": "https://in.linkedin.com/jobs/view/digital-technology-junior-analyst-at-ntt-data-north-america-4457500483",
       "reason": "fresh_active_link_audit_found_closed_or_unavailable",
       "lastCheckedAt": "2026-09-16T19:03:12+05:30"
+    },
+    {
+      "key": "freshness:target:0000430083",
+      "company": "Target",
+      "title": "Analyst · Promotions Insight",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Promotions-Insight_R0000430083",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:cityfurnish:data-analytics-ai-specialist",
+      "company": "Cityfurnish",
+      "title": "Data Analytics AI Specialist",
+      "url": "https://www.ycombinator.com/companies/cityfurnish/jobs/PzrSF3R-data-analytics-ai-specialist",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:athelas:data-operation-analyst-india",
+      "company": "Athelas",
+      "title": "Data Operation Analyst · India",
+      "url": "https://www.ycombinator.com/companies/athelas/jobs/SH6TOk1-data-operation-analyst-india",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:enerjazz:mis-process-excellence-automation-associate",
+      "company": "Enerjazz",
+      "title": "MIS, Process Excellence & Automation Associate",
+      "url": "https://www.ycombinator.com/companies/enerjazz/jobs/n4mXsBx-mis-process-excellence-automation-associate",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:topgrep-tech-private-limited:junior-power-bi-developer-analyst",
+      "company": "TopGrep Tech Private Limited",
+      "title": "Junior Power BI Developer / Analyst",
+      "url": "https://cutshort.io/job/Junior-Power-BI-Developer-Analyst-Bengaluru-Bangalore-Hyderabad-TopGrep-Tech-Private-Limited-OqBf0wWA",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:wissen-technology:data-analyst",
+      "company": "Wissen Technology",
+      "title": "Data Analyst",
+      "url": "https://cutshort.io/job/Data-Analyst-Bengaluru-Bangalore-Wissen-Technology-luTl05SY",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:stanza-living:data-analyst",
+      "company": "Stanza Living",
+      "title": "Data Analyst",
+      "url": "https://cutshort.io/job/Data-Analyst-Gurugram-Stanza-Living-EKjWJNY4",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:planetspark:data-analytics-data-analyst",
+      "company": "PlanetSpark",
+      "title": "Data Analytics · Data Analyst",
+      "url": "https://cutshort.io/job/Data-Analytics-Gurugram-Planet-Spark-ehIySmHq",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:jll:apprentice-mis-data-analyst",
+      "company": "JLL",
+      "title": "Apprentice · MIS Data Analyst",
+      "url": "https://jll.wd1.myworkdayjobs.com/en-US/jllcareers/job/Apprentice---MIS-Data-Analyst_REQ523162",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4380669180",
+      "company": "Khan Academy",
+      "title": "Monitoring & Evaluation Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4380669180/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:ally-software-llp:business-analyst",
+      "company": "Ally Software LLP",
+      "title": "Business Analyst",
+      "url": "https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-Ally-Software-LLP-pW1lAQQi",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:neolytix:rcm-mis-reporting-analyst",
+      "company": "Neolytix",
+      "title": "RCM MIS & Reporting Analyst",
+      "url": "https://careers.neolytix.com/apply/sZlpkv9mMS/RCM-MIS-Reporting-Analyst",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:kroll:21014613",
+      "company": "Kroll",
+      "title": "Analyst · Restructuring India",
+      "url": "https://careers.kroll.com/en/job/new-delhi/analyst-restructuring-india/21014613",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:ameriprise-financial:data-analyst",
+      "company": "Ameriprise Financial",
+      "title": "Data Analyst",
+      "url": "https://ameriprise.wd5.myworkdayjobs.com/en-US/Ameriprise/job/Gurugram-Haryana-India/Data-Analyst_R26_2684",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:labcorp:2627317",
+      "company": "Labcorp",
+      "title": "Data Analyst Entry",
+      "url": "https://labcorp.wd1.myworkdayjobs.com/External/job/Bengaluru-India/Data-Analyst-Entry_2627317",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4428229053",
+      "company": "IHG Hotels & Resorts",
+      "title": "Revenue Navigator Program Trainee",
+      "url": "https://in.linkedin.com/jobs/view/revenue-navigator-program-trainee-india-at-ihg-hotels-resorts-4428229053",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:isourse:1787302094",
+      "company": "Isourse",
+      "title": "Business Analytics Intern",
+      "url": "https://internshala.com/internship/detail/business-analytics-internship-in-dwarka-at-isourse1787302094",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:suvitt-service-solutions:1787285507",
+      "company": "Suvitt Service Solutions",
+      "title": "AI Automation Intern",
+      "url": "https://internshala.com/internship/detail/ai-automation-internship-in-gurgaon-at-suvitt-service-solutions-llp1787285507",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:jarvis-technology-strategy-consulting:1787392038",
+      "company": "Jarvis Technology & Strategy Consulting",
+      "title": "Operations Intern",
+      "url": "https://internshala.com/internship/detail/operations-internship-in-delhi-at-jarvis-technology-strategy-consulting1787392038",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:zaprev-nitin-choudhary:1787301138",
+      "company": "Zaprev / Nitin Choudhary",
+      "title": "Growth Marketing Intern",
+      "url": "https://internshala.com/internship/detail/growth-marketing-internship-in-gurgaon-at-nitin-choudhary1787301138",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4456635521",
+      "company": "Thoughts2Binary",
+      "title": "Functional Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/functional-business-analyst-at-thoughts2binary-4456635521",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4456639946",
+      "company": "AMONGST",
+      "title": "Founder’s Office Intern · Growth & Operations",
+      "url": "https://in.linkedin.com/jobs/view/founder-s-office-intern-growth-operations-at-amongst-4456639946",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4456010848",
+      "company": "American Express",
+      "title": "Apprentice · Product & Analytics",
+      "url": "https://in.linkedin.com/jobs/view/apprentice-at-american-express-4456010848",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4446579538",
+      "company": "EXL",
+      "title": "Associate · Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/associate-business-analyst-at-exl-4446579538",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:bxp-support-and-solutions:1784897897",
+      "company": "BXP Support and Solutions",
+      "title": "Data Analyst Intern",
+      "url": "https://internshala.com/internship/detail/data-analyst-internship-in-bangalore-at-bxp-support-and-solutions-private-limited1784897897",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:futurlytic:1785992879",
+      "company": "Futurlytic",
+      "title": "Data Analytics Intern",
+      "url": "https://internshala.com/internship/detail/data-analytics-internship-in-bangalore-at-futurlytic-private-limited1785992879",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:smartbridge-educational-services:1785395986",
+      "company": "SmartBridge Educational Services",
+      "title": "Data Analytics Intern",
+      "url": "https://internshala.com/internship/detail/data-analytics-internship-in-noida-at-smartbridge-educational-services-private-limited1785395986",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4457329075",
+      "company": "MUFG",
+      "title": "Cash Recon & Reporting Analyst",
+      "url": "https://in.linkedin.com/jobs/view/cash-recon-reporting-analyst-at-mufg-4457329075",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4455281279",
+      "company": "MUFG",
+      "title": "Analyst · Customer Data Management",
+      "url": "https://in.linkedin.com/jobs/view/analyst-customer-data-management-at-mufg-4455281279",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4456001007",
+      "company": "Clearwater Analytics",
+      "title": "Data Analyst · Revenue Operations",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-revenue-operations-at-clearwater-analytics-4456001007",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:pika-medical:1786436833",
+      "company": "PIKA Medical",
+      "title": "Sales Operations & Market Intelligence Intern",
+      "url": "https://internshala.com/internship/detail/sales-operations-market-intelligence-internship-in-bangalore-at-pika-medical1786436833",
+      "reason": "application_deadline_passed",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4454970922",
+      "company": "American Express",
+      "title": "Apprentice - Data Analytics",
+      "url": "https://in.linkedin.com/jobs/view/apprentice-data-analytics-at-american-express-4454970922",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4448743920",
+      "company": "Funding Societies | Modalku",
+      "title": "Data Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-intern-at-funding-societies-modalku-group-4448743920",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:portcast:39906260",
+      "company": "Portcast",
+      "title": "Data Analyst Intern",
+      "url": "https://jobs.lever.co/portcast/f18cc64e-c34a-416c-b213-62a39906260e",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4456087783",
+      "company": "Give",
+      "title": "Product Analyst",
+      "url": "https://in.linkedin.com/jobs/view/product-analyst-at-give-4456087783",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4428369297",
+      "company": "Instawork",
+      "title": "Data Operations Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-operations-analyst-intern-at-instawork-4428369297",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4455603847",
+      "company": "DeHaat",
+      "title": "Data Analyst / Data Engineer Intern",
+      "url": "https://www.linkedin.com/jobs/view/4455603847/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4436777534",
+      "company": "ByteDance",
+      "title": "Data Analyst Project Intern · Training & Quality",
+      "url": "https://www.linkedin.com/jobs/view/4436777534/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4456154864",
+      "company": "AppsForBharat",
+      "title": "Product / Business Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4456154864/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4455441587",
+      "company": "ShrinQ Consulting Group",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4455441587/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4446582457",
+      "company": "EXL",
+      "title": "Business Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4446582457/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:7495346653705449472",
+      "company": "IS Global Web",
+      "title": "MIS Executive",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7495346653705449472/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:gulf-client-via-fragma:fresher-business-analyst",
+      "company": "Gulf Client via Fragma",
+      "title": "Fresher Business Analyst",
+      "url": "https://cutshort.io/job/Fresher-Business-Analyst-Internship-Job-Opportunity-Bengaluru-Bangalore-Fragma-Data-Systems-y3Dq4NEk",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:concentrix-via-redfoxa:business-analyst-fresher",
+      "company": "Concentrix via Redfoxa",
+      "title": "Business Analyst - Fresher",
+      "url": "https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-Redfoxa-Careerlink-Pvt-Ltd-ufPMC4jn",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:paytm:growth-management-intern-insurance",
+      "company": "Paytm",
+      "title": "Growth Management Intern - Insurance",
+      "url": "https://jobs.lever.co/paytm/62bd3d00-f65c-4c70-b413-92d886a112e7/apply",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:tap-invest:data-analyst",
+      "company": "Tap Invest",
+      "title": "Data Analyst",
+      "url": "https://cutshort.io/job/Data-Analyst-Bengaluru-Bangalore-Tap-Invest-3nnNwkss",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:rentomojo:business-analyst",
+      "company": "RentoMojo",
+      "title": "Business Analyst",
+      "url": "https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-Rentomojo-cTAi1nzB",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4436513787",
+      "company": "Headout",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/growth-analyst-at-headout-4436513787",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:fox-corporation:data-analyst-apprentice",
+      "company": "FOX Corporation",
+      "title": "Data Analyst Apprentice",
+      "url": "https://cutshort.io/job/Data-Analyst-Apprentice-1-Year-contract-Bengaluru-Bangalore-FOX-Corporation-mb7NBICk",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:education-app-via-careernet:business-analyst",
+      "company": "Education app via CareerNet",
+      "title": "Business Analyst",
+      "url": "https://cutshort.io/job/Business-Analyst-Bengaluru-Bangalore-CareerNet-Technologies-Pvt-Ltd-8n5cJMih",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:fintech-startup-via-qrata:business-data-analyst",
+      "company": "Fintech startup via Qrata",
+      "title": "Business / Data Analyst",
+      "url": "https://cutshort.io/job/Bussiness-Data-Analyst-Bengaluru-Bangalore-Qrata-AIGcbKf2",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:e-commerce-company-via-qrata:e-commerce-data-analyst",
+      "company": "E-commerce company via Qrata",
+      "title": "E-commerce Data Analyst",
+      "url": "https://cutshort.io/job/E-commerce-Data-Analyst-Bengaluru-Bangalore-Mumbai-Qrata-xkYJq5sm",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "freshness:bharat-intelligence:associate-product-manager",
+      "company": "Bharat Intelligence",
+      "title": "Associate Product Manager",
+      "url": "https://cutshort.io/job/Associate-Product-Manager-Bengaluru-Bangalore-Bharat-Intelligence-YjcOBQWB",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-10T19:02:13+05:30"
     }
   ]
 }

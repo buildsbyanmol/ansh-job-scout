@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T19:03:12+05:30",
+  "updatedAt": "2026-10-10T19:20:00+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,34 +9,34 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-09-16T19:03:12+05:30",
-    "activeRoles": 53,
-    "tier1Roles": 26,
-    "closedOrInvalidated": 130,
+    "completedAt": "2026-10-10T19:20:00+05:30",
+    "activeRoles": 1,
+    "tier1Roles": 0,
+    "closedOrInvalidated": 183,
     "linkAudit": "passed",
     "materialChanges": true
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "Apply the user-requested eight-day freshness rule before each sweep. Resume the rate-limited past-24-hour LinkedIn matrix at the oldest failed page after cooldown, beginning with Business Analyst in Delhi at start 0, and rerun every failed matrix page without assuming coverage from search snippets. Then continue current normal-post variants, authenticated Instahyre, deeper Cutshort and Wellfound traversal, specialist detail recovery, broad portals, employer ATS pages, missing-listing trails, and the complete active-link audit. Publication checkpoint: commit c26a577 could not push on 16 Sep because the configured GitHub credential was denied for buildsbyanmol/ansh-job-scout; retry only after repository write access is restored."
+    "notes": "The user-requested eight-day freshness rule archived 53 older or insufficiently reverified listings on 10 Oct 2026. A limited fresh sweep found one directly verified LinkedIn Jobs posting at TravClan: Business Analyst, New Delhi, listed about four hours before verification; it is Tier 3 because the listing requires 2+ years. It remains active with its current Apply route. LinkedIn normal-post searches did not surface a separately verifiable current opportunity; results were stale or lacked a usable original application route. Startup-board discovery included a Newton School listing posted about two weeks earlier, excluded by the freshness rule. This was a targeted sweep, not completion of all lanes. Resume the 169 rate-limited or timed-out LinkedIn Jobs matrix pages at Business Analyst, Delhi, start 0 after cooldown, and continue every failed query page. Then resume normal-post variants, authenticated Instahyre, deeper Cutshort and Wellfound traversal, specialist detail recovery, broad portals, employer ATS pages, missing-listing trails, and full validation. This run's active direct-link and state audits passed. The previous GitHub credential failure note is obsolete; this run will attempt the already-authorized publication flow."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-09-16T19:03:12+05:30",
+      "lastAttemptAt": "2026-10-10T19:20:00+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. This morning's fresh indexed-role sweep confirmed Target as a duplicate, found Enerture and Care.fi closed, and removed SmartQ when its current page no longer exposed a live apply control. Level AI and eazyway.io were directly rechecked with live apply controls. The full failed matrix remains the next LinkedIn Jobs priority. Fresh audit archived 18 listings whose direct route is now closed or unavailable. The 4 Sep normal-post sweep only surfaced one-month-old posts or routes without a verifiable current employer listing; no role was added. On 12 Sep, independent indexed LinkedIn discovery surfaced only stale posts or a canonical PwC route returning HTTP 410; no role passed the live direct-route gate. Fresh audit archived 4 listings whose direct route is now closed or unavailable. Fresh audit archived 1 listings whose direct route is now closed or unavailable."
+      "notes": "The three saved checkpoints were recovered successfully first. The afternoon 207-page past-24-hour sweep completed only 38 requests; 169 pages were blocked by LinkedIn HTTP 429 responses or timeouts and remain incomplete. A targeted freshness sweep on 10 Oct surfaced TravClan Business Analyst, New Delhi; its direct LinkedIn page showed a live Apply control, posting age about four hours, and an explicit 2+ year requirement. Added as Tier 3. The full failed matrix remains the next LinkedIn Jobs priority; this targeted query did not resume the 169-page backlog or complete the matrix. Earlier direct-route closures and audit removals are preserved in the archive."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-09-04T09:18:00+05:30",
+      "lastAttemptAt": "2026-10-10T19:20:00+05:30",
       "resumeFrom": "fresh employee, recruiter, founder, and company posts using reporting, MIS, RevOps, risk, data engineering, fresher, graduate, referral, SQL, Python, and Power BI variants after indexing refreshes",
-      "notes": "Fresh normal hiring-post searches were run independently from LinkedIn Jobs across data, BI, MIS, risk, operations, SQL, Python, Power BI, fresher, graduate, intern, referral, recruiter, and founder variants. Results were older repost farms, undated comment-to-DM posts, or previously known roles; no post-only opportunity passed the current-original-post and usable-route gates."
+      "notes": "Fresh normal LinkedIn hiring-post queries were run separately from LinkedIn Jobs for junior/fresher analytics and adjacent data roles. Results in the current targeted pass were stale reposts or lacked an original post with a verifiable current application route; no post-only role was added. The full city, role, employee/recruiter/founder variant set remains incomplete."
     },
     {
       "id": "official_ats_and_careers",
