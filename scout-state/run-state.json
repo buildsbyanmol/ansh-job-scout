@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T14:01:04+05:30",
+  "updatedAt": "2026-10-11T19:04:32+05:30",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -9,67 +9,67 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-11T14:01:04+05:30",
+    "completedAt": "2026-10-11T19:04:32+05:30",
     "activeRoles": 4,
     "tier1Roles": 0,
-    "closedOrInvalidated": 184,
+    "closedOrInvalidated": 187,
     "linkAudit": "passed",
     "materialChanges": true,
-    "notes": "Fresh targeted sweep added three directly verified live roles: Time Hack Consulting Business Analyst (Bengaluru, 0–2 years preferred, LinkedIn Apply live, posted 2 days ago); Nippon Data Systems Business Analyst (Noida, years unspecified, LinkedIn Apply live, posted 19 hours ago); and EXL Associate Business Analyst, Process & Service Excellence (Noida, entry-level, LinkedIn Apply live, posted 5 days ago). Added Codemonk Associate Business Analyst from Wellfound (Bengaluru, Apply Now live, posted 1 week ago; 1–2 years and client-project documentation required). TravClan was removed after its direct LinkedIn page changed to no longer accepting applications. All four active cards were browser-checked 11 Oct; link audit and state validation passed. EXL Data Analyst was excluded because the direct page now says 2 weeks old. A fresh InternDoor discovery trail led to GE Vernova Data Analyst, but its canonical employer page shows 18 Sep, outside the user's eight-day window; S&P Global's candidate employer page returned 403. A LinkedIn post advertised Vyapar Data Analyst but its original page says 1 month, so it was not added. Full source matrix was not completed; every lane remains partial."
+    "notes": "Resumed the oldest LinkedIn Jobs checkpoint with targeted 24-hour/7-day searches across Delhi, Gurugram, Noida, and Bengaluru, then sampled LinkedIn hiring posts, Wellfound/Cutshort/Unstop/Internshala, broad portals, and ATS/career destinations. No new role passed the required direct live-destination check: ProductIn and California Burrito had fresh-looking LinkedIn Apply snippets but both direct URLs redirected to generic LinkedIn search, so they were archived as invalid; California Burrito's official careers page also did not list this analyst role. Archived Scoutit Business Analyst ID 4398790524 after its direct page said no longer accepting applications. Existing four roles remain active and passed link audit. Rejected stale/mismatched candidates including Headout canonical Greenhouse role posted 3 weeks, Navi Data Analyst 2 weeks, old NTT/Paytm experience levels, Signzy generic-search redirect, and Unstop FAM deadline 13 Sep. Wellfound EarnIn direct URL returned 410; Valerie Data Analyst/Scientist required 6–8 years. Relevant normal LinkedIn hiring post results were mostly 2 weeks to 11 months old; no post-only role passed the eight-day filter. Internshala remains robots-blocked. This was a targeted partial sweep, not exhaustive: all six source lanes remain partial and the 169 LinkedIn Jobs matrix failures remain queued from Business Analyst, Delhi, start 0. Link audit and state validation passed."
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "On 11 Oct the targeted fresh sweep replaced the prior TravClan listing after its direct page said no longer accepting applications. Four current Apply routes were directly verified and added, three from LinkedIn Jobs and one from Wellfound. Fresh candidates were checked across LinkedIn Jobs, LinkedIn normal posts, Wellfound/Cutshort/startup discovery, InternDoor's role feed, broad portals, and official employer/ATS destinations. The original Vyapar LinkedIn hiring post is 1 month old; EXL Data Analyst is now 2 weeks old; GE Vernova's employer posting date is 18 Sep; all were excluded under the eight-day rule. S&P Global's direct page returned 403. Naukri/Internshala remain blocked or inaccessible as previously recorded. Full sweep was not completed. Resume the 169 LinkedIn Jobs 24-hour matrix failures at Business Analyst, Delhi, start 0 after cooldown; then continue all remaining city/title pages, authenticated Instahyre, deeper board pagination, blocked portals, ATS pages, and missing-listing trails."
+    "notes": "The run found no new role that passed direct-page verification and archived one newly discovered closed Scoutit listing; two fresh-looking LinkedIn results were excluded after their direct URLs redirected to generic search. Link and state audits must pass before publication. At the next run resume the 169 LinkedIn Jobs 24-hour matrix failures at Business Analyst, Delhi, start 0 after cooldown; continue all remaining city/title pages, authenticated Instahyre, deeper board pagination, blocked portals, ATS pages, and missing-listing trails. Keep using the eight-day freshness cutoff; keep every inaccessible lane partial."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-10-11T14:01:04+05:30",
+      "lastAttemptAt": "2026-10-11T19:02:03+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "The prior 169 rate-limited/timed-out pages in the 17-role-family × four-location 24-hour matrix remain the oldest incomplete checkpoint, starting Business Analyst, Delhi, start 0; this run did not complete that backlog. Targeted fresh queries searched data/business analyst titles across Gurugram, Noida, Delhi, and Bengaluru. Three active additions across the refresh came from direct LinkedIn pages: Time Hack Consulting BA (Bengaluru, 2 days, 0–2 years preferred), Nippon Data Systems BA (Noida, 19 hours, experience years unspecified), and EXL Associate BA, Process & Service Excellence (Noida, 5 days), all with live LinkedIn Apply controls. A separate EXL Data Analyst result was rejected as 2 weeks old. TravClan's previously active BA job is now closed and archived. City × title traversal and 169-query retry remain incomplete."
+      "notes": "The prior 169 rate-limited/timed-out pages in the 17-role-family × four-location 24-hour matrix remain the oldest incomplete checkpoint, starting Business Analyst, Delhi, start 0; this run did not complete that backlog. Targeted searches revisited BA/DA synonyms across all four target areas. Two fresh-looking results, ProductIn Data Analyst and California Burrito Data Analyst, failed immediate direct URL checks because they redirected to generic LinkedIn search; neither was added. California Burrito's official careers page did not show the role. Scoutit ID 4398790524 was archived as closed. City × title traversal and 169-query retry remain incomplete."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-10-11T14:01:04+05:30",
+      "lastAttemptAt": "2026-10-11T19:02:03+05:30",
       "resumeFrom": "fresh employee, recruiter, founder, and company posts using reporting, MIS, RevOps, risk, data engineering, fresher, graduate, referral, SQL, Python, and Power BI variants after indexing refreshes",
-      "notes": "Normal LinkedIn employee/recruiter/founder posts were searched independently from the Jobs lane. The Vyapar Data Analyst post included a recruiter email and 0–2-year/fresher language, but the original post currently shows 1 month, so it was rejected under the eight-day rule and cached. Other discovered posts were stale or lacked a verifiable route. No current post-only role was added; city/title/persona query coverage remains partial. No email was sent."
+      "notes": "Searched normal LinkedIn posts independently using fresher/data analyst Bengaluru, Business Analyst Noida, Power BI Bengaluru, and Data Analyst Gurugram combinations. Relevant results included Wisdom Bridge walk-in (3 weeks old), Contify on-hold (4 months), Mastercard (3 months), Navi (3 weeks), Nutrabay (2 months), and other older posts; none passed the eight-day freshness rule. ProductIn’s company post was 6 days old and points to the separately tracked LinkedIn Jobs listing, not a distinct post-only application route. No email/contact or post-only role was acted upon. Lane remains partial."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-10-11T14:01:04+05:30",
+      "lastAttemptAt": "2026-10-11T19:02:03+05:30",
       "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added LinkedIn roles where exact employer requisitions appear",
-      "notes": "Fresh ATS/career follow-up checked the canonical GE Vernova Data Analyst page discovered through InternDoor. It has a live application route but the employer page's posted date is 18 Sep, outside the eight-day window. S&P Global Data Analyst employer destination returned HTTP 403, so it was not published. No exact employer requisition was confirmed for the three LinkedIn roles during this limited pass. Broad Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted traversal remains incomplete."
+      "notes": "Checked Headout’s canonical Greenhouse Data Analyst application page: apply form was live, but the page was crawled as 3 weeks old, outside the eight-day window, so excluded. No separate employer ATS page was verified for ProductIn or California Burrito during this pass. This run sampled Greenhouse/Lever/Ashby/Workday/company career queries but did not complete the ATS family/provider matrix. All remaining ATS traversal is incomplete."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-10-11T14:01:04+05:30",
+      "lastAttemptAt": "2026-10-11T19:02:03+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, current YC company boards, accelerator portfolio boards, and state-reversal checks for excluded Wellfound IDs",
-      "notes": "Wellfound was directly checked and Codemonk Associate Business Analyst was added: Bengaluru, posted 1 week ago, live Apply Now, recruiter recently active; requires 1–2 years and hands-on BA/client-documentation experience, so Tier 3. Cutshort and YC/startup discovery produced no other current directly verified role in this limited pass. Instahyre remains unauthenticated; pagination and other startup/accelerator boards are incomplete."
+      "notes": "Wellfound/Cutshort searches sampled current Data Analyst openings: EarnIn Risk Data Analyst returned HTTP 410 despite a recent snippet; Valerie Data Analyst/Scientist is Bengaluru but requires 6–8 years; no additional startup-board role passed age and experience checks. Existing Codemonk role remains within the eight-day window at the last check. Instahyre remains unauthenticated; YC, accelerator/startup boards, and pagination are incomplete."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-10-11T14:01:04+05:30",
+      "lastAttemptAt": "2026-10-11T19:02:03+05:30",
       "resumeFrom": "Recover current direct Internshala detail links for Galytix, Zomunk, Isourse, Zippee, Innerbhakti, and other fresh search-page results; then continue Unstop and Hirist detail pages",
-      "notes": "InternDoor's Bengaluru analytics/data-engineering index and selected detail pages were used as a discovery trail. GE Vernova's direct employer date was 18 Sep and excluded; S&P Global's application destination returned 403 and was excluded; no additional specialist-portal role passed verification. Internshala remains robots-blocked; Unstop and Hirist detail traversal are not complete."
+      "notes": "Sampled Unstop and Internshala separately. Unstop Data Analyst - FAM is Bangalore but its displayed application deadline is 13 Sep 2026 and registration is closed, so excluded. Internshala search/detail access remains robots-blocked. Hirist and other specialist portals were not exhaustively traversed."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-10-11T14:01:04+05:30",
+      "lastAttemptAt": "2026-10-11T19:02:03+05:30",
       "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction and fresh city-role pagination",
-      "notes": "A fresh Indeed/Naukri/general portal discovery pass was attempted; Naukri remained robots-blocked and Indeed did not yield a candidate whose direct employer application route could be independently verified. Recent LinkedIn/board candidates were checked against direct pages instead. This lane remains partial; retry accessible portal detail pages and canonical employer routes."
+      "notes": "Broad portal queries surfaced Cutshort listings, but visible postings were dated years old or required 3+ years; no additional current broad-portal role passed direct-destination verification. Naukri remained inaccessible/blocked in prior runs; Indeed and Foundit details were not fully traversed this run. Resume fresh city-role pagination and canonical employer routes."
     }
   ],
   "publication": {

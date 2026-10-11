@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T14:01:04+05:30",
+  "updatedAt": "2026-10-11T19:02:03+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -1897,6 +1897,94 @@
       "url": "https://www.linkedin.com/jobs/view/4472273346/",
       "reason": "listing_description_mismatches_named_role",
       "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4398790524",
+      "company": "Scoutit",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-scoutit-4398790524",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4476373002",
+      "company": "NTT DATA North America",
+      "title": "BA-Lending",
+      "url": "https://in.linkedin.com/jobs/view/ba-lending-at-ntt-data-north-america-4476373002",
+      "reason": "requires_10_plus_years_experience_not_early_career",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4473717109",
+      "company": "Paytm",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-paytm-4473717109",
+      "reason": "requires_2_to_5_years_experience_and_mid_senior_level",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4462964424",
+      "company": "Navi",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-navi-4462964424",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4448516986",
+      "company": "Navi",
+      "title": "Business Analyst I",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-i-at-navi-4448516986",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4465775278",
+      "company": "Signzy",
+      "title": "Associate Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/associate-business-analyst-at-signzy-4465775278",
+      "reason": "redirects_to_generic_linkedin_search_not_live_job",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "greenhouse:headoutcareers:4621320006",
+      "company": "Headout",
+      "title": "Data Analyst",
+      "url": "https://job-boards.greenhouse.io/headoutcareers/jobs/4621320006",
+      "reason": "canonical_listing_posted_3_weeks_outside_8_day_window",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "wellfound:4171835",
+      "company": "EarnIn",
+      "title": "Risk Data Analyst",
+      "url": "https://wellfound.com/jobs/4171835-risk-data-analyst",
+      "reason": "direct_role_returns_410_gone",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "unstop:1746484",
+      "company": "FAM",
+      "title": "Data Analyst",
+      "url": "https://unstop.com/jobs/data-analyst-fam-1746484/amp",
+      "reason": "registration_closed_deadline_2026_09_13_passed",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4472623335",
+      "company": "ProductIn",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-productin-4472623335",
+      "reason": "direct_url_redirects_to_generic_linkedin_search_no_live_destination",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4428046174",
+      "company": "California Burrito",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-california-burrito-4428046174",
+      "reason": "direct_url_redirects_to_generic_linkedin_search_and_role_absent_from_employer_careers",
+      "lastCheckedAt": "2026-10-11T19:02:03+05:30"
     }
   ]
 }
