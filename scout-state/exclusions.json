@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T19:02:13+05:30",
+  "updatedAt": "2026-10-11T14:01:04+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -1817,6 +1817,86 @@
       "url": "https://cutshort.io/job/Associate-Product-Manager-Bengaluru-Bangalore-Bharat-Intelligence-YjcOBQWB",
       "reason": "older_than_8_days_user_requested",
       "lastCheckedAt": "2026-10-10T19:02:13+05:30"
+    },
+    {
+      "key": "linkedin:4476256896",
+      "company": "TravClan",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-travclan-4476256896",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4446745041",
+      "company": "EXL",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4446745041/",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4423895953",
+      "company": "Scoutit",
+      "title": "Analyst",
+      "url": "https://in.linkedin.com/jobs/view/analyst-at-scoutit-4423895953",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4448518788",
+      "company": "MedTourEasy",
+      "title": "Data Analyst Trainee",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-trainee-at-medtoureasy-4448518788",
+      "reason": "no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4448744598",
+      "company": "MedTourEasy",
+      "title": "Data Analyst Trainee",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-trainee-at-medtoureasy-4448744598",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "workday:gevernova:R5053110",
+      "company": "GE Vernova",
+      "title": "Data Analyst",
+      "url": "https://careers.gevernova.com/fr/data-analyst/job/R5053110",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin-post:7502760112722411520",
+      "company": "Vyapar",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/posts/nageshwaran-subramaniyan-nk171028_were-hiring-data-analyst-02-years-activity-7502760112722411520-u3-0",
+      "reason": "older_than_8_days_user_requested",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4470404424",
+      "company": "Training Basket",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4470404424/",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4477239001",
+      "company": "Crystalspiders",
+      "title": "Data Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4477239001/",
+      "reason": "listing_description_mismatches_named_role",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+    },
+    {
+      "key": "linkedin:4472273346",
+      "company": "Softcrayons",
+      "title": "Business Analyst",
+      "url": "https://www.linkedin.com/jobs/view/4472273346/",
+      "reason": "listing_description_mismatches_named_role",
+      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
     }
   ]
 }
