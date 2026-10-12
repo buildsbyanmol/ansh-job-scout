@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T19:02:03+05:30",
+  "updatedAt": "2026-10-12T08:57:18+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -1985,6 +1985,46 @@
       "url": "https://in.linkedin.com/jobs/view/data-analyst-at-california-burrito-4428046174",
       "reason": "direct_url_redirects_to_generic_linkedin_search_and_role_absent_from_employer_careers",
       "lastCheckedAt": "2026-10-11T19:02:03+05:30"
+    },
+    {
+      "key": "linkedin:4465764486",
+      "company": "TravClan",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-travclan-4465764486",
+      "reason": "direct_listing_says_no_longer_accepting_and_posted_3_weeks_ago",
+      "lastCheckedAt": "2026-10-12T08:57:18+05:30"
+    },
+    {
+      "key": "linkedin:4473720448",
+      "company": "Kapiva",
+      "title": "Data Analyst - Central Analytics",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-central-analytics-at-kapiva-4473720448",
+      "reason": "direct_listing_says_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-12T08:57:18+05:30"
+    },
+    {
+      "key": "linkedin:4475718777",
+      "company": "CRE Matrix",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-cre-matrix-4475718777",
+      "reason": "embedded_job_details_date_to_2025_08_02_and_require_1_to_3_years_despite_fresh_shell",
+      "lastCheckedAt": "2026-10-12T08:57:18+05:30"
+    },
+    {
+      "key": "linkedin:4466199412",
+      "company": "Simplify Money",
+      "title": "Business Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-intern-at-simplify-money-4466199412",
+      "reason": "direct_page_has_no_live_apply_control_or_named_current_hiring_route",
+      "lastCheckedAt": "2026-10-12T08:57:18+05:30"
+    },
+    {
+      "key": "linkedin:4469595274",
+      "company": "Tradefluxs Services",
+      "title": "Data Analyst / Business Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-business-analyst-intern-at-softcrayons-it-education-4469595274",
+      "reason": "direct_link_audit_redirected_to_generic_linkedin_search_expired_jd_redirect",
+      "lastCheckedAt": "2026-10-12T08:57:18+05:30"
     }
   ]
 }
