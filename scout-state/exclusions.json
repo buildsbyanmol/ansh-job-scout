@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T08:57:18+05:30",
+  "updatedAt": "2026-10-12T19:02:46+05:30",
   "entries": [
     {
       "key": "linkedin:4380932905",
@@ -2025,6 +2025,38 @@
       "url": "https://in.linkedin.com/jobs/view/data-analyst-business-analyst-intern-at-softcrayons-it-education-4469595274",
       "reason": "direct_link_audit_redirected_to_generic_linkedin_search_expired_jd_redirect",
       "lastCheckedAt": "2026-10-12T08:57:18+05:30"
+    },
+    {
+      "key": "linkedin:4473354117",
+      "company": "Time Hack Consulting",
+      "title": "Business Analyst · Collections Analytics",
+      "url": "https://www.linkedin.com/jobs/view/4473354117/",
+      "reason": "freshness_unverified_approximate_one_week_label_cannot_confirm_within_8_day_user_limit",
+      "lastCheckedAt": "2026-10-12T19:02:46+05:30"
+    },
+    {
+      "key": "wellfound:4791901",
+      "company": "Codemonk",
+      "title": "Associate Business Analyst",
+      "url": "https://wellfound.com/jobs/4791901-associate-business-analyst",
+      "reason": "freshness_unverified_approximate_one_week_label_cannot_confirm_within_8_day_user_limit",
+      "lastCheckedAt": "2026-10-12T19:02:46+05:30"
+    },
+    {
+      "key": "linkedin:4446723624",
+      "company": "EXL",
+      "title": "Associate · Business Analyst, Process & Service Excellence",
+      "url": "https://in.linkedin.com/jobs/view/associate-business-analyst-business-process-service-excellence-business-analyst-at-exl-4446723624",
+      "reason": "freshness_unverified_approximate_one_week_label_cannot_confirm_within_8_day_user_limit",
+      "lastCheckedAt": "2026-10-12T19:02:46+05:30"
+    },
+    {
+      "key": "linkedin:4471902037",
+      "company": "Greentern",
+      "title": "Business Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-intern-at-greentern-4471902037",
+      "reason": "direct_link_redirects_to_generic_linkedin_search_with_expired_jd_redirect",
+      "lastCheckedAt": "2026-10-12T19:02:46+05:30"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T08:57:18+05:30",
-  "latestRunSummary": "Oct 12 partial refresh: added Greentern BA Intern (Bengaluru; engineering-degree-only). Five active direct links passed audit. Tradefluxs Services DA/BA Intern was first shortlisted from the browser-rendered Apply card, then removed when the command-line link audit followed its direct URL to a generic LinkedIn search with expired-job redirect. Archived/rejected TravClan (closed, 3 weeks old), Kapiva (closed), CRE Matrix (embedded 2025 date), Simplify Money (no Apply route), and Tradefluxs (expired redirect). Time Hack, Codemonk, and EXL now display the approximate 1-week age bucket and must be rechecked against the 8-day cutoff first next run. All source lanes remain partial; resume the 169 LinkedIn Jobs failures at Business Analyst, Delhi, start 0. No apply, message, form submission, or email was made.",
+  "updatedAt": "2026-10-12T19:02:46+05:30",
+  "latestRunSummary": "Oct 12 PM partial refresh: Saarthi's Bengaluru Data Analyst Intern listing was added (description identifies CoverSelf; LinkedIn shows 6 days ago and live Apply; requires current/recent degree in Data Science or Statistics). Archived Time Hack, Codemonk, and EXL because their approximate '1 week ago' labels cannot prove compliance with the strict 8-day ceiling. The direct-link audit then found Greentern's URL redirects to a generic LinkedIn page with expired-job redirect, so Greentern was archived too. Two active cards remain: Nippon Data Systems and Saarthi/CoverSelf. Rechecked the oldest LinkedIn Jobs lane with targeted Delhi BA, Bengaluru DA/intern and Noida DA searches, plus a separate LinkedIn hiring-post query. A surfaced PwC 758023WD aggregator lead did not match its canonical Workday job title and was not included. Link and state audits passed. All six source lanes remain partial; the 169 rate-limited/timed-out LinkedIn Jobs matrix pages remain queued from Business Analyst, Delhi, start 0. No apply, message, form submission, or email was made.",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -10,56 +10,55 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-12T08:57:18+05:30",
-    "activeRoles": 5,
+    "completedAt": "2026-10-12T19:02:46+05:30",
+    "activeRoles": 2,
     "tier1Roles": 0,
-    "closedOrInvalidated": 192,
+    "closedOrInvalidated": 196,
     "linkAudit": "passed",
     "materialChanges": true,
-    "notes": "Resumed the oldest LinkedIn Jobs checkpoint with targeted 24-hour/7-day searches across Delhi, Gurugram, Noida, and Bengaluru, then sampled LinkedIn hiring posts, Wellfound/Cutshort/Unstop/Internshala, broad portals, and ATS/career destinations. No new role passed the required direct live-destination check: ProductIn and California Burrito had fresh-looking LinkedIn Apply snippets but both direct URLs redirected to generic LinkedIn search, so they were archived as invalid; California Burrito's official careers page also did not list this analyst role. Archived Scoutit Business Analyst ID 4398790524 after its direct page said no longer accepting applications. Existing four roles remain active and passed link audit. Rejected stale/mismatched candidates including Headout canonical Greenhouse role posted 3 weeks, Navi Data Analyst 2 weeks, old NTT/Paytm experience levels, Signzy generic-search redirect, and Unstop FAM deadline 13 Sep. Wellfound EarnIn direct URL returned 410; Valerie Data Analyst/Scientist required 6–8 years. Relevant normal LinkedIn hiring post results were mostly 2 weeks to 11 months old; no post-only role passed the eight-day filter. Internshala remains robots-blocked. This was a targeted partial sweep, not exhaustive: all six source lanes remain partial and the 169 LinkedIn Jobs matrix failures remain queued from Business Analyst, Delhi, start 0. Link audit and state validation passed."
+    "notes": "Resumed the oldest LinkedIn Jobs checkpoint first with targeted freshness searches: Delhi Business Analyst, Bengaluru Data Analyst and Analyst Intern, and Noida Data Analyst. Added the Saarthi LinkedIn Data Analyst Intern listing after its direct page showed live Apply, Bengaluru, and 6-day age; its copy identifies CoverSelf as the role operator. Rechecked Time Hack Consulting (4473354117), Codemonk (Wellfound 4791901), and EXL (4446723624): each remained live but showed only the approximate 1-week bucket, removed because freshness within the strict eight-day limit could not be proven. Greentern (4471902037) was removed after direct link audit followed its URL to a generic LinkedIn page with an expired-job redirect. A PwC 758023WD aggregator candidate was rejected because its canonical Workday destination resolved to a differently titled Senior Associate AI Architect listing. Other surfaced posts were stale or closed. Targeted partial searches only; full query matrix is incomplete. All six lanes remain partial; 169 LinkedIn Jobs timeouts/rate limits remain queued from Business Analyst, Delhi, start 0. Internshala remains blocked from earlier attempts; authenticated Instahyre and deeper boards remain pending. No application, message, form submission, or email was made. Link and state audits passed."
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "At the next run resume the 169 LinkedIn Jobs 24-hour matrix failures at Business Analyst, Delhi, start 0 after cooldown. Recheck the three active cards whose pages now show the approximate 1-week age bucket first, then continue remaining city/title pages, authenticated Instahyre, deeper board pagination, blocked portals, ATS pages, and missing-listing trails. Keep the strict eight-day freshness cutoff; blocked/incomplete lanes remain partial."
+    "notes": "Next run resume the 169 incomplete LinkedIn Jobs 24-hour matrix pages at Business Analyst, Delhi, start 0. Recheck Saarthi/CoverSelf, Nippon Data Systems, and Greentern freshness and live application routes, then continue remaining city/title pages. Continue all other partial lanes: separate LinkedIn normal posts, authenticated Instahyre and deeper startup/specialist-board pages, broad portals, canonical ATS/company careers, and cross-platform missing-listing trails. Exclude uncertain age buckets that cannot be established within eight days; keep blocked/incomplete lanes partial."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-10-12T08:57:18+05:30",
+      "lastAttemptAt": "2026-10-12T19:02:46+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "The prior 169 rate-limited/timed-out pages in the 17-role-family × four-location 24-hour matrix remain the oldest incomplete checkpoint, starting Business Analyst, Delhi, start 0; this run did not complete that backlog. Targeted searches revisited BA/DA/intern synonyms. Added live-Apply Greentern BA Intern and Tradefluxs Services DA/BA Intern; the latter has employer/degree inconsistencies and is Tier 3. Archived closed/stale TravClan and Kapiva, stale CRE Matrix 2025 details, and Simplify Money without a live Apply control. Full city × title traversal and 169-query retry remain incomplete.",
-      "latestOutcome": "Resume the 169 incomplete pages starting Business Analyst, Delhi, start 0. Recheck the active 1-week-age listings first because the displayed relative age is approximate; keep this lane partial.",
-      "thisRunCorrection": "Tradefluxs Services DA/BA Intern was removed after audit because the direct URL redirected to a generic LinkedIn search with expired-job redirect; only Greentern is a new active role."
+      "notes": "Resumed the oldest incomplete LinkedIn Jobs lane using targeted queries for BA Delhi, DA/intern Bengaluru, and DA Noida; the full 169 timed-out/rate-limited 24-hour matrix queries were not traversed. Opened direct details for candidate roles and rejected stale/closed or mismatched routes. Added Saarthi's live Data Analyst Intern page (6 days old). Archived Time Hack, Codemonk, and EXL after they showed only the ambiguous one-week age bucket, which cannot establish the strict eight-day maximum. Greentern was initially carried forward from the prior pass but this run's direct link audit found its URL now redirects to a generic LinkedIn page with expired-job redirect; it was removed. All city × role-family pages and the 169-query retry remain incomplete.",
+      "latestOutcome": "169 incomplete pages remain, starting Business Analyst, Delhi, start 0. Two active listings remain after link and freshness cleanup; keep this lane partial."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-10-12T08:57:18+05:30",
+      "lastAttemptAt": "2026-10-12T19:02:46+05:30",
       "resumeFrom": "fresh employee, recruiter, founder, and company posts using reporting, MIS, RevOps, risk, data engineering, fresher, graduate, referral, SQL, Python, and Power BI variants after indexing refreshes",
-      "notes": "Searched normal hiring posts independently with fresher, BA internship, Noida, Bengaluru, and data-analyst variants. Indexed results were old reposts or pointed to already tracked job listings; no distinct post-only role had both a recent original post and current application route. No messages or emails sent. Lane remains partial.",
+      "notes": "Fresh normal-post query sampled Bengaluru Data Analyst fresher/hiring variants separately from Jobs. A result claiming a 22-hour post conflicted with the opened LinkedIn original showing 1 month old, so it was rejected; a 3-week walk-in and other older posts were also excluded. No new post-only role passed both freshness and route requirements. No messages or emails sent. Lane remains partial.",
       "latestOutcome": "Continue employee, recruiter, founder, and company-post query combinations; source lane not exhausted."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-10-12T08:57:18+05:30",
+      "lastAttemptAt": "2026-10-12T19:02:46+05:30",
       "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added LinkedIn roles where exact employer requisitions appear",
-      "notes": "Searched a limited set of official ATS/company-career query variants; no new canonical employer listing was verified for today’s additions. Prior Headout Greenhouse Data Analyst remained stale at 3 weeks. Provider-by-provider Lever, Greenhouse, Ashby, SmartRecruiters, Workday, Taleo and company-site matrix is incomplete.",
-      "latestOutcome": "Continue canonical employer lookups for current cards and broad provider/city/role searches; keep this lane partial."
+      "notes": "Searched the fresh PwC 758023WD GenAI Associate lead against its canonical Workday target. Workday URL resolved to a differently named Senior Associate AI Architect listing, inconsistent with the aggregator title/fresher description, so it was not published. No new canonical role was added in this limited check. The provider-by-provider Lever, Greenhouse, Ashby, SmartRecruiters, Workday, Taleo and company-site matrix remains incomplete.",
+      "latestOutcome": "Continue canonical employer lookups and ATS/company searches by city and role; keep this lane partial."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-10-12T08:57:18+05:30",
+      "lastAttemptAt": "2026-10-12T19:02:46+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, current YC company boards, accelerator portfolio boards, and state-reversal checks for excluded Wellfound IDs",
-      "notes": "Rechecked Codemonk on Wellfound: Apply Now live, recruiter recently active, and approximate age label 1 week. Current Wellfound/Cutshort results sampled, no new role passed fit/age/route checks. Instahyre unauthenticated; YC, accelerator boards, and pagination incomplete.",
-      "latestOutcome": "Recheck Codemonk first against the eight-day cutoff, then resume deeper board pagination and Instahyre access; keep partial."
+      "notes": "Rechecked Codemonk on Wellfound: Apply Now remained live, but its approximate 1-week age label could not verify <=8 days, so it was archived. Limited fresh Cutshort/Wellfound results did not produce another role passing age, fit, and direct-route checks. Instahyre unauthenticated; YC, accelerator boards, and pagination remain incomplete.",
+      "latestOutcome": "Continue deeper board pagination, authenticated Instahyre, YC and accelerator boards; keep partial."
     },
     {
       "id": "specialist_early_career_portals",
