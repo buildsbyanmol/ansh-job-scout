@@ -1,7 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T19:02:46+05:30",
+  "updatedAt": "2026-10-13T21:02:39+05:30",
   "entries": [
+    {
+      "key": "linkedin:4474580985",
+      "company": "Saarthi · CoverSelf role",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-saarthi-4474580985",
+      "reason": "older_than_8_days_user_requested_exact_datePosted_2026_10_02",
+      "lastCheckedAt": "2026-10-13T21:00:27+05:30"
+    },
+    {
+      "key": "wellfound:3527746",
+      "company": "SellerGeni",
+      "title": "Data Analyst - Intern",
+      "url": "https://wellfound.com/jobs/3527746-data-analyst-intern",
+      "reason": "direct_role_returns_410_gone_despite_search_snippet_saying_reposted_today",
+      "lastCheckedAt": "2026-10-13T21:00:27+05:30"
+    },
     {
       "key": "linkedin:4380932905",
       "company": "HSBC",
