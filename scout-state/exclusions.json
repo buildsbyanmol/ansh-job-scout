@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T21:02:39+05:30",
+  "updatedAt": "2026-10-14T19:02:20+05:30",
   "entries": [
     {
       "key": "linkedin:4474580985",
@@ -2113,6 +2113,14 @@
       "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-credit91-4476289071",
       "reason": "direct_url_returned_http_404_and_employer_careers_page_did_not_list_internship",
       "lastCheckedAt": "2026-10-14T10:22:23+05:30"
+    },
+    {
+      "key": "linkedin:4475211530",
+      "company": "British Council",
+      "title": "People Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/people-data-analyst-at-british-council-4475211530",
+      "reason": "official_apply_redirects_to_generic_careers_homepage_and_direct_linkedin_request_returned_http_429_application_route_not_verified",
+      "lastCheckedAt": "2026-10-14T19:02:20+05:30"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T10:27:50+05:30",
-  "latestRunSummary": "Oct 14 AM partial refresh: resumed LinkedIn Jobs first while preserving the historical 169-query matrix as unfinished. Added four verified current roles: Vecmocon MIS Intern (Manesar/Gurugram), Affluense Data Analyst (Finance & Validation) (Bengaluru), Pearson Apprentice Data Analytics & BI (Noida), and EXL Associate Business Analyst (Gurugram). Credit91 was considered but excluded after the direct link audit returned HTTP 404. Rechecked Amex, Airbus, and Nippon; all remain within eight days with Apply live. CoverSelf's alternate role has a live Keka Apply route, but its LinkedIn age is rounded to one week and cannot be proven inside eight days, so it is archived. Wellfound FOXO, Kedara, and SellerGeni recent-looking snippets each had direct pages return 410. Internshala and Naukri were blocked by robots; Cutshort's fresh matching role required 5–8 years. Seven active roles, two Tier 1. Link/state audits passed, commit 1ca37f6 was pushed to main, GitHub Pages deployment succeeded, and the public HTML snapshot was verified. All six lanes remain partial. No application, message, form submission, or email was made.",
+  "updatedAt": "2026-10-14T19:02:20+05:30",
+  "latestRunSummary": "Oct 14 PM partial refresh: resumed the oldest LinkedIn Jobs checkpoint first and continued separate searches across normal LinkedIn posts, company careers, startup boards, specialist portals, and broad portals. Added the verified MediNex Workforce Health Data Reporting Intern (remote India, 3 months, ₹17,000/month, no experience required) after confirming a current direct LinkedIn Apply control. The client hospital is undisclosed and recorded as a material diligence gap. British Council People Data Analyst was excluded because its official Apply control redirected to the generic careers homepage and LinkedIn returned HTTP 429. Other candidates were stale, outside the eight-day window, expired, blocked, senior, or lacked a live direct route. Eight active roles, two Tier 1. All six source lanes remain partial; the 169-query LinkedIn Jobs matrix remains unfinished. Validation and publication pending. No application, message, form submission, or email was made.",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -10,38 +10,38 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-14T10:27:50+05:30",
-    "activeRoles": 7,
+    "completedAt": "2026-10-14T19:02:20+05:30",
+    "activeRoles": 8,
     "tier1Roles": 2,
-    "closedOrInvalidated": 200,
-    "linkAudit": "passed",
+    "closedOrInvalidated": 201,
+    "linkAudit": "pending",
     "materialChanges": true,
-    "publicationStatus": "published",
+    "publicationStatus": "pending_validation",
     "publishedCommit": "1ca37f6",
-    "pagesDeployment": "built",
-    "publicSnapshotVerified": true,
-    "notes": "Resumed oldest LinkedIn Jobs checkpoint; the 169 page matrix remains incomplete. Added Vecmocon, Affluense, Pearson, and EXL after current direct Apply checks. Credit91 initially appeared current in search/browser results, but direct audit returned HTTP 404, so it was removed from active cards, archived, and excluded. Rechecked Amex, Airbus, and Nippon; all remain within eight days with Apply visible. CoverSelf alternate posting age was approximate and excluded. Wellfound FOXO, Kedara, and SellerGeni direct links returned 410 despite recent snippet language. Normal LinkedIn posts returned only stale/conflicting candidates. Internshala and Naukri blocked by robots; Cutshort exact fresher fit not found. Four net additions; seven active roles, two Tier 1. Both validations passed. Commit 1ca37f6 pushed; Pages build completed successfully and the public cache-busted HTML returned HTTP 200 with all four additions and seven active roles. No application, message, form submission, or email was made."
+    "pagesDeployment": "not_started",
+    "publicSnapshotVerified": false,
+    "notes": "Resumed the oldest LinkedIn Jobs checkpoint first and continued separate searches across normal LinkedIn posts, company careers, startup boards, specialist portals, and broad portals. Added MediNex Workforce Health Data Reporting Intern after verifying the current direct LinkedIn page and live Apply control. Exact posting age was 3 hours, remote India, ₹17,000/month, 1–3 months, no prior experience. Actual hospital/client is undisclosed, so noted as a diligence gap. Excluded British Council People Data Analyst: official Apply redirected to generic careers homepage; direct LinkedIn request returned HTTP 429, so no usable application route was verified. Other candidates were stale, beyond eight days, expired, inaccessible, senior, or lacked live Apply. Eight active roles, two Tier 1. All six lanes remain partial; the 169-result LinkedIn matrix remains queued at Business Analyst, Delhi, start 0. Run link/state validators and publish only if clean. No application, message, form submission, or email was made."
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "Next run resume the 169 incomplete LinkedIn Jobs 24-hour matrix pages at Business Analyst, Delhi, start 0, then continue remaining city/title pages. Recheck Nippon Data Systems, Airbus, and American Express freshness and live application routes. Do not resurface archived Saarthi ID 4474580985 unless it has a genuinely new posting date or requisition. Continue all other partial lanes: separate LinkedIn normal posts, authenticated Instahyre and deeper startup/specialist-board pages, broad portals, canonical ATS/company careers, and cross-platform missing-listing trails. Exclude uncertain age buckets that cannot be established within eight days; keep blocked/incomplete lanes partial."
+    "notes": "Next run resume the 169 incomplete LinkedIn Jobs 24-hour matrix pages at Business Analyst, Delhi, start 0, then continue remaining city/title pages. Recheck all eight active roles for exact age ≤8 days and live application routes, especially MediNex and roles near the cutoff. Do not resurface archived or rejected leads unless there is a genuinely new posting date/requisition or a route correction. Continue all other partial lanes: separate LinkedIn normal posts, authenticated Instahyre and deeper startup/specialist-board pages, broad portals, canonical ATS/company careers, and cross-platform missing-listing trails. Exclude uncertain age buckets that cannot be established within eight days; keep blocked/incomplete lanes partial."
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-10-14T10:22:23+05:30",
+      "lastAttemptAt": "2026-10-14T19:02:20+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "Retried targeted LinkedIn Jobs discovery for Business Analyst in Delhi and data-analyst/intern roles in Bengaluru; a current Delhi result (Analytics Training Hub, 2 hours old) had no visible Apply control and the direct request hit HTTP 429, so it was not saved. Rechecked Nippon Data Systems: direct LinkedIn page shows live Apply and 2 days ago. Saarthi's exact structured datePosted is 2 Oct, so it is outside the 8-day cap and archived. Added current official Airbus and Amex listings found through follow-the-trail verification. The 169 timed-out/rate-limited 24-hour matrix pages were not traversed; all city × role-family pages remain incomplete.",
-      "latestOutcome": "Four net additions; seven active roles after excluding the Credit91 404. All 169 unfinished LinkedIn Jobs pages remain queued at Business Analyst, Delhi, start 0; role-family/city traversal remains partial."
+      "notes": "Resumed Business Analyst, Delhi, start 0 and searched fresh LinkedIn Jobs variants for internships, reporting, and remote India roles. Added MediNex Workforce Health Data Reporting Intern (posted 3 hours ago, Apply live; client hospital undisclosed). British Council People Data Analyst was excluded: direct LinkedIn request returned HTTP 429 and the official Apply control led to the generic careers homepage. Snapmint and Allo Health redirects were expired; additional candidates were too old, age-ambiguous, or had no Apply route. The historical 169 timed-out/rate-limited 24-hour matrix pages were not traversed; all city × role-family pages remain incomplete.",
+      "latestOutcome": "One verified addition; eight active roles. British Council route not verifiable and excluded. All 169 unfinished LinkedIn Jobs pages remain queued at Business Analyst, Delhi, start 0; role-family/city traversal remains partial."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-10-14T10:22:23+05:30",
+      "lastAttemptAt": "2026-10-14T19:02:20+05:30",
       "resumeFrom": "fresh employee, recruiter, founder, and company posts using reporting, MIS, RevOps, risk, data engineering, fresher, graduate, referral, SQL, Python, and Power BI variants after indexing refreshes",
       "notes": "Searched normal LinkedIn hiring posts independently with data analyst intern/fresher, Bengaluru, SQL and analytics variants. Surfaced Nference, GE HealthCare, MyGate, and other results were 2 months old or older despite recent indexing, so not active leads. A current-looking Analytics Training Hub card was a Jobs listing rather than a normal post, showed no Apply control, and its direct request was rate-limited. No post-only role passed date/route verification; no messages or emails sent. Lane remains partial.",
       "latestOutcome": "No post-only additions passed the freshness and direct-route checks; continue employee/recruiter/founder queries. Lane remains partial."
@@ -50,7 +50,7 @@
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-10-14T10:22:23+05:30",
+      "lastAttemptAt": "2026-10-14T19:02:20+05:30",
       "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added LinkedIn roles where exact employer requisitions appear",
       "notes": "Verified Airbus Workday JR10446611 as a current Bengaluru student internship and American Express career job 26014304 as a current Gurugram Business Analyst–Data Analytics role (posted 12 Oct, apply deadline 20 Oct). Both official application destinations are recorded. Provider-by-provider Lever, Greenhouse, Ashby, SmartRecruiters, Workday, Taleo, and company-site query matrices remain incomplete.",
       "latestOutcome": "Amex and Airbus remain live; Pearson cross-checked via Indeed. Full ATS/company search matrix remains incomplete."
@@ -59,7 +59,7 @@
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-10-14T10:22:23+05:30",
+      "lastAttemptAt": "2026-10-14T19:02:20+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, current YC company boards, accelerator portfolio boards, and state-reversal checks for excluded Wellfound IDs",
       "notes": "Fresh Wellfound discovery returned SellerGeni Data Analyst - Intern (snippet says reposted 1 day ago, no experience required), but the direct job destination returned HTTP 410 and was added to exclusions. Cutshort result pages surfaced old listings (Apr/May 2026) or 3+ year requirements. Authenticated Instahyre, YC Work at a Startup, accelerator boards, and full pagination remain pending.",
       "latestOutcome": "No startup-board additions passed both freshness and direct-route checks. FOXO, Kedara, SellerGeni direct links returned 410; continue authenticated Instahyre, YC, accelerator boards and pagination."
@@ -68,7 +68,7 @@
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-10-14T10:22:23+05:30",
+      "lastAttemptAt": "2026-10-14T19:02:20+05:30",
       "resumeFrom": "Recover current direct Internshala detail links for Galytix, Zomunk, Isourse, Zippee, Innerbhakti, and other fresh search-page results; then continue Unstop and Hirist detail pages",
       "notes": "Searched Unstop for current Bengaluru data roles; Zinnov Management Consulting Data Analyst surfaced in search but the direct page opened with no content, age, or verifiable Apply route, so it was not published. Internshala detail URLs remain robots-blocked, and full Unstop/Hirist pagination is incomplete.",
       "latestOutcome": "Internshala blocked by robots; no new direct role added. Continue Unstop/Hirist verification and pagination; lane remains partial."
@@ -77,7 +77,7 @@
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-10-14T10:22:23+05:30",
+      "lastAttemptAt": "2026-10-14T19:02:20+05:30",
       "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction and fresh city-role pagination",
       "notes": "Indeed returned current Pearson req 25973 with an Apply-on-company-site destination, used as independent corroboration. The fresh Naukri query was blocked by robots.txt. Full Indeed/Foundit/Naukri pagination and city-role traversal remain incomplete.",
       "latestOutcome": "Pearson cross-checked on Indeed; Naukri blocked. Continue city/role queries and full pagination across broad portals."
