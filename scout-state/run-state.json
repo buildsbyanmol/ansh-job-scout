@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T10:22:23+05:30",
-  "latestRunSummary": "Oct 14 AM partial refresh: resumed LinkedIn Jobs first while preserving the historical 169-query matrix as unfinished. Added four verified current roles: Vecmocon MIS Intern (Manesar/Gurugram), Affluense Data Analyst (Finance & Validation) (Bengaluru), Pearson Apprentice Data Analytics & BI (Noida), and EXL Associate Business Analyst (Gurugram). Credit91 was considered but excluded after the direct link audit returned HTTP 404. Rechecked Amex, Airbus, and Nippon; all remain within eight days with Apply live. CoverSelf's alternate role has a live Keka Apply route, but its LinkedIn age is rounded to one week and cannot be proven inside eight days, so it is archived. Wellfound FOXO, Kedara, and SellerGeni recent-looking snippets each had direct pages return 410. Internshala and Naukri were blocked by robots; Cutshort's fresh matching role required 5–8 years. Seven active roles, two Tier 1. All six lanes remain partial. No application, message, form submission, or email was made.",
+  "updatedAt": "2026-10-14T10:27:50+05:30",
+  "latestRunSummary": "Oct 14 AM partial refresh: resumed LinkedIn Jobs first while preserving the historical 169-query matrix as unfinished. Added four verified current roles: Vecmocon MIS Intern (Manesar/Gurugram), Affluense Data Analyst (Finance & Validation) (Bengaluru), Pearson Apprentice Data Analytics & BI (Noida), and EXL Associate Business Analyst (Gurugram). Credit91 was considered but excluded after the direct link audit returned HTTP 404. Rechecked Amex, Airbus, and Nippon; all remain within eight days with Apply live. CoverSelf's alternate role has a live Keka Apply route, but its LinkedIn age is rounded to one week and cannot be proven inside eight days, so it is archived. Wellfound FOXO, Kedara, and SellerGeni recent-looking snippets each had direct pages return 410. Internshala and Naukri were blocked by robots; Cutshort's fresh matching role required 5–8 years. Seven active roles, two Tier 1. Link/state audits passed, commit 1ca37f6 was pushed to main, GitHub Pages deployment succeeded, and the public HTML snapshot was verified. All six lanes remain partial. No application, message, form submission, or email was made.",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -10,17 +10,17 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-14T10:22:23+05:30",
+    "completedAt": "2026-10-14T10:27:50+05:30",
     "activeRoles": 7,
     "tier1Roles": 2,
     "closedOrInvalidated": 200,
     "linkAudit": "passed",
     "materialChanges": true,
-    "publicationStatus": "pending_validation",
-    "publishedCommit": "f5934f3",
-    "pagesDeployment": "previous_snapshot_built",
-    "publicSnapshotVerified": false,
-    "notes": "Resumed oldest LinkedIn Jobs checkpoint; the 169 page matrix remains incomplete. Added Vecmocon, Affluense, Pearson, and EXL after current direct Apply checks. Credit91 initially appeared current in search/browser results, but direct audit returned HTTP 404, so it was removed from active cards, archived, and excluded. Rechecked Amex, Airbus, and Nippon; all remain within eight days with Apply visible. CoverSelf alternate posting age was approximate and excluded. Wellfound FOXO, Kedara, and SellerGeni direct links returned 410 despite recent snippet language. Normal LinkedIn posts returned only stale/conflicting candidates. Internshala and Naukri blocked by robots; Cutshort exact fresher fit not found. Four net additions; seven active roles, two Tier 1. Validation and publication pending. No application, message, form submission, or email was made."
+    "publicationStatus": "published",
+    "publishedCommit": "1ca37f6",
+    "pagesDeployment": "built",
+    "publicSnapshotVerified": true,
+    "notes": "Resumed oldest LinkedIn Jobs checkpoint; the 169 page matrix remains incomplete. Added Vecmocon, Affluense, Pearson, and EXL after current direct Apply checks. Credit91 initially appeared current in search/browser results, but direct audit returned HTTP 404, so it was removed from active cards, archived, and excluded. Rechecked Amex, Airbus, and Nippon; all remain within eight days with Apply visible. CoverSelf alternate posting age was approximate and excluded. Wellfound FOXO, Kedara, and SellerGeni direct links returned 410 despite recent snippet language. Normal LinkedIn posts returned only stale/conflicting candidates. Internshala and Naukri blocked by robots; Cutshort exact fresher fit not found. Four net additions; seven active roles, two Tier 1. Both validations passed. Commit 1ca37f6 pushed; Pages build completed successfully and the public cache-busted HTML returned HTTP 200 with all four additions and seven active roles. No application, message, form submission, or email was made."
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
