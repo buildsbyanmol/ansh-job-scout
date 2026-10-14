@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T19:02:20+05:30",
-  "latestRunSummary": "Oct 14 PM partial refresh: resumed the oldest LinkedIn Jobs checkpoint first and continued separate searches across normal LinkedIn posts, company careers, startup boards, specialist portals, and broad portals. Added the verified MediNex Workforce Health Data Reporting Intern (remote India, 3 months, ₹17,000/month, no experience required) after confirming a current direct LinkedIn Apply control. The client hospital is undisclosed and recorded as a material diligence gap. British Council People Data Analyst was excluded because its official Apply control redirected to the generic careers homepage and LinkedIn returned HTTP 429. Other candidates were stale, outside the eight-day window, expired, blocked, senior, or lacked a live direct route. Eight active roles, two Tier 1. All six source lanes remain partial; the 169-query LinkedIn Jobs matrix remains unfinished. Validation and publication pending. No application, message, form submission, or email was made.",
+  "updatedAt": "2026-10-14T19:32:17+05:30",
+  "latestRunSummary": "Oct 14 PM partial refresh: resumed the oldest LinkedIn Jobs checkpoint first and continued separate searches across normal LinkedIn posts, company careers, startup boards, specialist portals, and broad portals. Added the verified MediNex Workforce Health Data Reporting Intern (remote India, 3 months, ₹17,000/month, no experience required) after confirming a current direct LinkedIn Apply control. The client hospital is undisclosed and recorded as a material diligence gap. British Council People Data Analyst was excluded because its official Apply control redirected to the generic careers homepage and LinkedIn returned HTTP 429. Other candidates were stale, outside the eight-day window, expired, blocked, senior, or lacked a live direct route. Eight active roles, two Tier 1. Both validation scripts passed. Commit 2a4cc45 was pushed to main; the GitHub Pages build/deploy completed successfully and the cache-busted public HTML returned HTTP 200 with eight active roles and the new MediNex card. All six source lanes remain partial; the 169-query LinkedIn Jobs matrix remains unfinished. No application, message, form submission, or email was made.",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -10,17 +10,17 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-14T19:02:20+05:30",
+    "completedAt": "2026-10-14T19:32:17+05:30",
     "activeRoles": 8,
     "tier1Roles": 2,
     "closedOrInvalidated": 201,
-    "linkAudit": "pending",
+    "linkAudit": "passed",
     "materialChanges": true,
-    "publicationStatus": "pending_validation",
-    "publishedCommit": "1ca37f6",
-    "pagesDeployment": "not_started",
-    "publicSnapshotVerified": false,
-    "notes": "Resumed the oldest LinkedIn Jobs checkpoint first and continued separate searches across normal LinkedIn posts, company careers, startup boards, specialist portals, and broad portals. Added MediNex Workforce Health Data Reporting Intern after verifying the current direct LinkedIn page and live Apply control. Exact posting age was 3 hours, remote India, ₹17,000/month, 1–3 months, no prior experience. Actual hospital/client is undisclosed, so noted as a diligence gap. Excluded British Council People Data Analyst: official Apply redirected to generic careers homepage; direct LinkedIn request returned HTTP 429, so no usable application route was verified. Other candidates were stale, beyond eight days, expired, inaccessible, senior, or lacked live Apply. Eight active roles, two Tier 1. All six lanes remain partial; the 169-result LinkedIn matrix remains queued at Business Analyst, Delhi, start 0. Run link/state validators and publish only if clean. No application, message, form submission, or email was made."
+    "publicationStatus": "published",
+    "publishedCommit": "2a4cc45",
+    "pagesDeployment": "built",
+    "publicSnapshotVerified": true,
+    "notes": "Resumed the oldest LinkedIn Jobs checkpoint first and continued separate searches across normal LinkedIn posts, company careers, startup boards, specialist portals, and broad portals. Added MediNex Workforce Health Data Reporting Intern after verifying the current direct LinkedIn page and live Apply control. Exact posting age was 3 hours, remote India, ₹17,000/month, 1–3 months, no prior experience. Actual hospital/client is undisclosed, so noted as a diligence gap. Excluded British Council People Data Analyst: official Apply redirected to generic careers homepage; direct LinkedIn request returned HTTP 429, so no usable application route was verified. Other candidates were stale, beyond eight days, expired, inaccessible, senior, or lacked live Apply. Eight active roles, two Tier 1. Both validators passed. Commit 2a4cc45 pushed to main; Pages workflow 38572701259 completed successfully, and the cache-busted public page returned HTTP 200 with the new card and eight active roles. All six lanes remain partial; the 169-result LinkedIn matrix remains queued at Business Analyst, Delhi, start 0. No application, message, form submission, or email was made."
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
