@@ -16,7 +16,7 @@
       "title": "Data Analyst - Intern",
       "url": "https://wellfound.com/jobs/3527746-data-analyst-intern",
       "reason": "direct_role_returns_410_gone_despite_search_snippet_saying_reposted_today",
-      "lastCheckedAt": "2026-10-13T21:00:27+05:30"
+      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
     },
     {
       "key": "linkedin:4380932905",
@@ -224,7 +224,7 @@
       "title": "Product Analytics Intern",
       "url": "https://wellfound.com/jobs/4414185-product-analytics-intern",
       "reason": "direct_role_returns_410_gone",
-      "lastCheckedAt": "2026-08-23T09:20:00+05:30"
+      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
     },
     {
       "key": "wellfound:3731152",
@@ -2073,6 +2073,46 @@
       "url": "https://in.linkedin.com/jobs/view/business-analyst-intern-at-greentern-4471902037",
       "reason": "direct_link_redirects_to_generic_linkedin_search_with_expired_jd_redirect",
       "lastCheckedAt": "2026-10-12T19:02:46+05:30"
+    },
+    {
+      "key": "wellfound:4750164",
+      "company": "Kedara",
+      "title": "Data and ML Engineer Intern",
+      "url": "https://wellfound.com/jobs/4750164-data-and-ml-engineer-intern",
+      "reason": "direct_role_returns_410_gone_despite_recent_repost_search_snippet",
+      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
+    },
+    {
+      "key": "linkedin:4473343257",
+      "company": "Saarthi · CoverSelf role",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-saarthi-4473343257",
+      "reason": "rounded_one_week_posting_age_cannot_confirm_within_user_eight_day_cutoff",
+      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
+    },
+    {
+      "key": "keka:coverself:143419",
+      "company": "CoverSelf",
+      "title": "Data Analyst Intern",
+      "url": "https://coverself.keka.com/careers/jobdetails/143419",
+      "reason": "apply_control_live_but_linkedin_posting_age_is_rounded_and_exact_date_not_verifiable_within_8_day_cutoff",
+      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
+    },
+    {
+      "key": "wellfound:4522751",
+      "company": "Avacasa",
+      "title": "Data Analyst Internship",
+      "url": "https://wellfound.com/jobs/4522751-ai-content-creator-internship-clone",
+      "reason": "wellfound_posting_age_one_month_exceeds_eight_day_active_window",
+      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
+    },
+    {
+      "key": "linkedin:4476289071",
+      "company": "Credit91",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-credit91-4476289071",
+      "reason": "direct_url_returned_http_404_and_employer_careers_page_did_not_list_internship",
+      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
     }
   ]
 }
