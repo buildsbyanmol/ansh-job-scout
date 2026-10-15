@@ -16,11 +16,11 @@
     "closedOrInvalidated": 217,
     "linkAudit": "passed; 12 active roles, 0 need attention, 0 structural issues",
     "materialChanges": true,
-    "publicationStatus": "pending",
-    "publishedCommit": "9846d1e",
-    "pagesDeployment": "pending",
-    "publicSnapshotVerified": false,
-    "runSummary": "Oct 15 PM: three fresh verified additions (Eli Lilly, Credgenics, Crossing Infotech); one prior MediNex role removed after HTTP 502; nine rejected candidates archived. Twelve active roles. LinkedIn Jobs oldest checkpoint remains Business Analyst, Delhi, start 0; all six source lanes remain partial.",
+    "publicationStatus": "published",
+    "publishedCommit": "6b8095a",
+    "pagesDeployment": "success; workflow 38744948643 completed",
+    "publicSnapshotVerified": true,
+    "runSummary": "Oct 15 PM: three fresh verified additions (Eli Lilly, Credgenics, Crossing Infotech); one prior MediNex role removed after HTTP 502; nine rejected candidates archived. Twelve active roles. LinkedIn Jobs oldest checkpoint remains Business Analyst, Delhi, start 0; all six source lanes remain partial. Commit 6b8095a deployed successfully and the public HTML showed all three additions and the 12-role count.",
     "notes": "Added four roles after current-date/source inspection and direct verification: Hindware BA Intern (posted 1 day ago; named current recruiter route), AuthBridge Product Analyst Intern (2 days; live Apply), Digital Nexon MIS Fresher Intern (4 hours; live Apply), and India Prosperity Initiative Decision Scientist Intern (posted Oct 9; live Apply). Final audit found Affluense and Pearson no longer accepting applications, so both were removed from active cards and archived. Added exclusions for closed or dead destinations, including OneGuardian (expired LinkedIn job redirect), The Caliper Lab (HTTP 410), ByteDance (Unstop registration closed/deadline passed), and WeCredit (Indeed HTTP 403 direct destination). Active total is ten, Tier 1 is one; the validator's direct-link audit found zero structural issues, and both state and links validators still need final run before publication. Searches included LinkedIn Jobs, normal LinkedIn posts, specialist/startup boards, broad portals, and official company/ATS pages, but pagination/authenticated access and the full source matrix were not completed. All six lanes remain partial. The historical 169-page LinkedIn Jobs matrix remains queued at Business Analyst, Delhi, start 0. No application, message, form submission, or email was made."
   },
   "nextRun": {
