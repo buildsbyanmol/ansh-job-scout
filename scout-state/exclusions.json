@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T19:02:20+05:30",
+  "updatedAt": "2026-10-15T19:00:12+05:30",
   "entries": [
     {
       "key": "linkedin:4474580985",
@@ -1846,9 +1846,9 @@
       "key": "linkedin:4446745041",
       "company": "EXL",
       "title": "Data Analyst",
-      "url": "https://www.linkedin.com/jobs/view/4446745041/",
-      "reason": "older_than_8_days_user_requested",
-      "lastCheckedAt": "2026-10-11T14:01:04+05:30"
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-exl-4446745041",
+      "reason": "direct_page_age_is_one_week_relative; exact_date_cannot_confirm_within_eight_day_freshness_cutoff",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
     },
     {
       "key": "linkedin:4423895953",
@@ -2169,6 +2169,78 @@
       "url": "https://in.indeed.com/viewjob?jk=8cb296dfde21545d",
       "reason": "direct_detail_destination_returned_http_403_and_live_application_route_could_not_be_verified",
       "lastCheckedAt": "2026-10-15T10:00:00+05:30"
+    },
+    {
+      "key": "linkedin:4478404501",
+      "company": "MediNex Workforce",
+      "title": "Health Data Reporting Intern",
+      "url": "https://in.linkedin.com/jobs/view/health-data-reporting-intern-excel-sql-dashboards-at-medinex-workforce-4478404501",
+      "reason": "direct_link_audit_returned_http_502; removed_from_active_until_live_route_can_be_reverified",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4474244394",
+      "company": "MediNex Workforce",
+      "title": "Junior Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/junior-data-analyst-intern-excel-sql-power-bi-at-medinex-workforce-4474244394",
+      "reason": "direct_link_verification_returned_http_429; destination_and_live_apply_route_unverified",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4476680938",
+      "company": "MedTourEasy",
+      "title": "Data Analyst Trainee",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-trainee-at-medtoureasy-4476680938",
+      "reason": "direct_listing_says_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4424286972",
+      "company": "Enerture Technologies",
+      "title": "Data Analyst / Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-enerture-technologies-4424286972",
+      "reason": "direct_destination_redirects_to_expired_generic_linkedin_search",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4404723499",
+      "company": "FirstClub",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-firstclub-4404723499",
+      "reason": "direct_destination_redirects_to_expired_generic_linkedin_search",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4407682627",
+      "company": "Scoutit",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-scoutit-4407682627",
+      "reason": "direct_destination_redirects_to_expired_generic_linkedin_search",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4470262836",
+      "company": "Droisys",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-droisys-4470262836",
+      "reason": "direct_listing_shows_three_weeks_old_and_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4445201206",
+      "company": "Criteo",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-criteo-4445201206",
+      "reason": "direct_destination_redirects_to_expired_generic_linkedin_search",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "citi:101901966304",
+      "company": "Citi",
+      "title": "Data Analyst",
+      "url": "https://jobs.citi.com/job/bengaluru/data-analyst/287/101901966304",
+      "reason": "official_employer_page_returned_http_404",
+      "lastCheckedAt": "2026-10-15T19:00:12+05:30"
     }
   ]
 }
