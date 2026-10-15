@@ -2121,6 +2121,54 @@
       "url": "https://in.linkedin.com/jobs/view/people-data-analyst-at-british-council-4475211530",
       "reason": "official_apply_redirects_to_generic_careers_homepage_and_direct_linkedin_request_returned_http_429_application_route_not_verified",
       "lastCheckedAt": "2026-10-14T19:02:20+05:30"
+    },
+    {
+      "key": "linkedin:4475218080",
+      "company": "Affluense",
+      "title": "Data Analyst (Finance & Validation), Internship to Full-Time",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-finance-validation-internship-%E2%86%92-full-time-at-affluense-4475218080",
+      "reason": "direct_link_audit_2026_10_15_detected_no_longer_accepting_closed_and_removed_from_active_board",
+      "lastCheckedAt": "2026-10-15T10:00:00+05:30"
+    },
+    {
+      "key": "linkedin:4477919572",
+      "company": "Pearson",
+      "title": "Apprentice, Data Analytics and Business Intelligence, req 25973",
+      "url": "https://in.linkedin.com/jobs/view/apprentice-data-analytics-business-intelligence-at-pearson-4477919572",
+      "reason": "direct_link_audit_2026_10_15_detected_no_longer_accepting_closed_and_removed_from_active_board",
+      "lastCheckedAt": "2026-10-15T10:00:00+05:30"
+    },
+    {
+      "key": "linkedin:4422852947",
+      "company": "OneGuardian Brands",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-oneguardian-brands-4422852947",
+      "reason": "direct_link_redirected_to_generic_analyst_search_with_expired_jd_redirect; archived_as_closed",
+      "lastCheckedAt": "2026-10-15T10:00:00+05:30"
+    },
+    {
+      "key": "wellfound:4589460",
+      "company": "The Caliper Lab",
+      "title": "AI Data & Research Intern",
+      "url": "https://wellfound.com/jobs/4589460-ai-data-research-intern",
+      "reason": "search_snippet_said_posted_yesterday_but_direct_destination_returned_http_410_gone",
+      "lastCheckedAt": "2026-10-15T10:00:00+05:30"
+    },
+    {
+      "key": "unstop:1729597",
+      "company": "ByteDance",
+      "title": "Data Analyst Project Intern (Training & Quality) - 2026 Start",
+      "url": "https://unstop.com/internships/data-analyst-project-intern-training-quality-2026-start-bsms-bytedance-1729597/amp",
+      "reason": "canonical_unstop_listing_registration_closed_deadline_2026_08_17",
+      "lastCheckedAt": "2026-10-15T10:00:00+05:30"
+    },
+    {
+      "key": "indeed:8cb296dfde21545d",
+      "company": "WeCredit",
+      "title": "Business Analyst Intern",
+      "url": "https://in.indeed.com/viewjob?jk=8cb296dfde21545d",
+      "reason": "direct_detail_destination_returned_http_403_and_live_application_route_could_not_be_verified",
+      "lastCheckedAt": "2026-10-15T10:00:00+05:30"
     }
   ]
 }
