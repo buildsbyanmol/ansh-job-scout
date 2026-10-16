@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T11:02:36+05:30",
+  "updatedAt": "2026-10-16T11:06:27+05:30",
   "latestRunSummary": "Oct 16 AM partial refresh: resumed the oldest LinkedIn Jobs checkpoint at Business Analyst, Delhi, start 0. Added three roles verified within eight days: ConvertPolo Conversion Data Analysis & AI Enablement Intern (New Delhi, live LinkedIn Apply, Tier 2), DeepDimex Web/Data Analytics Intern (Bengaluru, named email/WhatsApp route, paid, Tier 2), and Forage AI Research Associate Intern (remote India, live LinkedIn Apply, Tier 3). Re-audited active cards: Digital Nexon MIS Fresher Intern and Crossing Infotech Healthcare Data Analyst Intern now say no longer accepting and were removed. Rejected/cached leads include expired Wellfound EarnIn, RUSA talent-pool/volunteer roles, unpaid Cantar/Zetheta, and Circles without a visible application route. Thirteen active roles, one Tier 1. All six lanes remain partial; the oldest 169-page LinkedIn Jobs matrix remains unfinished. No application, message, form submission, or email was made.",
   "strategy": {
     "freshWindow": "24 hours",
@@ -10,18 +10,18 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-16T11:02:36+05:30",
+    "completedAt": "2026-10-16T11:06:27+05:30",
     "activeRoles": 13,
     "tier1Roles": 1,
     "closedOrInvalidated": 225,
     "linkAudit": "passed; 13 active roles, 0 need attention, 0 structural issues",
     "materialChanges": true,
-    "publicationStatus": "pending_publish",
-    "publishedCommit": null,
-    "pagesDeployment": "not checked for this run",
-    "publicSnapshotVerified": false,
-    "runSummary": "Oct 16 AM: three verified additions (ConvertPolo, DeepDimex, Forage AI); two listings (Digital Nexon, Crossing Infotech) closed during direct re-audit; eight new exclusion entries cached. Thirteen active roles remain, Tier 1 is one. The oldest LinkedIn Jobs checkpoint remains Business Analyst, Delhi, start 0; all six source lanes remain partial. Validation and publication are pending.",
-    "notes": "Discovery covered targeted LinkedIn Jobs queries for analyst interns, BA, analytics interns, SQL analysts, data engineering and adjacent roles; direct pages verified ConvertPolo (7 hours old, live Apply), DeepDimex (4 hours old, named current email/WhatsApp route; no outreach sent), and Forage AI (5 days old, live Apply, India remote). The all-active link audit closed Digital Nexon and Crossing Infotech due explicit no-longer-accepting language. Rejected/cache outcomes: Wellfound EarnIn direct HTTP 410; RUSA Analytics pages are volunteer/talent-pool rather than confirmed concrete openings; Cantar and Zetheta explicitly unpaid; Circles has no visible Apply/current named route; previously cached Caliper and Kedara Wellfound IDs were rechecked and remain HTTP 410. Wipro BA L2 and PayU Associate BA found in official search were beyond eight days; an EXL official-board result was discovery-only and not separately direct verified, so no addition. Normal LinkedIn posts did not produce a new post-only opening with verified fresh date/route. Broad boards and ATS were search-discovery only and pagination remains incomplete. All six source lanes remain partial. No application, message, form submission, or email was made."
+    "publicationStatus": "published",
+    "publishedCommit": "bbd9a19",
+    "pagesDeployment": "success; workflow 38856557197 completed",
+    "publicSnapshotVerified": true,
+    "runSummary": "Oct 16 AM: three verified additions (ConvertPolo, DeepDimex, Forage AI); two listings (Digital Nexon, Crossing Infotech) closed during direct re-audit; eight new exclusion entries cached. Thirteen active roles remain, Tier 1 is one. Validation passed, commit bbd9a19 was pushed to main, Pages workflow 38856557197 succeeded, and the public HTML reflects the 13-role snapshot. The oldest LinkedIn Jobs checkpoint remains Business Analyst, Delhi, start 0; all six source lanes remain partial.",
+    "notes": "Discovery covered targeted LinkedIn Jobs queries for analyst interns, BA, analytics interns, SQL analysts, data engineering and adjacent roles; direct pages verified ConvertPolo (7 hours old, live Apply), DeepDimex (4 hours old, named current email/WhatsApp route; no outreach sent), and Forage AI (5 days old, live Apply, India remote). The all-active link audit closed Digital Nexon and Crossing Infotech due explicit no-longer-accepting language. Rejected/cache outcomes: Wellfound EarnIn direct HTTP 410; RUSA Analytics pages are volunteer/talent-pool rather than confirmed concrete openings; Cantar and Zetheta explicitly unpaid; Circles has no visible Apply/current named route; previously cached Caliper and Kedara Wellfound IDs were rechecked and remain HTTP 410. Wipro BA L2 and PayU Associate BA found in official search were beyond eight days; an EXL official-board result was discovery-only and not separately direct verified, so no addition. Normal LinkedIn posts did not produce a new post-only opening with verified fresh date/route. Broad boards and ATS were search-discovery only and pagination remains incomplete. The deployed Pages snapshot was fetched after successful workflow 38856557197 and contains all three new cards, 13 active opportunities, and both closure rows. All six source lanes remain partial. No application, message, form submission, or email was made."
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
