@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T19:00:12+05:30",
+  "updatedAt": "2026-10-16T11:02:36+05:30",
   "entries": [
     {
       "key": "linkedin:4474580985",
@@ -2080,7 +2080,7 @@
       "title": "Data and ML Engineer Intern",
       "url": "https://wellfound.com/jobs/4750164-data-and-ml-engineer-intern",
       "reason": "direct_role_returns_410_gone_despite_recent_repost_search_snippet",
-      "lastCheckedAt": "2026-10-14T10:22:23+05:30"
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
     },
     {
       "key": "linkedin:4473343257",
@@ -2152,7 +2152,7 @@
       "title": "AI Data & Research Intern",
       "url": "https://wellfound.com/jobs/4589460-ai-data-research-intern",
       "reason": "search_snippet_said_posted_yesterday_but_direct_destination_returned_http_410_gone",
-      "lastCheckedAt": "2026-10-15T10:00:00+05:30"
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
     },
     {
       "key": "unstop:1729597",
@@ -2241,6 +2241,70 @@
       "url": "https://jobs.citi.com/job/bengaluru/data-analyst/287/101901966304",
       "reason": "official_employer_page_returned_http_404",
       "lastCheckedAt": "2026-10-15T19:00:12+05:30"
+    },
+    {
+      "key": "linkedin:4475927145",
+      "company": "Digital Nexon",
+      "title": "MIS Fresher Intern",
+      "url": "https://in.linkedin.com/jobs/view/mis-fresher-intern-at-digital-nexon-4475927145",
+      "reason": "direct_page_states_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "linkedin:4477280604",
+      "company": "Crossing Infotech",
+      "title": "Healthcare Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/healthcare-data-analyst-intern-freshers-welcome-healthcare-data-excel-sql-reporting-remote-at-crossing-infotech-4477280604",
+      "reason": "direct_page_states_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "wellfound:4722602",
+      "company": "EarnIn",
+      "title": "Analytics Engineering Contractor",
+      "url": "https://wellfound.com/jobs/4722602-analytics-engineering-contractor",
+      "reason": "direct_job_destination_returned_http_410_gone_despite_recent_search_snippet",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "linkedin:4479174213",
+      "company": "RUSA Analytics",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-rusaanalytics-4479174213",
+      "reason": "listing_is_a_talent_pool_and_employment_type_is_volunteer_not_a_confirmed_paid_opening",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "linkedin:4479173319",
+      "company": "RUSA Analytics",
+      "title": "Data Engineering Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-engineering-intern-at-rusaanalytics-4479173319",
+      "reason": "listing_is_a_talent_pool_not_a_confirmed_opening_and_compensation_is_unstated",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "linkedin:4473435494",
+      "company": "Cantar Analytics",
+      "title": "Data Science Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-science-intern-at-cantar-analytics-4473435494",
+      "reason": "direct_listing_explicitly_states_unpaid_internship",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "linkedin:4478840789",
+      "company": "Zetheta Algorithms Private Limited",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-zetheta-algorithms-private-limited-4478840789",
+      "reason": "direct_listing_explicitly_states_unpaid_internship",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "linkedin:4475188116",
+      "company": "Circles",
+      "title": "Intern, Data Analytics and Visualizations",
+      "url": "https://in.linkedin.com/jobs/view/intern-data-analytics-and-visualizations-at-circles-4475188116",
+      "reason": "direct_listing_has_no_visible_apply_control_or_current_named_hiring_route",
+      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
     }
   ]
 }
