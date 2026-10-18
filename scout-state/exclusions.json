@@ -1,7 +1,103 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T11:02:36+05:30",
+  "updatedAt": "2026-10-18T19:10:44+05:30",
   "entries": [
+    {
+      "key": "linkedin:4474247882",
+      "company": "Scoutit",
+      "title": "MIS Analyst",
+      "url": "https://in.linkedin.com/jobs/view/mis-analyst-at-scoutit-4474247882",
+      "reason": "expired_linkedin_redirect_to_generic_management_information_systems_manager_search",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4446730433",
+      "company": "EXL",
+      "title": "Associate - Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/associate-business-analyst-at-exl-4446730433",
+      "reason": "older_than_8_days_direct_linkedin_page_says_2_weeks_ago",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4476464537",
+      "company": "Mastercard",
+      "title": "Associate Analyst, Insights & Enablement",
+      "url": "https://in.linkedin.com/jobs/view/associate-analyst-insights-enablement-at-mastercard-4476464537",
+      "reason": "listing_closed_or_inconsistent_with_current_employer_route",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4477635541",
+      "company": "Altera Institute",
+      "title": "Growth Analyst",
+      "url": "https://in.linkedin.com/jobs/view/growth-analyst-at-altera-institute-4477635541",
+      "reason": "direct_page_says_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4476631582",
+      "company": "To-Let Globe",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-to-let-globe-4476631582",
+      "reason": "direct_page_says_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4444679117",
+      "company": "Scoutit",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-scoutit-4444679117",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4451176550",
+      "company": "GoML",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-goml-4451176550",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4465200071",
+      "company": "Euronics",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-euronics-4465200071",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4466681352",
+      "company": "ThoughtSol",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-thoughtsol-4466681352",
+      "reason": "direct_page_closed_and_experience_requirement_exceeds_early_career_scope",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4466167847",
+      "company": "CloudLabs",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-cloudlabs-4466167847",
+      "reason": "minimum_6_years_experience_outside_early_career_scope",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4467506595",
+      "company": "Scoutit",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-scoutit-4467506595",
+      "reason": "expired_linkedin_redirect",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
+    {
+      "key": "linkedin:4469001130",
+      "company": "Krwizard",
+      "title": "MIS & Data Analytics Executive",
+      "url": "https://in.linkedin.com/jobs/view/mis-data-analytics-executive-at-krwizard-4469001130",
+      "reason": "minimum_3_years_experience_outside_early_career_scope",
+      "lastCheckedAt": "2026-10-18T19:10:44+05:30"
+    },
     {
       "key": "linkedin:4474580985",
       "company": "Saarthi · CoverSelf role",
@@ -2305,6 +2401,118 @@
       "url": "https://in.linkedin.com/jobs/view/intern-data-analytics-and-visualizations-at-circles-4475188116",
       "reason": "direct_listing_has_no_visible_apply_control_or_current_named_hiring_route",
       "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+    },
+    {
+      "key": "linkedin:4467183663",
+      "company": "Impacto Digifin Technologies",
+      "title": "Business Analyst Intern 6 months (expired job copy)",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-intern-6-months-at-impacto-digifin-technologies-4467183663",
+      "reason": "direct_job_url_redirects_to_linkedin_expired_job_search; a separate current company hiring post has a named route and is tracked independently",
+      "lastCheckedAt": "2026-10-16T19:01:07+05:30"
+    },
+    {
+      "key": "linkedin:4478430027",
+      "company": "DeepDimex",
+      "title": "Web Analytics / Data Analytics Intern",
+      "url": "https://in.linkedin.com/jobs/view/web-analytics-data-analytics-intern-at-deepdimex-4478430027",
+      "reason": "direct_page_explicitly_states_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-17T11:34:00+05:30"
+    },
+    {
+      "key": "linkedin:4476295003",
+      "company": "The India Prosperity Initiative",
+      "title": "Decision Scientist Intern",
+      "url": "https://in.linkedin.com/jobs/view/decision-scientist-intern-at-the-india-prosperity-initiative-4476295003",
+      "reason": "posted_2026_10_09_exact_post_time_unavailable_and_eight_day_cutoff_cannot_be_confirmed",
+      "lastCheckedAt": "2026-10-17T11:34:00+05:30"
+    },
+    {
+      "key": "linkedin:4472614219",
+      "company": "Skillzenloop",
+      "title": "Data Analyst Intern | Remote | India (older requisition)",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-entry-level-remote-freshers-welcome-at-skillzenloop-4472614219",
+      "reason": "older_similar_requisition_direct_page_returned_http_404; a separate fresh requisition 4477392894 was independently verified",
+      "lastCheckedAt": "2026-10-17T11:34:00+05:30"
+    },
+    {
+      "key": "linkedin:4479784323",
+      "company": "Dexter's Tech",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-dexter-s-tech-4479784323",
+      "reason": "listing_conflicts_on_eligibility_and_describes_a_career_launch_training_program_with_performance_based_stipend_and_college_student_only_condition",
+      "lastCheckedAt": "2026-10-17T11:34:00+05:30"
+    },
+    {
+      "key": "linkedin:4470027261",
+      "company": "Vortenza Systems",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-vortenza-systems-4470027261",
+      "reason": "listing_describes_a_career_launch_training_program_with_performance_based_stipend_and_college_student_only_condition_not_a_clear_employee_role",
+      "lastCheckedAt": "2026-10-17T11:34:00+05:30"
+    },
+    {
+      "key": "workday:airbus:JR10446611",
+      "company": "Airbus India · India Innovation Center",
+      "title": "Data Analyst Intern",
+      "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Internship---India-Innovation-Center----Data-Analyst-Intern_JR10446611",
+      "reason": "direct_job_url_resolved_to_generic_workday_maintenance_page_not_a_live_role_or_apply_route",
+      "lastCheckedAt": "2026-10-17T11:34:00+05:30"
+    },
+    {
+      "key": "linkedin:4478134573",
+      "company": "Crossing Infotech",
+      "title": "Data Science Intern | Freshers Welcome | Python, Data Analysis & Machine Learning | Remote",
+      "url": "https://in.linkedin.com/jobs/view/data-science-intern-freshers-welcome-python-data-analysis-machine-learning-remote-at-crossing-infotech-4478134573",
+      "reason": "direct_listing_explicitly_states_no_longer_accepting_applications_despite_recent_discovery_label",
+      "lastCheckedAt": "2026-10-17T18:59:00+05:30"
+    },
+    {
+      "key": "linkedin:4478485687",
+      "company": "Techolution",
+      "title": "Power BI Intern",
+      "url": "https://in.linkedin.com/jobs/view/power-bi-intern-at-techolution-4478485687",
+      "reason": "direct_linkedin_page_says_no_longer_accepting_applications_on_2026_10_18",
+      "lastCheckedAt": "2026-10-18T09:13:50+05:30"
+    },
+    {
+      "key": "linkedin:4461192384",
+      "company": "Kapiva",
+      "title": "Data Analyst - Central Analytics",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-central-analytics-at-kapiva-4461192384",
+      "reason": "direct_linkedin_page_says_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-18T09:13:50+05:30"
+    },
+    {
+      "key": "linkedin:4469794403",
+      "company": "Cargill",
+      "title": "Data Analyst - Corporate Audit",
+      "url": "https://careers.cargill.com/en/job/bengaluru/data-analyst-corporate-audit/23251/101076020688",
+      "reason": "official_career_page_dates_role_2026_09_24_and_requires_minimum_two_years_experience_outside_freshness_and_early_career_scope",
+      "lastCheckedAt": "2026-10-18T09:13:50+05:30"
+    },
+    {
+      "key": "linkedin-post:7497163322845224960",
+      "company": "Codemonk",
+      "title": "Business Analyst Intern",
+      "url": "https://www.linkedin.com/posts/himanshipaliwal_hiringfreshers-2026batch-2027batch-activity-7497163322845224960-td_g",
+      "reason": "original_linkedin_post_is_about_three_weeks_old_even_though_search_snippet_suggested_six_days",
+      "lastCheckedAt": "2026-10-18T09:13:50+05:30"
+    },
+    {
+      "key": "wellfound:1634155",
+      "company": "Zethic",
+      "title": "Business Analyst Intern",
+      "url": "https://wellfound.com/jobs/1634155-business-analyst-3-years-experience",
+      "reason": "wellfound_listing_reposted_two_weeks_ago_outside_user_requested_eight_day_window",
+      "lastCheckedAt": "2026-10-18T09:13:50+05:30"
+    },
+    {
+      "key": "linkedin:4479063725",
+      "company": "Hire Daily / WhiteLotus Talent Partners",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-hire-daily-4479063725",
+      "reason": "duplicate_linkedin_requisition_for_the_same_whiteLotus_talent_partners_opening_tracked_as_4479057861",
+      "lastCheckedAt": "2026-10-18T09:13:50+05:30"
     }
   ]
 }

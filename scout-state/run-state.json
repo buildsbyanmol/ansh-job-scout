@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T11:06:27+05:30",
-  "latestRunSummary": "Oct 16 AM partial refresh: resumed the oldest LinkedIn Jobs checkpoint at Business Analyst, Delhi, start 0. Added three roles verified within eight days: ConvertPolo Conversion Data Analysis & AI Enablement Intern (New Delhi, live LinkedIn Apply, Tier 2), DeepDimex Web/Data Analytics Intern (Bengaluru, named email/WhatsApp route, paid, Tier 2), and Forage AI Research Associate Intern (remote India, live LinkedIn Apply, Tier 3). Re-audited active cards: Digital Nexon MIS Fresher Intern and Crossing Infotech Healthcare Data Analyst Intern now say no longer accepting and were removed. Rejected/cached leads include expired Wellfound EarnIn, RUSA talent-pool/volunteer roles, unpaid Cantar/Zetheta, and Circles without a visible application route. Thirteen active roles, one Tier 1. All six lanes remain partial; the oldest 169-page LinkedIn Jobs matrix remains unfinished. No application, message, form submission, or email was made.",
+  "updatedAt": "2026-10-18T19:10:44+05:30",
+  "latestRunSummary": "Oct 18 PM partial refresh resumed the oldest LinkedIn Jobs lane and searched adjacent role trails. Added Statiq Business Analyst (3 days old; 2–3 years requested), Cvent Associate Revenue Operations (4 days; 1–2 years requested), and Citi Business Analytics Intermediate Analyst (official listing posted Oct 12; 2–5 years requested). Archived EXL BA because LinkedIn now says 2 weeks ago, and rejected Scoutit MIS because its direct URL redirects to a generic search page. Board: 20 active roles, one Tier 1, and 215 closed or invalidated archive rows. All six discovery lanes remain partial. No application, message, form submission, or email was made. No publication occurred because repository branch policy requires a codex branch while recurring permission covers main only.",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -10,78 +10,90 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-16T11:06:27+05:30",
-    "activeRoles": 13,
+    "completedAt": "2026-10-18T19:10:44+05:30",
+    "activeRoles": 20,
     "tier1Roles": 1,
-    "closedOrInvalidated": 225,
-    "linkAudit": "passed; 13 active roles, 0 need attention, 0 structural issues",
+    "closedOrInvalidated": 248,
+    "linkAudit": "passed; 20 active roles, 0 need attention, 0 structural issues",
     "materialChanges": true,
-    "publicationStatus": "published",
-    "publishedCommit": "bbd9a19",
-    "pagesDeployment": "success; workflow 38856557197 completed",
-    "publicSnapshotVerified": true,
-    "runSummary": "Oct 16 AM: three verified additions (ConvertPolo, DeepDimex, Forage AI); two listings (Digital Nexon, Crossing Infotech) closed during direct re-audit; eight new exclusion entries cached. Thirteen active roles remain, Tier 1 is one. Validation passed, commit bbd9a19 was pushed to main, Pages workflow 38856557197 succeeded, and the public HTML reflects the 13-role snapshot. The oldest LinkedIn Jobs checkpoint remains Business Analyst, Delhi, start 0; all six source lanes remain partial.",
-    "notes": "Discovery covered targeted LinkedIn Jobs queries for analyst interns, BA, analytics interns, SQL analysts, data engineering and adjacent roles; direct pages verified ConvertPolo (7 hours old, live Apply), DeepDimex (4 hours old, named current email/WhatsApp route; no outreach sent), and Forage AI (5 days old, live Apply, India remote). The all-active link audit closed Digital Nexon and Crossing Infotech due explicit no-longer-accepting language. Rejected/cache outcomes: Wellfound EarnIn direct HTTP 410; RUSA Analytics pages are volunteer/talent-pool rather than confirmed concrete openings; Cantar and Zetheta explicitly unpaid; Circles has no visible Apply/current named route; previously cached Caliper and Kedara Wellfound IDs were rechecked and remain HTTP 410. Wipro BA L2 and PayU Associate BA found in official search were beyond eight days; an EXL official-board result was discovery-only and not separately direct verified, so no addition. Normal LinkedIn posts did not produce a new post-only opening with verified fresh date/route. Broad boards and ATS were search-discovery only and pagination remains incomplete. The deployed Pages snapshot was fetched after successful workflow 38856557197 and contains all three new cards, 13 active opportunities, and both closure rows. All six source lanes remain partial. No application, message, form submission, or email was made."
+    "publicationStatus": "not_published_policy_conflict",
+    "publishedCommit": null,
+    "pagesDeployment": "not attempted; publishing to main conflicts with shared repository branch policy",
+    "publicSnapshotVerified": false,
+    "runSummary": "Oct 18 PM partial refresh: added Statiq Business Analyst (2–3 years requested), Cvent Associate Revenue Operations (1–2 years operational/customer experience), and Citi Business Analytics Intermediate Analyst (official role, 2–5 years requested). Directly checked the fresh candidate pages and audited every active route. The final link audit passed all 20 active links with zero attention items or structural issues. Archived EXL Associate BA after its direct LinkedIn page aged to 2 weeks; rejected Scoutit MIS after its direct URL redirected to a generic LinkedIn search. Other reviewed candidates were closed, expired, or outside early-career scope and were added to the exclusion cache. The board now has 20 active roles, one Tier 1, and 215 archive rows. All six source lanes remain partial; LinkedIn historical/query pagination is incomplete, Internshala/Naukri remain blocked, and Instahyre authentication is pending. No application, message, form submission, or email was made. No commit, push, or Pages deployment occurred because repository branch policy requires a codex branch while recurring permission covers main only.",
+    "notes": "Resumed the oldest LinkedIn Jobs checkpoint at Business Analyst, Delhi, start 0, and used adjacent role trails plus a separate scan of normal LinkedIn hiring posts, startup/specialist boards, broad portals, and official-career pages. Added Statiq Business Analyst, LinkedIn ID 4478867391: posted 3 days ago, Gurugram, live Apply, asks 2–3 years; stretch. Added Cvent Associate Revenue Operations / Sales Planning, ID 4478439372: posted 4 days ago, Gurugram, live Apply, asks 1–2 years in customer/operations work; relevant quota, forecasting, reconciliation, and reporting duties. Added Citi Business Analytics Intermediate Analyst, req 26997911: official Citi page posted 12 Oct, Bengaluru hybrid, live Workday Apply, asks 2–5 years; substantial stretch. The direct link audit passed all 18 pre-edit active cards. EXL ID 4446730433 was removed because the current page says 2 weeks ago. Scoutit MIS ID 4474247882 was rejected after its direct URL redirected to a generic Management Information Systems Manager search page. Also cached currently closed/expired/over-experience IDs found in the adjacent-role sweep. All six lanes remain partial; the 169 historical LinkedIn query pages and full role/city pagination remain unfinished. No applications, recruiter messages, forms, or emails were sent. Publication and Pages verification were not attempted because the global repo rule requires a codex branch while this automation's recurring permission is specifically for main."
   },
   "nextRun": {
     "startWithLane": "linkedin_jobs",
     "then": "fresh_all_lane_sweep",
-    "notes": "Next run resumes the oldest incomplete LinkedIn Jobs matrix at Business Analyst, Delhi, start 0, and proceeds through remaining city/title pages. Recheck all thirteen active roles for age ≤8 days and live application routes. Do not resurface archived/rejected leads unless there is a genuinely new posting date/requisition or route correction. Continue normal LinkedIn post queries, authenticated Instahyre and deeper startup/specialist pagination, broad portals, canonical ATS/company careers, and cross-platform missing-listing trails. Exclude uncertain age buckets; keep blocked/incomplete lanes partial."
+    "notes": "Resume Business Analyst, Delhi, start 0 and traverse its result pages. Then continue the city × role-family matrix without treating snippets as verified. Recheck all twenty active URLs and strict 8-day freshness. Do not resurface cached IDs unless a new requisition or route appears. Continue normal LinkedIn employee/recruiter/founder posts, authenticated Instahyre and deeper startup/specialist pagination, broad portals, official ATS/company careers, and cross-platform listing trails. Keep blocked and incomplete lanes partial."
+  },
+  "latestLaneAudit": {
+    "attemptedAt": "2026-10-18T19:10:44+05:30",
+    "resumeLane": "linkedin_jobs",
+    "lanes": [
+      {"id":"linkedin_jobs","status":"partial","checkpoint":"Business Analyst, Delhi, start 0; 169 historical 24-hour matrix pages remain untraversed","attempted":"Resumed Business Analyst, Delhi, start 0, then followed adjacent BA/MIS/Revenue Operations and official-employer trails. Added Statiq BA 4478867391 (3 days, live Apply, 2–3 years), Cvent RevOps 4478439372 (4 days, live Apply, 1–2 years), and Citi req 26997911 (official page posted Oct 12, live Apply, 2–5 years). Rejected expired Scoutit MIS 4474247882 and aged EXL BA 4446730433. The full LinkedIn query matrix and result pagination remain incomplete.","limitation":"LinkedIn result pagination and full query matrix remain incomplete; direct pages can redirect to generic searches and discovery results include stale or closed roles.","nextAction":"Continue exact Business Analyst, Delhi page 0 and paginate; record query/page checkpoints for each remaining city and role family."},
+      {"id":"linkedin_normal_posts","status":"partial","checkpoint":"Fresh role/company/recruiter post variants; employee/recruiter/founder matrix incomplete","attempted":"Ran a separate normal LinkedIn hiring-post scan using hiring, fresher, analytics, MIS, SQL, Power BI, and city variants. Cross-checked Cvent's current job listing with its named recruiter route; no post-only listing independently passed freshness and current-route checks.","limitation":"Search indexing and post pagination incomplete; many results are stale reposts, and comment/DM routes are not independently actionable without outreach.","nextAction":"Continue separate employee, recruiter, founder, and company-post combinations; inspect original post dates and named current routes."},
+      {"id":"startup_boards","status":"partial","checkpoint":"Wellfound, Cutshort, Instahyre, YC and accelerator pagination/authentication incomplete","attempted":"Continued startup-board search and cross-platform role trails. Previously cached Zethic remained out of window; no startup-board candidate passed this run's direct freshness and route checks.","limitation":"Instahyre authentication and full board pagination unavailable; search results include stale/removed jobs.","nextAction":"Continue authenticated Instahyre, YC and accelerator boards, then paginate each accessible startup board."},
+      {"id":"specialist_early_career_portals","status":"partial","checkpoint":"Unstop/Hirist detail pages and Internshala extraction incomplete","attempted":"Searched Unstop, Hirist, and Internshala. No fresh direct-verified target role surfaced; Internshala returned a robots block.","limitation":"Internshala remains robots-blocked; Unstop/Hirist query and page traversal incomplete.","nextAction":"Continue Unstop/Hirist detail pages and retry Internshala through accessible public detail routes."},
+      {"id":"broad_job_portals","status":"partial","checkpoint":"Indeed/Foundit/Naukri city-role pagination incomplete","attempted":"Searched Indeed, Foundit, and Naukri variants. Indeed results were several weeks old; Foundit surfaced old/closed UPTITUDE and irrelevant or closed listings; Naukri job-listings path was robots-blocked. No new candidate passed current direct-route verification.","limitation":"Provider pagination is incomplete; Naukri detail routes remain inaccessible to the search client.","nextAction":"Continue direct employer destination extraction and city-role queries across Indeed, Foundit, and Naukri."},
+      {"id":"official_ats_and_careers","status":"partial","checkpoint":"ATS/provider and employer-site matrices incomplete","attempted":"Searched official employer/ATS discovery and followed Citi's current careers trail. Added Citi Business Analytics Intermediate Analyst req 26997911 after confirming its Oct 12 posting date and live Workday Apply control; 2–5 years requested. Provider and employer pagination remains incomplete.","limitation":"Only search-indexed ATS/company pages and targeted employer follow-ups were covered; provider and employer pagination remains incomplete.","nextAction":"Continue Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby and employer career queries; canonicalize newly found cross-platform roles."}
+    ]
   },
   "sourceLanes": [
     {
       "id": "linkedin_jobs",
       "label": "LinkedIn Jobs",
       "status": "partial",
-      "lastAttemptAt": "2026-10-16T11:02:36+05:30",
+      "lastAttemptAt": "2026-10-18T19:10:44+05:30",
       "resumeFrom": "Resume the 169 rate-limited or timed-out pages in the 17-role-family by four-location past-24-hour matrix, starting with Business Analyst in Delhi at start 0; preserve all individual failures as incomplete and retry after cooldown",
-      "notes": "Resumed the oldest checkpoint at Business Analyst, Delhi, start 0. Searched BA intern/business analyst and adjacent fresh listings. Added Hindware BA Intern (1 day; named current TA route), AuthBridge Product Analyst Intern (2 days; Apply live), Digital Nexon MIS Fresher Intern (4 hours; Apply live), and The India Prosperity Initiative Decision Scientist Intern (Oct 9; Apply live). Final direct audit found Affluense and Pearson no longer accepting applications; removed both from active board. OneGuardian was excluded after its direct URL redirected to LinkedIn's expired generic search. The historical 169 rate-limited/timed-out 24-hour matrix pages were not traversed; all city × role-family pages remain incomplete.",
-      "latestOutcome": "Three additions, two closures/removals; thirteen active roles. Old 169 unfinished LinkedIn Jobs pages remain queued at Business Analyst, Delhi, start 0; role-family/city traversal remains partial."
+      "notes": "Resumed the oldest checkpoint at Business Analyst, Delhi, start 0, then followed fresh adjacent BA/MIS/RevOps listings. Added Statiq BA 4478867391 (3 days, Apply live, 2–3 years), Cvent RevOps 4478439372 (4 days, Apply live, 1–2 years), and Citi req 26997911 via its official employer page (posted 12 Oct, Apply live, 2–5 years). EXL 4446730433 was archived after the direct page showed 2 weeks. Scoutit MIS 4474247882 redirected to a generic search and was rejected. The historical 169 pages and full city × role-family matrix remain incomplete.",
+      "latestOutcome": "Three roles added, one active role archived for age, and one expired direct destination rejected. The 169-page historical matrix plus city-role traversal remain incomplete."
     },
     {
       "id": "linkedin_normal_posts",
       "label": "Normal LinkedIn hiring posts",
       "status": "partial",
-      "lastAttemptAt": "2026-10-16T11:02:36+05:30",
+      "lastAttemptAt": "2026-10-18T19:10:44+05:30",
       "resumeFrom": "fresh employee, recruiter, founder, and company posts using reporting, MIS, RevOps, risk, data engineering, fresher, graduate, referral, SQL, Python, and Power BI variants after indexing refreshes",
       "notes": "Searched normal hiring posts separately using fresher/graduate, analytics, intern, SQL, and target-city terms. Search surfacing repeated OneGuardian hiring posts, but they were 1–2 months old and the canonical LinkedIn Job destination now expires; excluded. Other surfaced hiring posts were outside eight days, requested comments/contact without a direct current application route, or had uncertain dates. No post-only listing passed freshness and route checks; no messages or emails sent. Lane remains partial.",
-      "latestOutcome": "No post-only additions passed; current searches yielded no post with both ≤8-day freshness and a usable route. Employee/recruiter/founder query combinations remain incomplete. Lane remains partial."
+      "latestOutcome": "No normal-post role passed both freshness and usable-route checks. Surfaced posts were 3 weeks to 10 months old; employee/recruiter/founder combinations remain incomplete."
     },
     {
       "id": "official_ats_and_careers",
       "label": "Company careers and ATS pages",
       "status": "partial",
-      "lastAttemptAt": "2026-10-16T11:02:36+05:30",
+      "lastAttemptAt": "2026-10-18T19:10:44+05:30",
       "resumeFrom": "Fresh Workday, Taleo, SmartRecruiters, Lever, Greenhouse, Ashby, and company-hosted pages, then canonicalize the newly added LinkedIn roles where exact employer requisitions appear",
       "notes": "Searched official careers and ATS domains plus cross-platform employer follow-ups for fresh roles. Amex and Airbus remain live from the prior pass. Pearson is now closed on the direct LinkedIn page and has been removed from active. No new official employer/ATS listing passed freshness, fit, and live-route verification; broad provider-specific and company-site matrices remain incomplete.",
-      "latestOutcome": "Official search found Wipro BA L2 and PayU Associate BA outside the 8-day cutoff; an EXL result was discovery-only and not separately direct-verified. Full ATS/company search matrix remains incomplete."
+      "latestOutcome": "Citi req 26997911 passed direct employer-page verification and was added as Tier 3 due its 2–5 year requirement. Full ATS/company-career pagination remains incomplete."
     },
     {
       "id": "startup_boards",
       "label": "Startup boards",
       "status": "partial",
-      "lastAttemptAt": "2026-10-16T11:02:36+05:30",
+      "lastAttemptAt": "2026-10-18T19:10:44+05:30",
       "resumeFrom": "Authenticated Instahyre traversal, deeper Cutshort pagination, current YC company boards, accelerator portfolio boards, and state-reversal checks for excluded Wellfound IDs",
       "notes": "Searched Wellfound, Cutshort, Instahyre, YC/startup boards. The Caliper Lab Data Research Intern appeared as posted yesterday but direct URL returned HTTP 410; excluded. Avacasa and other Wellfound results were a month old. Cutshort yielded old/over-experience results; Instahyre surfaced no direct current opening. Authenticated Instahyre, YC, accelerator boards, and full pagination remain pending.",
-      "latestOutcome": "Wellfound EarnIn direct HTTP 410; previously cached Caliper and Kedara IDs rechecked and remain HTTP 410. Continue authenticated Instahyre, YC, accelerator boards and pagination."
+      "latestOutcome": "No new startup-board role passed current direct verification. Wellfound and Cutshort surfaced stale/removed leads; Instahyre authentication, YC and accelerator coverage, and pagination remain pending."
     },
     {
       "id": "specialist_early_career_portals",
       "label": "Specialist and early-career portals",
       "status": "partial",
-      "lastAttemptAt": "2026-10-16T11:02:36+05:30",
+      "lastAttemptAt": "2026-10-18T19:10:44+05:30",
       "resumeFrom": "Recover current direct Internshala detail links for Galytix, Zomunk, Isourse, Zippee, Innerbhakti, and other fresh search-page results; then continue Unstop and Hirist detail pages",
       "notes": "Unstop surfaced ByteDance Data Analyst Project Intern, but its canonical listing showed registration closed and an Aug 17 deadline; excluded despite recent search visibility. Internshala details remain robots-blocked; Unstop/Hirist query and page traversal remain incomplete.",
-      "latestOutcome": "No specialist-portal additions; RUSA listings were volunteer/talent-pool. Continue Unstop/Hirist verification and pagination; lane remains partial."
+      "latestOutcome": "No fresh specialist-portal role passed direct verification. Internshala remains robots-blocked; Unstop/Hirist coverage and pagination remain partial."
     },
     {
       "id": "broad_job_portals",
       "label": "Broad job portals",
       "status": "partial",
-      "lastAttemptAt": "2026-10-16T11:02:36+05:30",
+      "lastAttemptAt": "2026-10-18T19:10:44+05:30",
       "resumeFrom": "Retry Indeed in an authenticated session or canonicalize employer destinations, then retry Foundit and Naukri client-rendered detail extraction and fresh city-role pagination",
       "notes": "Indeed surfaced current-looking leads, including WeCredit BA Intern; its direct detail request returned HTTP 403 and application destination was not verifiable, so excluded. Pearson req 25973 had been cross-checked in the earlier pass but is now closed on LinkedIn. Naukri remained robots-blocked; broad portal pagination and city-role traversal remain incomplete.",
-      "latestOutcome": "No broad-portal addition passed direct-route and freshness checks. Continue Indeed/Foundit/Naukri city/role queries and pagination."
+      "latestOutcome": "No broad-portal addition passed direct-route and freshness checks. Indeed surfaced old roles, Foundit surfaced old/closed pages, and Naukri path access was blocked; pagination remains incomplete."
     }
   ],
   "publication": {
