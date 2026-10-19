@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T10:50:00+05:30",
-  "latestRunSummary": "Oct 19 AM refresh resumed the oldest LinkedIn Jobs checkpoint and swept fresh variants across LinkedIn posts, startup and specialist boards, broad portals, and ATS/company pages. Added PwC Data Analytics Associate, Kapiva Data Analyst - Central Analytics, and Eptura Product Associate Apprentice. Removed closed WhiteLotus, Learning Routes, and RUSA cards; cached closed, expired, or over-age candidate destinations. Board: 20 active roles, two Tier 1, and 218 archive rows. All six lanes remain partial. No application, message, form submission, or email was made.",
+  "updatedAt": "2026-10-19T10:55:14+05:30",
+  "latestRunSummary": "Oct 19 AM refresh resumed the oldest LinkedIn Jobs checkpoint and swept fresh variants across LinkedIn posts, startup and specialist boards, broad portals, and ATS/company pages. Added PwC Data Analytics Associate, Kapiva Data Analyst - Central Analytics, and Eptura Product Associate Apprentice. Removed closed WhiteLotus, Learning Routes, and RUSA cards; cached closed, expired, or over-age candidate destinations. Board: 20 active roles, two Tier 1, and 218 archive rows. Both audits passed. Commit cf73684 was pushed to main; GitHub Pages deployment 39204350755 succeeded and the public snapshot was verified. All six lanes remain partial. No application, message, form submission, or email was made.",
   "strategy": {
     "freshWindow": "24 hours",
     "standardWindow": "7 days",
@@ -10,17 +10,17 @@
     "coverageGoal": "maximum practical coverage; never claim inaccessible or blocked listings were searched"
   },
   "lastRun": {
-    "completedAt": "2026-10-19T10:50:00+05:30",
+    "completedAt": "2026-10-19T10:55:14+05:30",
     "activeRoles": 20,
     "tier1Roles": 2,
     "closedOrInvalidated": 218,
-    "linkAudit": "pending final rerun",
+    "linkAudit": "passed; 20 active roles, 0 need attention, 0 structural issues",
     "materialChanges": true,
-    "publicationStatus": "pending_validation_and_publish",
-    "publishedCommit": "659c16737baeb53d7ce2a5cd603fb6f3570b3e86",
-    "pagesDeployment": "pending push and Pages verification",
-    "publicSnapshotVerified": false,
-    "runSummary": "Oct 19 AM partial refresh: added PwC Acceleration Center India Data Analytics Associate (Bengaluru, posted 3 days ago, entry level, live Apply); Kapiva Data Analyst - Central Analytics (Bengaluru, posted 4 hours ago, live Apply); and Eptura Product Associate Apprentice (Gurugram, posted 2 days ago, 12-month India apprenticeship, live Apply). Removed WhiteLotus and Learning Routes after the direct-link audit marked them closed, and removed RUSA because it was volunteer-classified with no confirmed current route. Cached Abdos, rSTAR, CSK Data Analyst Intern, and Affluense rejected or closed destinations. Board now has 20 active roles, two Tier 1, and 218 archive rows. The eight-day cutoff script found no additional dated active cards older than the limit. Both validation scripts and publication are pending. All six source lanes remain partial. No application, message, form submission, or email was made.",
+    "publicationStatus": "published",
+    "publishedCommit": "cf73684672531a5985969ef628c74d19cfdc3080",
+    "pagesDeployment": "success; GitHub Actions Pages deployment run 39204350755 completed for commit cf73684672531a5985969ef628c74d19cfdc3080 at 2026-10-19T05:24:45Z; live HTML verified after completion on 19 Oct 2026",
+    "publicSnapshotVerified": true,
+    "runSummary": "Oct 19 AM partial refresh: added PwC Acceleration Center India Data Analytics Associate (Bengaluru, posted 3 days ago, entry level, live Apply); Kapiva Data Analyst - Central Analytics (Bengaluru, posted 4 hours ago, live Apply); and Eptura Product Associate Apprentice (Gurugram, posted 2 days ago, 12-month India apprenticeship, live Apply). Removed WhiteLotus and Learning Routes after the direct-link audit marked them closed, and removed RUSA because it was volunteer-classified with no confirmed current route. Cached Abdos, rSTAR, CSK Data Analyst Intern, and Affluense rejected or closed destinations. Board now has 20 active roles, two Tier 1, and 218 archive rows. The eight-day cutoff script found no additional dated active cards older than the limit. Both validations passed. Commit cf736846 was pushed to main; GitHub Pages deployment 39204350755 succeeded and the public HTML was checked for the refreshed timestamp, all three new cards, and the 218-row archive count. All six source lanes remain partial. No application, message, form submission, or email was made.",
     "notes": "Resumed LinkedIn Jobs Business Analyst, Delhi, start 0. Direct checks found Abdos ID 4477245631 and rSTAR ID 4478457991 explicitly closed. Search variants surfaced PwC ID 4462808267 (entry level, posted 3 days, live Apply), Kapiva ID 4479360386 (posted 4 hours, live Apply), and Eptura ID 4480567862 (posted 2 days, live Apply; recent-graduate apprenticeship). Greenhouse candidate Definitive Healthcare 6222293004 had a current Apply form and 0-1 year experience, but freshness was not independently established, so not added. Razorpay Greenhouse result redirected to a jobs/error page; excluded. Removed active WhiteLotus 4479057861 and Learning Routes 4478107088 after audit detected closure; removed RUSA 4479174213 due volunteer classification and no confirmed current route. Added Abdos, rSTAR, CSK Data Analyst Intern 4473590355, and Affluense 4473689967 to exclusions. Wellfound/Cutshort surfaced stale or removed results; Internshala remains robots-blocked. Hirist surfaced only old or over-experience jobs; LinkedIn normal-post results were stale. Naukri query path was robots-blocked. Full LinkedIn city-role pagination remains incomplete. All six lanes stay partial. No application, message, form submission, or email was made."
   },
   "nextRun": {
