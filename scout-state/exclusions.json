@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T19:10:44+05:30",
+  "updatedAt": "2026-10-19T10:50:00+05:30",
   "entries": [
     {
       "key": "linkedin:4474247882",
@@ -2367,8 +2367,8 @@
       "company": "RUSA Analytics",
       "title": "Data Analyst Intern",
       "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-rusaanalytics-4479174213",
-      "reason": "listing_is_a_talent_pool_and_employment_type_is_volunteer_not_a_confirmed_paid_opening",
-      "lastCheckedAt": "2026-10-16T11:02:36+05:30"
+      "reason": "listing_is_a_talent_pool_and_employment_type_is_volunteer_not_a_confirmed_paid_opening; removed_from_active_board_after_2026-10-19_recheck",
+      "lastCheckedAt": "2026-10-19T10:50:00+05:30"
     },
     {
       "key": "linkedin:4479173319",
@@ -2513,6 +2513,54 @@
       "url": "https://in.linkedin.com/jobs/view/data-analyst-at-hire-daily-4479063725",
       "reason": "duplicate_linkedin_requisition_for_the_same_whiteLotus_talent_partners_opening_tracked_as_4479057861",
       "lastCheckedAt": "2026-10-18T09:13:50+05:30"
+    },
+    {
+      "key": "linkedin:4479057861",
+      "company": "WhiteLotus Talent Partners / Hire Daily",
+      "title": "Data Analyst",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-at-hire-daily-4479057861",
+      "reason": "direct_link_audit_says_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-19T10:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4478107088",
+      "company": "Learning Routes",
+      "title": "Jr. MIS Executive - Lead Distribution",
+      "url": "https://in.linkedin.com/jobs/view/jr-mis-executive-at-learning-routes-4478107088",
+      "reason": "direct_link_audit_says_no_longer_accepting_applications",
+      "lastCheckedAt": "2026-10-19T10:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4477245631",
+      "company": "Abdos Life Sciences",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-abdos-life-sciences-4477245631",
+      "reason": "direct_page_says_no_longer_accepting_applications_and_requires_2_to_5_years",
+      "lastCheckedAt": "2026-10-19T10:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4478457991",
+      "company": "rSTAR Technologies",
+      "title": "Business Analyst",
+      "url": "https://in.linkedin.com/jobs/view/business-analyst-at-rstar-technologies-4478457991",
+      "reason": "direct_page_says_no_longer_accepting_applications_and_requires_5_or_more_years",
+      "lastCheckedAt": "2026-10-19T10:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4473590355",
+      "company": "CSK Technologies",
+      "title": "Data Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analyst-intern-at-csk-technologies-opc-private-limted-4473590355",
+      "reason": "direct_page_says_no_longer_accepting_and_application_deadline_30_sep_2026_passed",
+      "lastCheckedAt": "2026-10-19T10:50:00+05:30"
+    },
+    {
+      "key": "linkedin:4473689967",
+      "company": "Affluense",
+      "title": "Data Analytics Intern",
+      "url": "https://in.linkedin.com/jobs/view/data-analytics-intern-at-affluense-4473689967",
+      "reason": "direct_job_url_redirects_to_generic_linkedin_search_not_a_current_role_destination",
+      "lastCheckedAt": "2026-10-19T10:50:00+05:30"
     }
   ]
 }
